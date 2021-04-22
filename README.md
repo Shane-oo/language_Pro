@@ -4,6 +4,13 @@ HTML files:
 CSS and JS files
   all css and JS files go into sub directory style
  
+GIT FIRST STEP:
+ 1.Clone repository into your files
+ 2. IF YOU ARE GOING TO WORK ON CODE- CREATE A BRANCH AND WORK IN THAT BRANCH DO NOT WORK IN MAIN!!!!! THEN WHEN YOU
+ THINK ITS DONE AND WORKING PUSH IT AND THEN IF YOU ARE CONFIDENT PULL REQUEST INTO MAIN
+DO NOT WORK IN MAIN!!!!!
+DO NOT WORK IN MAIN!!!!!
+DO NOT WORK IN MAIN!!!!!
 HOW TO RUN FLASK:
 in terminal:
   1. cd into the languagePro directory
