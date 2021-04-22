@@ -1,19 +1,44 @@
 <!--homepage is index.html-->
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <!--CSS FILES-->
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
-        
-        <meta charset="utf-8"/>
-        <title>Language Pro - Learn a new Language Like a Pro!</title>
-    </head>
-    <body>
-        <div class="head-container">
-            <h2>Language Pro</h2>
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<head>
+    <!-- Bootstrap Link  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" crossorigin="anonymous">
+
+    <!--CSS Link-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Langauge Pro</a>
+            </div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li class="link-accPage"><a href="accountPage">Account Page</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Contact</a></li>
+                    
+                </ul>
+            </div>
+            
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
         </div>
-        <div class="to-account-page">
-            <p><a href="accountPage">Go to account Page</a></p>
-        </div>
-    </body>
-</html>
+    </nav>
+
+    <section class="home">
+    </section>
+</head>
