@@ -1,8 +1,8 @@
 # language_Pro
 HTML files:
- all html files go into sub directory templates
-CSS and JS files
-  all css and JS files go into sub directory style
+ all html files go into sub directory "templates"
+CSS and JS files:
+  all css and JS files go into sub directory "style"
  
 GIT FIRST STEP:
  1.Clone repository into your files
