@@ -1,86 +1,19 @@
-/* Login Page CSS */
+/* GENERAL CSS */ 
 
 html {
     background-color: #56baed;
   }
   
-  body {
-    font-family: "Poppins", sans-serif;
-    height: 100vh;
-  }
+  body {font-family: Arial, Helvetica, sans-serif;}
   
   a {
     color: #92badd;
     display:inline-block;
     text-decoration: none;
     font-weight: 400;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    display:inline-block;
-    margin: 40px 8px 10px 8px; 
-    color: #cccccc;
-  }
-  
-  
-  
-  /* STRUCTURE */
-  
-  .wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    justify-content: center;
-    width: 100%;
-    min-height: 100%;
-    padding: 20px;
-  }
-  
-  #formContent {
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    background: #fff;
-    padding: 30px;
-    width: 90%;
-    max-width: 450px;
-    position: relative;
-    padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    text-align: center;
-  }
-  
-  #formFooter {
-    background-color: #f6f6f6;
-    border-top: 1px solid #dce8f1;
-    padding: 25px;
-    text-align: center;
-    -webkit-border-radius: 0 0 10px 10px;
-    border-radius: 0 0 10px 10px;
-  }
-  
-  
-  
-  /* TABS */
-  
-  h2.inactive {
-    color: #cccccc;
-  }
-  
-  h2.active {
-    color: #0d0d0d;
-    border-bottom: 2px solid #5fbae9;
-  }
-  
-  
-  
-  /* FORM TYPOGRAPHY*/
-  
-  input[type=submit], input[type=button]  {
+  }  
+
+input[type=reset], input[type=submit], input[type=button]{
     background-color: #56baed;
     border: none;
     color: white;
@@ -97,19 +30,57 @@ html {
     margin: 5px 20px 40px 20px;
   }
   
-  input[type=submit]:hover, input[type=button]:hover  {
+  input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover  {
     background-color: #39ace7;
   }
   
-  input[type=submit]:active, input[type=button]:active  {
+  input[type=submit]:active, input[type=button]:active, input[type=reset]:active  {
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -o-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
   }
+
+
+/* LOGIN CSS */
   
-  input[type=text],input[type=password] {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #loginContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #loginFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+    
+    
+/* login textbox */ 
+#txt{
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -130,17 +101,18 @@ html {
     border-radius: 5px 5px 5px 5px;
   }
   
-  input[type=text]:focus, input[type=password]:focus {
+  
+#txt:focus{
     background-color: #fff;
     border-bottom: 2px solid #5fbae9;
   }
   
-  input[type=text]:placeholder, input[type=password]:placeholder {
+#txt:placeholder {
     color: #cccccc;
   }
   
   
-  /* ANIMATIONS */
+  /* login animations */
   
   /* Simple CSS3 Fade-in-down Animation */
   .fadeInDown {
@@ -216,7 +188,7 @@ html {
     animation-delay: 1s;
   }
 
-  /* Simple CSS3 Fade-in Animation */
+  /* Forget password style */
   .underlineHover:after {
     display: block;
     left: 0;
@@ -237,8 +209,6 @@ html {
   }
   
   
-  /* OTHERS */
-  
   *:focus {
       outline: none;
   } 
@@ -246,3 +216,64 @@ html {
   #icon {
     width:40%;
   }
+
+/* SIGN UP CSS */ 
+* {
+    box-sizing: border-box;
+  }
+
+.formContent {
+    border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+    margin : auto; 
+    width : 70%;
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px 10px 10px 10px;
+  }
+
+#formBtn{
+    text-align: center;
+}
+
+#txt1{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #f6f6f6;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #f6f6f6;
+    color: #0d0d0d;
+}
+
+#txt1:focus{
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+#txt1:placeholder {
+    color: #cccccc;
+  }
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  /* set style for select */ 
+  #sequrity-qs {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid #f6f6f6;
+    background: #f6f6f6;
+  }
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
