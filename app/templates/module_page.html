@@ -2,7 +2,14 @@
 <html lang='en'>
 <meta charset="utf-8">
 <head>
+    <!--CSS FILES-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
+    <!--JS FILES-->
+    <script src="{{url_for('static', filename='js/module_page.js')}}"></script>
+
     <title> Language Pro - Modules</title>
+    <!--icon bug-->
+    <link rel="icon" href="data:,">
     <!-- Feature shins navbar up top-->
 </head>
 <body>
@@ -15,8 +22,20 @@
         </h2>
     </div>
     <!--Accordian drop down module menu-->
-    <button class = "accordion">Hola y adiós (Hello and Goodbye!)</button>
-    <div class = "panel">
-        <p></p>
+    <button class="accordion">Section 1</button>
+    
+    
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 </body>
