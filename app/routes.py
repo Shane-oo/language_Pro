@@ -18,3 +18,7 @@ def forgetPass():
 @app.route('/signupPage')
 def signupPage():
     return render_template('signupPage.html')
+
+@app.route('/module_page')
+def moudule_page():
+    return render_template('module_page.html')
