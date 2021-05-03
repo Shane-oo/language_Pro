@@ -7,12 +7,14 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/accountPage')
-def accountPage():
-    return render_template('accountPage.html')
+@app.route('/loginPage')
+def loginPage():
+    return render_template('loginPage.html')
 
 @app.route('/forgetPass')
 def forgetPass():
     return render_template('forgetPass.html')
 
-
+@app.route('/signupPage')
+def signupPage():
+    return render_template('signupPage.html')
