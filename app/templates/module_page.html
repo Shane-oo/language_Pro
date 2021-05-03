@@ -9,7 +9,7 @@
 
     <title> Language Pro - Modules</title>
     <!--icon bug-->
-    <link rel="icon" href="data:,">
+    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
     <!-- Feature shins navbar up top-->
 </head>
 <body>
@@ -17,27 +17,127 @@
         <h2>Welcome to the Module page! or should I say ¡Bienvenido a la página del módulo!
             <!--Could say more greetings here if we decide to go with more languages-->
             <br>
-            Here is where you can start learning something new, continue where you left off, or view 
-            how far you've come!
+            Here is where you can start learning something new, continue where you left off, or test your
+            knowlege to see how far you've come!
         </h2>
     </div>
-    <!--Accordian drop down module menu-->
-    <div class = "accord_container">
-        <button class="accordion">¡Hola!</button>
-    
+    <!--Accordian drop down module menu for first module-->
+        <button class="accordion">Hello and goodbye / Hola y adiós</button>
         <div class="panel">
             <div class = "module_title">
                 <p>
-                <h3>Learning Hello! Aprendiendo ¡hola!</h3>
-                <h7>How to greet people in Spanish</h7>
-           </p>
-           </div>
+                    <h3>Hello / hola</h3>
+                    <br>
+                    <h3>How to say hello</h3>
+                    <div class = "start_button">
+                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                    </div>
+                
+            </div>
            <div class = "progress_bar">
-               <div id = "module1Bar">0%</div>
-               <br>
-               <button onclick = "move()">Click Me</button>
-           </div>
-        </div>
+                <div id = "module1Bar">0%</div>
+                    <br>
+                    <button onclick = "move()">Click Me</button>
+                
+            </div>
+            <div class = "module_title">
+                <p>
+                <h3>I am / estoy</h3>
+                <br>
+                <h3>Introducing yourself</h3>
+                    <div class = "start_button">
+                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                    </div>
+                </p>
+            </div>
+                <div class = "progress_bar">
+                    <div id = "module1Bar">0%</div>
+                    <br>
+                    <button onclick = "move()">Click Me</button>
+            </div>
+            <div class = "module_title">
+                <p>
+                <h3>How are you? / ¿Cómo estás?</h3>
+                <br>
+                <h3>How to ask how they're going</h3>
+                    <div class = "start_button">
+                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                    </div>
+                </p>
+            </div>
+                <div class = "progress_bar">
+                    <div id = "module1Bar">0%</div>
+                    <br>
+                    <button onclick = "move()">Click Me</button>
+            </div>
+            <div class = "module_title">
+                <p>
+                <h3>Goodbye / Adiós</h3>
+                <br>
+                <h3>Saying goodbye to new friend</h3>
+                    <div class = "start_button">
+                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                    </div>
+                </p>
+            </div>
+                <div class = "progress_bar">
+                    <div id = "module1Bar">0%</div>
+                    <br>
+                    <button onclick = "move()">Click Me</button>
+            </div>
 
-    </div>
+            
+
+        </div>
+        <p>Im free to seperate these</p>
+        <!--Accordian drop down module menu for first module-->
+        <button class="accordion">Counting / Contando</button>
+        <div class="panel">
+            <div class = "module_title">
+                <p>
+                    <h3>Hello / hola</h3>
+                    <br>
+                    <h3>How to say hello</h3>
+                    <div class = "start_button">
+                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                    </div>
+                
+            </div>
+           <div class = "progress_bar">
+                <div id = "module1Bar">0%</div>
+                    <br>
+                    <button onclick = "move()">Click Me</button>
+                
+            </div>
+
+
+        
+        
+        
+        
+        </div>
+        <p> Im free to sperate these</p>
+        <button class="accordion">Yes & No Questions / Sí y No Preguntas</button>
+        <div class="panel">
+            <div class = "module_title">
+                <p>
+                    <h3>Hello / hola</h3>
+                    <br>
+                    <h3>How to say hello</h3>
+                    <div class = "start_button">
+                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                    </div>
+                
+            </div>
+           <div class = "progress_bar">
+                <div id = "module1Bar">0%</div>
+                    <br>
+                    <button onclick = "move()">Click Me</button>
+            </div>
+        </div>
+        <p> Im free to sperate these</p>
+        <button class = "test" onclick="document.location.href=this.getAttribute('href');" href="test1_page">
+        Test your knowlege</button>
+        
 </body>
+</html>

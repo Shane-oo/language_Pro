@@ -1,18 +1,13 @@
 .desc_module_page{
     text-align: center;
 }
-.accord_container{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    width: 66.6%;
-    }
+
 .accordion {
     background-color: 	rgba(199,3,24,255);
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 50%;
     height: 150px;
     border: none;
     text-align: middle;
@@ -24,30 +19,90 @@
   .active, .accordion:hover {
     background-color: rgba(182,0,34,255); 
   }
+
+  .test{
+    background-color: 	rgba(199,3,24,255);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    height: 150px;
+    border: none;
+    text-align: middle;
+    outline: none;
+    font-size: 50px;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .active, .test:hover {
+    background-color: rgba(182,0,34,255); 
+  }
+  
   
   .panel {
     padding: 0 18px;
-    display: none;
+    
     background-color: white;
     overflow: hidden;
+    max-height:0;
+    transition: max-height 0.2s ease-out;
   }
 .module_title{
     color:black;
     font-size:25px;
-    border:3px; 
+    border:none; 
     border-style:solid; 
     border-color:rgba(199,3,24,255); 
     padding: 1em;
     border-width: medium;
-    width:75%;
+    width:45%;
     background-color: rgba(255,197,0,255);
-    border-radius: 25px;
+    border-radius: 50px;    
+    display:flex;
+    justify-content:space-between;
+  }
+
+.start_button{
+    /* button attributes */
+    
+   display: block;
+   width:200px;
+   height: 100px;
+   line-height: 40px;
+   font-size: 18px;
+   font-family:sans-serif;
+   text-decoration: none;
+   color:#333;
+   border: 2px solid #333;
+   letter-spacing: 2px;
+   text-align: center;
+   position: relative;
+   transition: all .35s;
+  }
+
+  .start_button_text span{
+    position: relative;
+    z-index:2;
+  }
+  .start_button_text:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background:	rgba(199,3,24,255);
+    transition: all .35s;
+  }
+  .start_button_text:hover{
+    color: #fff;
+  }
+  .start_button_text:hover:after{
+      width:100%;
   }
 .progress_bar{
-    
-        width: 100%;
+        width: 50%;
         background-color: rgba(182,0,34,255);
-      
 }
 #module1Bar{
     width: 0%;
