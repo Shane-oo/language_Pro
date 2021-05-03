@@ -46,7 +46,7 @@
 .progress_bar{
     
         width: 100%;
-        background-color: grey;
+        background-color: rgba(182,0,34,255);
       
 }
 #module1Bar{
