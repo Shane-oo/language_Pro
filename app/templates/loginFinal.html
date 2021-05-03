@@ -8,7 +8,7 @@
     <script src="/
     /maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel='stylesheet' href='/Users/iffaaaah/Desktop/language_Pro/app/static/final.css'>
+    <link rel='stylesheet' href="{{ url_for('static',filename='final.css') }}">
 
     <title>Language Pro</title>
 </head>
@@ -19,7 +19,7 @@
             
             <!-- icon to fade in first -->
             <div class='fadeIn first'>
-                <img src='/Users/iffaaaah/Desktop/language_Pro/app/static/icon.png' id='icon' alt='User Icon' />
+                <img src="/static/icon.png" id="icon" alt="User Icon" />
             </div>
 
             <!-- Login Form -->
