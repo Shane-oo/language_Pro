@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+    <!-- STYLE SHEETS AND SCRIPTS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="/
+    /maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel='stylesheet' href="{{ url_for('static',filename='final.css') }}">
+
+    <title>Language Pro</title>
+</head>
+
+<body>
+    <div class='wrapper fadeInDown'>
+        <div id='loginContent'>
+            
+            <!-- icon to fade in first -->
+            <div class='fadeIn first'>
+                <img src="/static/icon.png" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form>
+                <input type='text' id='txt' class='fadeIn second' name='username' placeholder='username'>
+                <input type='password' id='txt' class='fadeIn third' name='password' placeholder="password">
+
+                <input type='submit' id='btn' class="fadeIn fourth" value='Login' onclick="location.href='...html'">
+                <input type='button' id='btn' class="fadeIn fourth" value='Sign Up'
+                    onclick="location.href='signup3.html'">
+            </form>
+
+            <!-- Forgot Password -->
+            <div id="loginFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
