@@ -3,9 +3,7 @@
     <meta charset="utf-8">
     <head>
         <title>Language Project</title>
-
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='signupstyle.css') }}">
-
     </head>
     <body>
         <div class="modal-body">
@@ -15,14 +13,13 @@
                 <p>Answer the security question below to sign in.</p>
             <hr>
                 <label for="answer"><b>Security Question</b></label>
-                <input type="text" placeholder="Your answer here" name="answer" required>
+                <input type="text" placeholder="Your answer here..." name="answer" required>
             </div>
-            <div class="clearfix">
-                <button type="submit" class="signupbtn">Submit</button>
+            <div class='clearfix'>
+                <button type="submit" >Submit</button>
+                <button type="button" data-dismiss="modal">Close</button>
             </div>
-            <div class="clearfix">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+            <br>
             </form>
         </div>    
     

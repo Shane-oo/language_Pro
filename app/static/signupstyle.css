@@ -76,6 +76,7 @@ html {
   .clearfix{
     text-align: center;
   }
+
   /* The Modal (background) */
   .signUp {
     display: none; /* Hidden by default */
@@ -108,4 +109,10 @@ html {
     .signupbtn {
        width: 100%;
     }
+  }
+
+  .button-forgetpass{
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
   }
