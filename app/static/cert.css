@@ -1,0 +1,44 @@
+.outerlayer-cert{
+    margin: auto;
+    width: max-content;
+    height: 650px;
+    padding:30px;
+    border: 10px solid goldenrod;
+    text-align: center;
+    background-color: gold;
+}
+
+.innerlayer-cert{
+    margin: auto;
+    width:max-content;
+    height: 570px; 
+    padding: 30px; 
+    text-align:center; 
+    border: 5px dotted goldenrod;
+    border-radius: 30px;
+}
+
+.firstline-cert{
+    font-weight: bold;
+    font-size: 70px;
+    font-family: 'Dancing Script';
+}
+
+.name-cert{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.wording-cert{
+    font-style: italic;
+    font-size: 25px;
+}
+
+.mark-cert{
+    font-size: 25px;
+}
+
+.date-cert{
+    font-size: 30px;
+}
+
