@@ -26,3 +26,8 @@ def moudule_page():
 @app.route('/test1_page')
 def test1_page():
     return render_template('learningQuizzes/test1_page.html')
+
+
+@app.route('/learnHello')
+def learnHello():
+    return render_template('learningQuizzes/learnHello.html')
