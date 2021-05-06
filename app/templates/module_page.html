@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 <meta charset="utf-8">
+<div class = "container">
 <head>
     <!--CSS FILES-->
 	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
@@ -12,18 +13,58 @@
     <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
     <!-- Feature shins navbar up top-->
 </head>
-<body>
+<body class="bodyModulePage">
     <div class="desc_module_page">
         <h2>Welcome to the Module page! or should I say ¡Bienvenido a la página del módulo!
             <!--Could say more greetings here if we decide to go with more languages-->
-            <br>
-            Here is where you can start learning something new, continue where you left off, or test your
-            knowlege to see how far you've come!
         </h2>
+        <br>
+        <h6>
+            We all know Covid-19 put a massive halt to all travel, and the travelers out there are suffering, stuck at home 
+            unable to see new places and experience things people can only dream of. It's fun being a tourist, a stranger 
+            to the envirnoment, that's what's great about travelling, half the time you have no idea where you are or what you are doing.
+            It gives you time to explore these unfamilar places and meeet new people, but best of all you are left with the memories.
+            <br>
+            Inside this module we're gonna get you travel ready for when those planes start to take off!
+            <br>
+            At the end you're gonna be ready for all destinations where Spanish is needed, places like...
+            <br>
+            <p>Costa Rica <span class="dests">Mexico </span><span class="dests1">Peru </span></p>
+           
+            <a target="_blank" href="https://travel.usnews.com/Costa_Rica/">
+                 
+                <img class ="images" id = "costaRica" src ="/static/CostaRica.png" alt="Costa Rica"/>
+           </a>
+       
+           <a target="_blank" href="https://www.nomadicmatt.com/travel-guides/mexico-travel-tips/">
+                 
+            <img class ="images" id = "Mexico" src ="/static/Mexico.jpg" alt="Mexico"/>
+       </a>
+       
+           <a target="_blank" href="https://www.nomadicmatt.com/travel-guides/peru-travel-tips/">
+                 
+            <img class ="images" id = "Mexico" src ="/static/Peru.jpeg" alt="Peru"/>
+       </a>
+       <br>
+            Argentina, Columbia, Venezuela, Dominican Republic, Chile, Cuba, Bolivia, and the list goes on. 
+        </h6>
     </div>
+    <div class="main">
     <!--Accordian drop down module menu for first module-->
+    <div class = "module_talk">
+
+        <p>
+            <h3>Greetings</h3>
+            Alright we're first gotta work on your people skills, how do we get the conversations started and how do we end them
+            so they like us. 
+            <br>
+            By saying hello, good morning and thank you, you are acknowledging another person, providing recognition.
+            In many cultures, this is the equivalent of giving someone a blessing for the day.
+        </p>
+    </div>
         <button class="accordion">Hello and goodbye / Hola y adiós</button>
         <div class="panel">
+            
             <div class = "module_title">
                 <p>
                     <h3>Hello / hola</h3>
@@ -89,7 +130,6 @@
             
 
         </div>
-        <p>Im free to seperate these</p>
         <!--Accordian drop down module menu for first module-->
         <button class="accordion">Counting / Contando</button>
         <div class="panel">
@@ -116,7 +156,6 @@
         
         
         </div>
-        <p> Im free to sperate these</p>
         <button class="accordion">Yes & No Questions / Sí y No Preguntas</button>
         <div class="panel">
             <div class = "module_title">
@@ -135,9 +174,9 @@
                     <button onclick = "move()">Click Me</button>
             </div>
         </div>
-        <p> Im free to sperate these</p>
         <button class = "test" onclick="document.location.href=this.getAttribute('href');" href="test1_page">
         Test your knowlege</button>
-        
+        </div>
 </body>
+</div>
 </html>
