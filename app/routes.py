@@ -9,7 +9,7 @@ def index():
 
 @app.route('/loginPage')
 def loginPage():
-    return render_template('loginPage.html')
+    return render_template('loginFinal.html')
 
 @app.route('/forgetPass')
 def forgetPass():
@@ -17,7 +17,7 @@ def forgetPass():
 
 @app.route('/signupPage')
 def signupPage():
-    return render_template('signupPage.html')
+    return render_template('signupFinal.html')
 
 @app.route('/module_page')
 def moudule_page():
