@@ -2,6 +2,7 @@
 <html lang='en'>
 <meta charset="utf-8">
 <div class = "QuizContainer">
+    <div class = "container">
 <head>
     <!--CSS FILES-->
 	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
@@ -14,7 +15,27 @@
     <!-- Feature shins navbar up top-->
 </head>
 <body>
-
+    <div class = "progress_bar">
+        <div id = "module1Bar">0%</div>
+            <br>
+            <button onclick = "move()">Click Me</button>
+    </div>
+    <div class = "wordLearn">
+       <h3><span class = "heading">¡Hola!</span></h3>
+        <br>
+        <br>
+        <p>
+            Spanish is the native language of more than 450 million
+            people and the official language in 21 countries worldwide – 
+            Mastering SPanish means you'll be understood whether you go
+            despite any regional differences there may be.
+            <br>
+            And it all starts with...
+            <br>
+            <span class = "sayWord">Hola</span>
+        </p>
+    </div>
 </body>
+</div>
 </div>
 </html>
