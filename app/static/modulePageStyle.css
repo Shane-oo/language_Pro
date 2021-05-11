@@ -9,9 +9,7 @@
     font-family:'Lato';
     
 }
-.main{
-    
-}
+
 .container {
     max-width:1500px;
     margin:0 auto;
@@ -166,14 +164,14 @@
     
     
 }
-img:hover {
+.images:hover {
     box-shadow: 5px 4px 10px grey;
   }
  
   /* Three image containers*/
 .imgCol {
     flex: 33.33%;
-  padding: 5px;
+    padding: 5px;
   }
   
   /* Clear floats after image containers */
@@ -205,24 +203,93 @@ img:hover {
     border-width: medium;
     padding: 30px;
     margin: 00px;   
+    border-radius: 10px;
   }
 
   .wordLearn  .sayWord{
-    padding: 100px;
+    padding: 50px;
     margin: 00px;   
+    font-size: 1em;
+    font-family: 'Lato';
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
   .content{
     display:none;
   }
-  button{
-    margin-top:30px;
+
+  /* next and previous buttons*/
+  .next {
+    color: black;
+    border: 2px solid rgb(9, 216, 2);
+    border-radius: 10px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+    -webkit-transition: ease-out 1.0s;
+    -moz-transition: ease-out 1.0s;
+    transition: ease-out 1.0s;
+    float: right;
+  }
+  .next:hover {
+    box-shadow: inset 400px 0 0 0 rgb(9, 216, 2);
   }
   .back{
     display:none;
+    color: black;
+    border: 2px solid rgb(9, 216, 2);
+    border-radius: 10px;
+    padding: 18px 36px;
+    
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+    -webkit-transition: ease-out 1.0s;
+    -moz-transition: ease-out 1.0s;
+    transition: ease-out 1.0s;
+    float: left;
   }
-  .next{
-    margin-left:50px;
+  .back:hover {
+    box-shadow: inset -400px 0 0 0 rgb(9, 216, 2);
   }
+  
+
+  /*--------------------------*/
+
+
   .end{
     display:none;
   }
+  #module2Bar{
+    width: 0%;
+    height:30px;
+    background-color: rgb(9, 216, 2);
+    border-radius: 10px;
+    height:20px;
+    text-align: center; /* To center it horizontally (if you want) */
+    color: black;
+    font-family: 'Lato';
+}
+.progress_bar2{
+  background-color: black;
+  padding:3px;
+  text-align: center;
+  border-radius: 13px;
+  position: relative;
+}
+.wholeBar{
+  margin: auto;
+  width: 50%;
+}
+
+.imageForHolaMod{
+  max-width: 100%;
+  height:auto;
+}
