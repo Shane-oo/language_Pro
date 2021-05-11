@@ -7,7 +7,9 @@
     <!--CSS FILES-->
 	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
     <!--JS FILES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{{url_for('static', filename='js/module_page.js')}}"></script>
+ 
 
     <title> Language Pro - Learn Hola</title>
     <!--icon bug-->
@@ -21,6 +23,7 @@
             <button onclick = "move()">Click Me</button>
     </div>
     <div class = "wordLearn">
+        <div class = "content" id = "content-1" style = "display: block;">
        <h3><span class = "heading">¡Hola!</span></h3>
         <br>
         <br>
@@ -34,6 +37,19 @@
             <br>
             <span class = "sayWord">Hola</span>
         </p>
+        </div>
+
+        <div class = "content"id = "content-2">
+            <p> HOLAAAA</p>
+        </div>
+        <div class = "content"id = "content-3">
+            <p>HOLLAAAA3</p>
+        </div>
+        <button type = "button" class = "back">Previous</button>
+        <button type = "button" class = "next">Next</button>
+    </div>
+    <div class = "end">
+        <p> module done</p>
     </div>
 </body>
 </div>

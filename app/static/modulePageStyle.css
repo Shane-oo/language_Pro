@@ -211,3 +211,18 @@ img:hover {
     padding: 100px;
     margin: 00px;   
   }
+  .content{
+    display:none;
+  }
+  button{
+    margin-top:30px;
+  }
+  .back{
+    display:none;
+  }
+  .next{
+    margin-left:50px;
+  }
+  .end{
+    display:none;
+  }

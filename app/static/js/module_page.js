@@ -1,5 +1,5 @@
+//Function for accordions on module_page
 window.onload = function() {
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 console.log(acc)
@@ -14,10 +14,8 @@ for (i = 0; i < acc.length; i++) {
     }
   });
     }
-
-
-
 }
+// Progress bars inside accordions
 function move() {
     var i = 0;
   if (i == 0) {
@@ -38,3 +36,34 @@ function move() {
     }
   }
 }
+//content next and previous
+
+
+  var counter = 1;
+  $('body').on('click', '.next', function() { 
+    $('.content').hide();
+
+    counter++;
+    $('#content-'+counter+'').show();
+
+    if(counter>1){
+      $('.back').show();
+    }
+    //when module finised
+    if(counter>3){
+      $('.wordLearn').hide();
+      $('.end').show();
+    };
+  });
+  //clicked previous
+  $('body').on('click','.back',function(){
+    counter--;
+    $('.content').hide()
+    var id = counter;
+    $('#content-'+id).show();
+      if(counter<2){
+        $('.back').hide();
+      }
+
+    });
+  
