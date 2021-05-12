@@ -1,215 +1,296 @@
-.head-container{
-    text-align: center;
-}
-
-
-.bodyAcc {
-        font-family: Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-}
-        
-        /* Full-width input fields */
-.signUp-container{
-          width: 100%;
-          padding: 15px;
-          margin: 5px 0 22px 0;
-          display: inline-block;
-          border: none;
-          background: #f1f1f1;
-}
-        
-        /* Add a background color when the inputs get focus */
-        /*input[type=text]:focus, input[type=password]:focus {
-          background-color: #ddd;
-          outline: none;
-        }*/
-        
-/* set style for select */ 
-.sequrity-qs {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-/* Set a style for all buttons */
-.btn-btn-primar {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 30%;
-    opacity: 0.9;
-}
-        
-/*button:hover {
-    opacity:1;
-    }
-*/
-        
-/* Float cancel and signup buttons and add an equal width */
-.signupbtn {
-    float: left;
-    width: 100%;
-}
-        
-/* Add padding to container elements */
-.signUp-container {
-    padding: 20px;
-}
-        
-/* The Modal (background) */
-.signUp {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: #474e5d;
-    padding-top: 25px;
-}
-        
-/* Modal Content/Box */
-.signUp-content {
-    background-color: #fefefe;
-    margin: 5% auto 5% auto; /* 5% from the top, 10% from the bottom and centered */
-    width: 100%; /* Could be more or less, depending on screen size */
-}
-        
-/* Style the horizontal ruler */
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
-        
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-        
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .signupbtn {
-        width: 100%;
-        }
-}
-    
-
-
-/*@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-html,
-body {
-    margin: 0;
-    padding: 0;
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-size: 62.5%;
-    font-size: 10px;
 }
-*/
-/* Navbar section */
 
-.nav {
-    width: 100%;
-    height: 65px;
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #aa151b;
     position: fixed;
-    line-height: 65px;
+    top: 0%;
+    width:100%;
     text-align: center;
 }
 
-.nav div.logo {
+.logo {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 22px;
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    padding-left: 10px;
 }
 
-.nav div.logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.5rem;
-}
-
-.nav div.logo a:hover {
-    color: #00E676;
-}
-
-.nav div.main_list {
-    height: 65px;
-    float: right;
-}
-
-.nav div.main_list ul {
-    width: 100%;
-    height: 65px;
+.nav-links{
     display: flex;
+    justify-content: space-around;
+    width: 30%; 
+}
+
+.nav-links a{
+    color: white;
+    float:right;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #CCCCCC;
+}
+
+.nav-links li{
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-.nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
-}
-
-.nav .search-container {
-    float: right;
-}
-.nav .search-container button {
-    float: right;
-    padding: 20px 10px;
-    margin-top: 16px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 65px;
-    border: 10px;
+.burger{
+    display: none;
     cursor: pointer;
 }
-  
-.nav .search-container button:hover {
-    background: #ccc;
+
+.burger div{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease;
 }
 
-.nav div.main_list ul li a:hover {
-    color: #00E676;
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    } 
+
+    .nav-links{
+        position: absolute;
+        right: 0px; 
+        height: 92vh;
+        top: 8vh;
+        background-color: #aa151b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    }
 }
 
-.nav div.main_list ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 65px;
-    font-size: 2.4rem;
+.nav-active{
+    transform: translateX(0%);
 }
 
-/* Home section */
+@keyframes navLinkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
-.home {
+.toggle.line1{
+    transform: rotate(-45deg) translate(-5px,6px_);
+}
+
+.toggle.line2{
+    opacity: 0;
+}
+
+.toggle.line3{
+    transform: rotate(45deg) translate(-5px,6px_);
+}
+
+/* BODY  */
+body{
+    /* background-color: #aa151b; */
+}
+#spanishpic{
+    padding-top: 64px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+}
+
+.grid{
+    float: center;
     width: 100%;
-    height: 100vh;
-    background-color: black;
-    background-position: center top;
-	background-size:cover;
 }
 
-/* .navTrigger {
+.grid-heading{
+    padding-top: 20px;
+    letter-spacing: 3px;
+    font-weight: 20px;
+    text-align: center;
+    font-style: bold;
+}
+.grid-subline{
+    padding: 10px;
+    font-style: italic;
+    font-weight: 5px;
+    text-align: center;
+}
+.grid-paragraph{
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    line-height: 2;
+}
+
+.bg-grey{
+    /* background-color:#CCCCCC; */
+    color: black;
+}
+
+.bg-yellow{
+    /* background-color:#F1BF00; */
+    color:black;
+}
+
+hr { 
+    display: block; 
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 1px;
+}
+
+/* SLIDE SHOW */
+.slideshow-container {
+    /* min-height: 640px; */
+    /* max-width: 1000px; */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    
+    max-width: 1000px;
+    margin:auto;
+    position: relative;
+    
+    /* width: 640px;
+    margin: auto;
+    position: absolute; */
+    /* absolute maybe can */
+    background-color: #CCCCCC;
+}  
+.ss-image{
+    /* NOT SURE WHY CAN'T I STYLE MY SLIDESHOW IMAGES HERE INSTEAD :c */
+}
+
+/* .mySlides {
     display: none;
 } */
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+
+footer{
+    padding: 128px;
+    font-size: 18px;
+    font-weight: bold;
+
+    background-color: #1a1010a2;
+    color: white;
+
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
 }

@@ -3,49 +3,117 @@
 <html lang='en'>
 <meta charset="utf-8">
 <head>
-    <!-- Bootstrap Link  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" crossorigin="anonymous">
-
-    <!--CSS Link-->
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
-    
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="#">Langauge Pro</a>
-            </div>
-            <div class="search-container">
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li class="link-LogInPage"><a href="loginPage">Login</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="module_page">Module Page</a></li>
-                    <li><a href="">Log In</a></li>
-                    <li><a href="">Contact</a></li>
-                    
-                </ul>
-            </div>
-            
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-    </nav>
-
-    <section class="home">
-    </section>
+    <script src= "homepage script.js"></script>
 </head>
 
 <body>
-    <p>This do be the body of the homePage</p>
-    <img id = "spanish Pic" src = "/static/spanish.jpg" alt="Spanish picture"/>
+    <nav>
+        <div class= "logo">
+            <h4>LANGUAGEPRO</h4>
+        </div>
+        <ul class= "nav-links">
+            <li><a href="/templates/loginFinal.html">Login</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/templates/module_page.html">Module Page</a></li>
+            <li><a href="#footer">Contact</a></li>  
+        </ul>
+        <div class= "burger">
+            <div class= "line1"></div>
+            <div class= "line2"></div>
+            <div class= "line3"></div>
+        </div>
+    </nav>
+
+    <img id = "spanishpic" src = "/static/spanish.jpg" alt="Spanish picture"/ style= "width: 100%">
+
+    <div class="grid">
+        <!-- First Grid -->
+        <div class= "bg-grey">
+            <h1 class = "grid-heading">FUN FACTS ABOUT SPANISH</h1>
+            <h3 class= "grid-subline">Why learn Spanish?</h3>
+            <p class="grid-paragraph">
+                Spanish is a Romance language derived from Vulgar Latin. <br>
+                Spanish is spoken by 559 million people around the world. <br>
+                Spanish uses inverted exclamation and question marks. <br>
+                Like most languages, Spanish has its own very unique words which can't be translated in other languages.
+            </p>
+        </div>
+        <hr>
+        <!-- Second Grid -->
+        <div id = "about" class="bg-yellow">
+            <!-- <h1><a id="about" class= "grid-heading">ABOUT OUR COURSE</a></h1> -->
+            <h1 class = "grid-heading">ABOUT OUR COURSE</h1>
+            <h3 class= "grid-subline">Probably the best you can find</h3>
+            <p class="grid-paragraph">
+                Because we put hell lot of effort so please? <br>
+                And u can get a certificate. <br>
+                Why not pick up a new laungauge. <br>
+                Right??
+            </p>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class= "ss-img" src="/static/Mexico.jpg" style = "width:100%">
+            <div class="text">Module 1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/static/spanish.jpg" class= "ss-img" style = "width:100%">
+            <div class="text">Module 2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class= "ss-img" src="/static/Peru.jpeg" style = "width:100%">
+            <div class="text">Module 3</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <footer>
+        <a id="footer" class= grid-heading>CONTACT US</a><br>
+        <p>Email us at <a href="#">enquiries@languagepro.com</a><br><br><br>
+        Powered By Language Pro</p>
+    </footer>
 </body>
 
-</html>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+</script>
