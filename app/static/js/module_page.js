@@ -77,6 +77,49 @@ $('body').on('click','.back',function(){
 
 });
 
+// Show Results
+window.onload = function() {
+document.getElementById("form4").onsubmit=function() {
+  //check that all questions are answered
+  for(var i = 1 ; i <= 3 ; i++)
+  {
+      var radios = document.getElementsByName('question'+i);
+      var checked = false;
+      for (var j = 0, length = radios.length; j < length; j++) 
+      {
+
+         if (radios[j].checked) 
+         {
+          checked = true;
+          break;
+         }
+
+
+       }
+       if(!checked)
+       {
+         alert('Please answer question '+i);
+         
+         return false; //stops page from refreshing
+       }
+}
+  if(checked==true){
+  question1Res = parseInt(document.querySelector('input[name = "question1"]:checked').value);
+  question2Res = parseInt(document.querySelector('input[name = "question2"]:checked').value);
+  question3Res = parseInt(document.querySelector('input[name = "question3"]:checked').value);
+  }
+ 
+  result = question1Res+question2Res+question3Res;
+  
+  if(result == 99){
+    result =100;
+  }
+  document.getElementById("grade").innerHTML = result;
+  return false; //stops page from refreshing
+
+}
+}
+
 //play sounds
 var hola = new Audio("/static/sounds/hola.m4a"); 
 var buenosDias = new Audio("/static/sounds/buenosDias.m4a");
