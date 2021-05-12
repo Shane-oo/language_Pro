@@ -1,6 +1,6 @@
 from app import db
 from werkzeug.security import generate_password_hash, check_password_hash
-#from flask_login import UserMixin 
+from flask_login import UserMixin 
 
 #creating user database model - UserMixin : mixin class that includes generic implementations that are appropriate for most user model classes. 
 class User(db.Model):
