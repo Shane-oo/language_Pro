@@ -293,3 +293,31 @@
   max-width: 100%;
   height:auto;
 }
+.end{
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  
+  font-family: 'Lato';
+
+}
+.end .heading{
+  border: 1px;
+  border-style:solid; 
+  border-color:black; 
+  border-width: medium;
+  padding: 30px;
+  margin: 00px;   
+  border-radius: 10px;
+}
+.sayWordtestm1{
+  width:"200";
+  height:"200";
+
+}
+.multiChoice{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img.left {float: left;}
