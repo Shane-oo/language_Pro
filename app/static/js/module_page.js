@@ -16,11 +16,6 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
-
-
-
-
-
 // Progress bars for module
 var width = 0;
 function move() {
