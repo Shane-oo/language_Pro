@@ -1,0 +1,31 @@
+{% extends "TestIndex.html" %}
+{% block content %}
+<div class='wrapper fadeInDown'>
+    <div id='loginContent'>
+
+        <!-- icon to fade in first -->
+        <div class='fadeIn first'>
+            <img src='static/icon.png' id='icon' alt='User Icon' />
+        </div>
+
+        <!-- Login Form -->
+        <form action="" method="POST">
+            <input type='text' id='txt' class='fadeIn second' name='email' placeholder='email'>
+            <input type='password' id='txt' class='fadeIn third' name='password' placeholder="password">
+
+            <input type='submit' id='btnsubmit' class="fadeIn fourth" value='Login'>
+            <!-- <input type='button' id='btn' class="fadeIn fourth" value='Sign Up'
+                onclick="location.href='signup3.html'"> -->
+        </form>
+
+        <!-- Forgot Password -->
+        <div id="loginFooter">
+            <a class="underlineHover" href="{{ url_for('forgetPass') }}">Forgot Password?</a>
+        </div>
+        <!-- Create new account -->
+        <div id="loginFooter">
+            <a class="underlineHover" href="{{ url_for('signupPage2') }}">Create account!</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

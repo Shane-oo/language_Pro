@@ -64,9 +64,9 @@ def signupPage2():
     return render_template('signupPage2.html', title='Register', form=form)
 
 #user profile view 
-@app.route('/user/<email>')
+@app.route('/user/<firstname>')
 @login_required  # protects a view function against anonymous users
-def user(email):
-    user = User.query.filter_by(email=email).first_or_404()
+def user(firstname):
+    user = User.query.filter_by(firstname=firstname).first_or_404()
 
     return render_template('user.html', user=user)
