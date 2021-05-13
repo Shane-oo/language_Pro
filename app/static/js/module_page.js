@@ -41,6 +41,12 @@ function unmove(){
     }
   
 }
+function saveProgress(){
+  // Save progress
+  
+  //Go back to module_page
+  location.href='module_page';
+}
 
 
 //content next and previous
