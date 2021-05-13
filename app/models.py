@@ -11,7 +11,8 @@ class User(UserMixin, db.Model):
     password_hash = db.Column(db.String(128)) #security - user password will not be stored in the db if the database ever becomes compromised, the attackers will have access to the passwords, and that could be devastating for users. Instead of writing the passwords directly, I'm going to write password hashes, which greatly improve security. 
     firstname = db.Column(db.String(64))
     lastname = db.Column(db.String(64)) 
-
+    progress =db.Column(db.Integer)
+    
     def __repr__(self):
         return '<User {}>'.format(self.email) 
 

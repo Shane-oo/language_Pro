@@ -43,9 +43,9 @@ function unmove(){
 }
 function saveProgress(){
   // Save progress
-  
+  //location.href="{{ url_for('user', email=current_user.email)}}"
   //Go back to module_page
-  location.href='module_page';
+  //location.href='module_page';
 }
 
 

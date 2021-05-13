@@ -29,7 +29,7 @@
                     {% else %}
                     <li><a href="{{ url_for('user', email=current_user.email) }}">Home</a></li> -->
                     <li><a href="{{ url_for('logout') }}">Logout</a></li>
-                    <li><a href= 'module_page'>Module Page</a></li>
+                    <li><a href= "{{url_for('module_page'}}">Module Page</a></li>
                     {% endif %}
                     <li><a href="">Contact</a></li>
                 </ul>
