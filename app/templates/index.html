@@ -5,21 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src= "{{ url_for('static',filename='js/homepage_script.js') }}"></script>
 </head>
 
 <body>
-    <!-- TEST -->
-    <div class = "topnav">
+    <div class = "topnav" id = newTopnav>
         <div id = "logo"><h4>LANGUAGE PRO</h4></div>
-            <div class="myTopnav">
+            <div class ="myTopnav">
                 <a href="loginPage">Login/Sign Up</a>
                 <a href="#about">About</a>   
                 <a href="module_page">Module Page</a>
-                <a href="#footer">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+                <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a>
             </div>
         </div>
     </div>
@@ -50,8 +47,7 @@
                     but learning a new language is not easy either. <br>
                     This course covers the basics of Spanish, 
                     so that you will be able to do basic conversations as you travel to a Spanish speaking country!<br>
-                    Our course incudes:
-                </p>
+                    Our course incudes:</p>
                 <div class = "grid-paragraph">
                     <li>Different categories of Spanish phrases</li>
                     <li>Audio included for accurate pronounciation</li>
