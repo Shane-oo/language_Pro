@@ -2,12 +2,13 @@
 <!DOCTYPE html>
 <html lang='en'>
 <meta charset="utf-8">
+
 <head>
     <!-- Bootstrap Link  -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" crossorigin="anonymous">
 
     <!--CSS Link-->
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
 
     <nav class="nav">
         <div class="container">
@@ -16,21 +17,23 @@
             </div>
             <div class="search-container">
                 <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li class="link-LogInPage"><a href="loginPage">Login</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Courses</a></li>
-                    <li><a href="{{ url_for('loginTest') }}">Log In Test</a></li>
+                    <li><a href="{{ url_for('home') }}">Main</a></li>
+                    {% if current_user.is_anonymous %}
+                    <li><a href="{{ url_for('loginTest') }}">Login</a></li>
+                    {% else %}
+                    <li><a href="{{ url_for('user', email=current_user.email) }}">Home</a></li> -->
+                    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                    {% endif %}
                     <li><a href="">Contact</a></li>
-                    
                 </ul>
             </div>
-            
+
             <span class="navTrigger">
                 <i></i>
                 <i></i>
@@ -44,8 +47,19 @@
 </head>
 
 <body>
+    
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
     <p>This do be the body of the homePage</p>
-    <img id = "spanish Pic" src = "/static/spanish.jpg" alt="Spanish picture"/>
+    <img id="spanish Pic" src="/static/spanish.jpg" alt="Spanish picture" />
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-from app import app
+from app import app, db
 from app.models import User
 
 #registers the function as a shell context function
