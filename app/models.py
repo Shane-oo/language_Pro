@@ -12,6 +12,8 @@ class User(UserMixin, db.Model):
     firstname = db.Column(db.String(64))
     lastname = db.Column(db.String(64)) 
     progress = db.Column(db.Integer)
+    testScore = db.Column(db.Integer)
+
 
     def __repr__(self):
         return '<User {}>'.format(self.email) 
