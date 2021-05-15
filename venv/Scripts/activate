@@ -37,7 +37,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
+VIRTUAL_ENV="C:\Users\Tan Joe Win\Documents\GitHub\language_Pro\venv"
+=======
 VIRTUAL_ENV="C:\Users\YSLim\Desktop\CITS3403\Group Project\language_Pro\venv"
+>>>>>>> main
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

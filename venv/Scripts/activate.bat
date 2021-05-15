@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
+set VIRTUAL_ENV=C:\Users\Tan Joe Win\Documents\GitHub\language_Pro\venv
+=======
 set VIRTUAL_ENV=C:\Users\YSLim\Desktop\CITS3403\Group Project\language_Pro\venv
+>>>>>>> main
 
 if not defined PROMPT set PROMPT=$P$G
 
