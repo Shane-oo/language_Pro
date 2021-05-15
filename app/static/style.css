@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 /* BASE PAGE CSS */
 * {
     font-family: 'Lato', sans-serif;
-=======
-* {
-    font-family: 'Trebuchet MS', sans-serif;
->>>>>>> main
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -16,7 +11,6 @@
     background-color: #aa151b;
     float: right;
     width: 100%;
-<<<<<<< HEAD
 }
   
 .topnav a {
@@ -481,137 +475,3 @@ body {font-family: Arial, Helvetica, sans-serif;}
   }
   
   
-=======
-}
-  
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin: 10px;
-}
-
-.myTopnav{
-    float: right;
-}
-
-#logo{
-    color: white;
-    letter-spacing: 4px;
-    font-size: 22px;
-    float: left;
-    padding: 20px 30px;
-}
-  
-.topnav a:hover {
-    color: #CCCCCC;
-}
-  
-.topnav a.active {
-    background-color: #aa151b;
-    color: white;
-}
-  
-.topnav .icon {
-    display: none;
-}
-  
-@media screen and (max-width: 700px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
-    float: right;
-    display: block;
-    }
-}
-  
-@media screen and (max-width: 700px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-    .topnav.responsive a {
-    float: none;
-    display: flex;
-    text-align: left;
-    }
-}
-
-/* BODY  */
-#spanishpic{
-    padding-top: 64px;
-    padding-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-}
-
-.grid{
-    float: center;
-    width: 100%;
-}
-
-.grid-heading{
-    padding-top: 20px;
-    letter-spacing: 3px;
-    font-weight: 20px;
-    text-align: center;
-    font-style: bold;
-}
-.grid-subline{
-    padding: 10px;
-    font-style: italic;
-    font-weight: 5px;
-    text-align: center;
-}
-.grid-paragraph{
-    padding: 10px;
-    text-align: center;
-    font-style: italic;
-    line-height: 2;
-}
-
-.bg-grey{
-    /* background-color:#CCCCCC; */
-    color: black;
-}
-
-.bg-yellow{
-    /* background-color:#F1BF00; */
-    color:black;
-}
-
-/* line across the page to section different things */
-hr { 
-    display: block; 
-    margin-left: 10px;
-    margin-right: 10px;
-    overflow: hidden; 
-    border-style: inset; 
-    border-width: 1px;
-}
-
-.QOTD{
-    box-sizing:border-box;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-footer{
-    padding: 128px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #1a1010a2;
-    color: white;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 2px;
-}
->>>>>>> main
