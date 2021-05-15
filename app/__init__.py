@@ -16,6 +16,5 @@ login = LoginManager(app)
 login = LoginManager(app)
 login.login_view = 'loginTest' # <- 'login' is the page name 
 
-
 from app import routes, models
 app.run(debug=True)
