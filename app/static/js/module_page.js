@@ -41,6 +41,9 @@ function unmove(){
     }
   
 }
+
+
+
 function saveProgress(){
   // Save progress
   //location.href="{{ url_for('user', email=current_user.email)}}"
@@ -120,6 +123,11 @@ document.getElementById("form4").onsubmit=function() {
 
 }
 }
+// Disable buttons if progress is not enough on Module Page
+//window.onload= function(){
+  //let buttons = document.querySelector(".start_button_text");
+  //buttons.disabled = true;
+//}
 
 //play sounds
 var hola = new Audio("/static/sounds/hola.m4a"); 
