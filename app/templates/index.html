@@ -1,15 +1,11 @@
-<!--homepage is index.html-->
-<!DOCTYPE html>
+<!-- HOME PAGE BEFROE LOG IN -->
+{% extends "index2.html" %}
+<!-- <!DOCTYPE html>
 <html lang='en'>
-<meta charset="utf-8">
-
-<head>
-    <!-- Bootstrap Link  -->
+<meta charset="utf-8"> -->
+<!-- <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" crossorigin="anonymous">
-
-    <!--CSS Link-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
-
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -28,7 +24,7 @@
                     <li><a href="{{ url_for('loginTest') }}">Login</a></li>
                     {% else %}
                     <li><a href="{{ url_for('user', email=current_user.email) }}">Home</a></li> -->
-                    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                    <!-- <li><a href="{{ url_for('logout') }}">Logout</a></li> 
                     {% endif %}
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -44,10 +40,9 @@
 
     <section class="home">
     </section>
-</head>
+</head>  -->
 
 <body>
-    
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul>
@@ -57,9 +52,60 @@
     </ul>
     {% endif %}
     {% endwith %}
-    {% block content %}{% endblock %}
-    <p>This do be the body of the homePage</p>
-    <img id="spanish Pic" src="/static/spanish.jpg" alt="Spanish picture" />
+    {% block content %}
+    
+    <div class = "welcome">
+        <h1>¡HOLA!<br> WELCOME TO LANGUAGE PRO </h1>    
+    </div>
+    <div class = "images">
+        <img src = "/static/spanish.jpg" alt="Spanish picture">    
+    </div>
+    
+    
+    <div class="grid">
+        <div class = "images">
+            <img src = static/Aircraft.png" alt="Aircraft picture">    
+        </div>
+        <!-- First Grid -->
+        <div class= "bg-grey">
+            
+            <h1 class = "grid-heading">TRAVELLING IN SPANISH</h1>
+            <h3 class= "grid-subline">Why learn Spanish?</h3>
+            <p class="grid-paragraph">
+                Did you know 22 countries around the world speaks Spanish?<br>
+                Spanish is spoken in countries such as Argentina, Bolivia, Chile, Colombia, <br> 
+                Costa Rica, Cuba, Dominican Republic, Ecuador, Equatorial Guinea, El Salvador, <br>
+                Guatemala, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Spain, <br>
+                Uruguay, and Venezuela. <br>
+            </p>
+        </div>
+        <hr>
+        <!-- Second Grid -->
+        <div>
+            <div class="bg-yellow">
+                <h1 class = "grid-heading" id = "about">ABOUT OUR COURSE</h1>
+                <h3 class= "grid-subline">Want to pick up Spanish?</h3>
+                <p class="grid-paragraph">
+                    Travelling to a country without knowing their language can be tough, 
+                    but learning a new language is not easy either. <br>
+                    This course covers the basics of Spanish, 
+                    so that you will be able to do basic conversations as you travel to a Spanish speaking country!<br>
+                    Our course incudes:</p>
+                <div class = "grid-paragraph">
+                    <li>Different categories of Spanish phrases</li>
+                    <li>Audio included for accurate pronounciation</li>
+                    <li>Test at the end to assess your knowledge</li>
+                    <li>Certificate upon completion of the course</li>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <p> this is between the block content markers.</p>
+        
+    {% endblock %}
+    <!-- <p>This do be the body of the homePage</p> -->
+    
 </body>
 
 </html>

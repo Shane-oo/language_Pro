@@ -8,6 +8,14 @@ from werkzeug.urls import url_parse
 
 
 @app.route('/')
+@app.route('/index2')
+def index2():
+    return render_template('index2.html')
+
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
 @app.route('/home')
 @login_required  # to protect some pages nd only allow access to authenticated user
 def home():

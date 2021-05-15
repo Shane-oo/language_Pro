@@ -1,215 +1,151 @@
-.head-container{
-    text-align: center;
-}
-
-
-.bodyAcc {
-        font-family: Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-}
-        
-        /* Full-width input fields */
-.signUp-container{
-          width: 100%;
-          padding: 15px;
-          margin: 5px 0 22px 0;
-          display: inline-block;
-          border: none;
-          background: #f1f1f1;
-}
-        
-        /* Add a background color when the inputs get focus */
-        /*input[type=text]:focus, input[type=password]:focus {
-          background-color: #ddd;
-          outline: none;
-        }*/
-        
-/* set style for select */ 
-.sequrity-qs {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-/* Set a style for all buttons */
-.btn-btn-primar {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 30%;
-    opacity: 0.9;
-}
-        
-/*button:hover {
-    opacity:1;
-    }
-*/
-        
-/* Float cancel and signup buttons and add an equal width */
-.signupbtn {
-    float: left;
-    width: 100%;
-}
-        
-/* Add padding to container elements */
-.signUp-container {
-    padding: 20px;
-}
-        
-/* The Modal (background) */
-.signUp {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: #474e5d;
-    padding-top: 25px;
-}
-        
-/* Modal Content/Box */
-.signUp-content {
-    background-color: #fefefe;
-    margin: 5% auto 5% auto; /* 5% from the top, 10% from the bottom and centered */
-    width: 100%; /* Could be more or less, depending on screen size */
-}
-        
-/* Style the horizontal ruler */
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
-        
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-        
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .signupbtn {
-        width: 100%;
-        }
-}
-    
-
-
-/*@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-html,
-body {
-    margin: 0;
-    padding: 0;
+/* BASE PAGE CSS */
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-size: 62.5%;
-    font-size: 10px;
 }
-*/
-/* Navbar section */
 
-.nav {
+.topnav {
+    overflow: hidden;
+    background-color: #aa151b;
+    float: right;
     width: 100%;
-    height: 65px;
-    position: fixed;
-    line-height: 65px;
-    text-align: center;
-}
-
-.nav div.logo {
-    float: left;
-    width: auto;
-    height: auto;
-    padding-left: 3rem;
-}
-
-.nav div.logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.5rem;
-}
-
-.nav div.logo a:hover {
-    color: #00E676;
-}
-
-.nav div.main_list {
-    height: 65px;
-    float: right;
-}
-
-.nav div.main_list ul {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
-}
-
-.nav .search-container {
-    float: right;
-}
-.nav .search-container button {
-    float: right;
-    padding: 20px 10px;
-    margin-top: 16px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 65px;
-    border: 10px;
-    cursor: pointer;
 }
   
-.nav .search-container button:hover {
-    background: #ccc;
-}
-
-.nav div.main_list ul li a:hover {
-    color: #00E676;
-}
-
-.nav div.main_list ul li a {
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
     text-decoration: none;
-    color: #fff;
-    line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 17px;
+    margin: 10px;
 }
 
-/* Home section */
-
-.home {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    background-position: center top;
-	background-size:cover;
+.myTopnav{
+    float: right;
 }
 
-/* .navTrigger {
+#logo{
+    color: white;
+    letter-spacing: 4px;
+    font-size: 22px;
+    float: left;
+    padding: 20px 30px;
+}
+  
+.topnav a:hover {
+    color: #CCCCCC;
+}
+  
+.topnav a.active {
+    background-color: #aa151b;
+    color: white;
+}
+  
+.topnav .icon {
     display: none;
-} */
+}
+  
+@media screen and (max-width: 700px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+  
+@media screen and (max-width: 700px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+    .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+    }
+}
 
-.nav {
+/* MAIM HOME PAGE CSS - BEFORE LOGIN */
+.images{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 790px;
+}
+
+.welcome{
+    text-align: center;
+    font-size: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+}
+
+.grid{
+    float: center;
+    width: 100%;
+}
+
+.grid-heading{
+    padding-top: 20px;
+    letter-spacing: 3px;
+    font-weight: 20px;
+    text-align: center;
+    font-style: bold;
+}
+.grid-subline{
+    padding: 10px;
+    font-style: italic;
+    font-weight: 5px;
+    text-align: center;
+}
+.grid-paragraph{
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    line-height: 2;
+}
+
+.bg-grey{
+    /* background-color:#CCCCCC; */
+    color: black;
+}
+
+.bg-yellow{
+    /* background-color:#F1BF00; */
+    color:black;
+}
+
+/* line across the page to section different things */
+hr { 
+    display: block; 
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 1px;
+}
+
+.QOTD{
+    box-sizing:border-box;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer{
+    padding: 128px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1a1010a2;
+    color: white;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
 }
