@@ -83,7 +83,7 @@ function updateProgressBars(){
 
 //content next and previous
 var counter = 1;
-$('.moduleLearn').on('click', '.next', function() { 
+$('body').on('click', '.next', function() { 
   $('.content').hide();
 
   counter++;
