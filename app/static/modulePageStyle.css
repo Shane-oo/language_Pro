@@ -17,7 +17,7 @@
   }
 .accordion {
     position: relative;
-    background-color:#38cc70; 
+    background-color:#00BFFF;
     font-weight: 700;
     padding:2em;
     display:block;
@@ -37,7 +37,7 @@
   }
 
   .active, .accordion:hover {
-    background-color:#2fba64;
+    background-color:#1E90FF;
   }
   .panel {
     padding: 0 18px;
@@ -67,7 +67,7 @@
     padding: 1em;
     border-width: medium;
     width:95%;
-    background-color:#38cc70;
+    background-color:#00BFFF;
     border-radius: 20px;    
     display:flex;
     justify-content:space-between;
@@ -88,7 +88,8 @@
     border-radius: 50px;
   }
   .active, .test:hover {
-    background-color:#2fba64;
+    background-color: #1E90FF;
+
   }
   
   
@@ -137,7 +138,8 @@
     left: 0;
     width:0;
     height: 100%;
-    background-color:black;
+    background-color:grey;
+    border-radius: 20px;
     transition: all .35s;
   }
   .start_button_text:hover{
@@ -147,18 +149,77 @@
       width:100%;
   }
 .progress_bar{
-        width: 100%;
-        background-color: rgba(182,0,34,255);
+  background-color: grey;
+  padding:3px;
+  text-align: center;
+  border-radius: 13px;
+  position: relative;
+  margin: auto;
 }
-#module1Bar{
-    width: 0%;
-    height:30px;
-    background-color: #04AA6D;
-    text-align: center; /* To center it horizontally (if you want) */
-    line-height: 30px; /* To center it vertically */
-    color: black;
+/*All module bars that will be updated with progress*/
+/*--------------------------------------------------*/
+#moduleBar1{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar2{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar3{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar4{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar5{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar6{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
 }
 
+/*--------------------------------------------------*/
 .images{
 
     max-width: 100%;

@@ -77,6 +77,7 @@
         </p>
     </div>
         <button class="accordion">Hello and goodbye / Hola y adiós</button>
+        
         <div class="panel">
             
             <div class = "module_title">
@@ -86,15 +87,12 @@
                     <h3>How to say hello 2</h3>
                     <div class = "start_button" >
                         
-                        <a class="start_button_text"  href = 'learnHello'><span>Start</span></a>
+                        <a class="start_button_text"   onclick="startHandler(1)" ><span>Start</span></a>
                     </div>
                 
             </div>
            <div class = "progress_bar">
-                <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
-                
+                <div id = "moduleBar1">0%</div>
             </div>
             <div class = "module_title">
                 <p>
@@ -102,14 +100,12 @@
                 <br>
                 <h3>Introducing yourself</h3>
                     <div class = "start_button">
-                        <a class="start_button_text"onclick="startHandler2()" ><span>Start</span></a>
+                        <a class="start_button_text" onclick="startHandler(2)" ><span>Start</span></a>
                     </div>
                 </p>
             </div>
                 <div class = "progress_bar">
-                    <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
+                    <div id = "moduleBar2">0%</div>
             </div>
             <div class = "module_title">
                 <p>
@@ -117,14 +113,12 @@
                 <br>
                 <h3>How to ask how they're going</h3>
                     <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                        <a class="start_button_text"  onclick="startHandler(3)"><span>Start</span></a>
                     </div>
                 </p>
             </div>
                 <div class = "progress_bar">
-                    <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
+                    <div id = "moduleBar3">0%</div>
             </div>
             <div class = "module_title">
                 <p>
@@ -132,14 +126,12 @@
                 <br>
                 <h3>Saying farewell</h3>
                     <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                        <a class="start_button_text" onclick="startHandler(4)"><span>Start</span></a>
                     </div>
                 </p>
             </div>
                 <div class = "progress_bar">
-                    <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
+                    <div id = "moduleBar4">0%</div>
             </div>
 
             
@@ -165,15 +157,12 @@
                     <br>
                     <h3>How to say hello</h3>
                     <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                        <a class="start_button_text" onclick="startHandler(5)"  ><span>Start</span></a>
                     </div>
                 
             </div>
            <div class = "progress_bar">
-                <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
-                
+                <div id = "moduleBar5">0%</div>
             </div>
 
         
@@ -199,14 +188,12 @@
                     <br>
                     <h3>How to say hello</h3>
                     <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                        <a class="start_button_text"  onclick="startHandler(6)"><span>Start</span></a>
                     </div>
                 
             </div>
            <div class = "progress_bar">
-                <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
+                <div id = "moduleBar6">0%</div>
             </div>
         </div>
         <button class = "test" onclick="document.location.href=this.getAttribute('href');" href="test1_page">

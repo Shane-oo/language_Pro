@@ -14,6 +14,8 @@ for (i = 0; i < acc.length; i++) {
     }
   });
     }
+
+    updateProgressBars();
 }
 
 // Progress bars for module
@@ -22,8 +24,6 @@ function move() {
    
     var elem = document.getElementById("module2Bar");
     console.log(elem)
-   
-  
       if (width<100) {
         width+=25
         elem.style.width = width + "%";
@@ -41,18 +41,49 @@ function unmove(){
     }
   
 }
+//window.onload = function() {
+  //updateProgressBars();
+//}
 
-
-
-function saveProgress(){
+function updateProgressBars(){
+  var progressVal = document.getElementById("progress");
+  progressVal.innerHTML = progressVal.textContent;
+ 
+  value = progressVal.innerHTML;
+  var prefix = 'moduleBar';
   
-  location.href='module_page';
-}
+  for(var i = 1; elem = document.getElementById(prefix + i); i++) {
+    // Module is complete
+    console.log(value)
+    if(value>=i) {
+      width+=100;
+      elem.style.width = width + "%";
+      elem.innerHTML = "Complete";
+    }
+    width =0;
+    var nextModule = parseInt(value)+1;
+    console.log(nextModule)
+    // Module ready to begin
+    if(nextModule == i){
+      console.log(i)
+      width+=100;
+      elem.style.width = width + "%";
+      elem.innerHTML = "Ready To Start";
+      elem.style.backgroundColor = "#f1a165";
+    }
+    else if(value<i){
+      width+=100;
+      elem.style.width = width + "%";
+      elem.innerHTML = "Not Unlocked";
+      elem.style.backgroundColor = "grey";
+    }
 
+}
+}
 
 //content next and previous
 var counter = 1;
-$('body').on('click', '.next', function() { 
+$('.moduleLearn').on('click', '.next', function() { 
   $('.content').hide();
 
   counter++;
@@ -81,6 +112,7 @@ $('body').on('click','.back',function(){
 
 // Show Results
 window.onload = function() {
+  if(document.getElementById("form4")!=null){
 document.getElementById("form4").onsubmit=function() {
   //check that all questions are answered
   for(var i = 1 ; i <= 3 ; i++)
@@ -121,21 +153,69 @@ document.getElementById("form4").onsubmit=function() {
 
 }
 }
-// Disable buttons if progress is not enough on Module Page
-function startHandler(){
-    location.href = 'learnHello'
 }
-function startHandler2(){
+// Disable buttons if progress is not enough on Module Page
+
+    //location.href = 'learnHello'
+//MODULES
+
+function startHandler(moduleClicked){
+  
   var progressVal = document.getElementById("progress");
   progressVal.innerHTML = progressVal.textContent;
-  console.log(progressVal.innerHTML)
-  if(progressVal.innerHTML<1){
-    alert("Module Not Unlocked Please Complete Above Modules")
-    location.href = 'module_page';
+  console.log(progressVal.innerHTML) 
+  switch(moduleClicked){
+    case 1:
+      //Does not need progress to be greater than anythin
+      location.href = 'learnHello';
+      break;
+    case 2:
+      if(progressVal.innerHTML<1){
+        alert("Module Not Unlocked Please Complete Above Modules")
+        break;
+      }
+      else{
+        location.href = 'learnHello';
+        break;
+      }
+    case 3:
+      if(progressVal.innerHTML<2){
+        alert("Module Not Unlocked Please Complete Above Modules")
+        break;
+      }
+      else{
+        location.href = 'learnHello';
+        break;
+      }
+    case 4:
+      if(progressVal.innerHTML<3){
+        alert("Module Not Unlocked Please Complete Above Modules")
+        break;
+      }
+      else{
+        location.href = 'learnHello';
+        break;
+      }
+    case 5:
+    if(progressVal.innerHTML<3){
+      alert("Module Not Unlocked Please Complete Above Modules")
+      break;
+    }
+    else{
+      location.href = 'learnHello';
+      break;
+    }
+    case 6:
+      if(progressVal.innerHTML<3){
+        alert("Module Not Unlocked Please Complete Above Modules")
+        break;
+      }
+      else{
+        location.href = 'learnHello';
+        break;
+      }
   }
-  else{
-    location.href = 'learnHello'
-  }
+
 }
 
   //document.getElementById("startBut1gra").innerHTML = "result";
