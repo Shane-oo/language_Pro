@@ -209,26 +209,26 @@
     pointer-events: none;
 }
 
-.quiz_section footer{
+.quiz_section.quizFooter{
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.quiz_section footer .quiz_remaining span{
+.quiz_section.quizFooter .quiz_remaining span{
     display:flex;
     align-items: center;  
     user-select: none; 
     font-size: 20px;
 }
 
-.quiz_section footer .quiz_remaining span p{
+.quiz_section.quizFooter .quiz_remaining span p{
     font-weight: bold;
     padding: 3px;
 }
  
-.quiz_section footer .next_button{
+.quiz_section.quizFooter .next_button{
     display: none;
     padding: 15px;
     font-size: 15px;
@@ -239,7 +239,7 @@
     color:whitesmoke;
 }
 
-.quiz_section footer .next_button:hover{
+.quiz_section.quizFooter.next_button:hover{
     background: rgb(250, 67, 47);
 }
 

@@ -80,3 +80,6 @@ def user(firstname):
     return render_template('user.html', user=user)
 
 
+@app.route('/quiz')
+def quiz():
+    return render_template('quiz.html')
