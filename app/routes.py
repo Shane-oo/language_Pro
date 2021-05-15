@@ -71,11 +71,11 @@ def user(email):
 
     return render_template('user.html', user=user)
 # Route to module page
-@app.route('/module_page/<progress>')
-@login_required  # protects a view function against anonymous users
-def module_page(progress):
-    progress = User.query.filter_by(progress=progress).first_or_404()
-    return render_template('module_page.html',progress=progress)
+#@app.route('/module_page/<progress>')
+#@login_required  # protects a view function against anonymous users
+#def module_page(progress):
+ #   progress = User.query.filter_by(progress=progress).first_or_404()
+  #  return render_template('module_page.html',progress=progress)
 
 @app.route('/learnHello')
 def learnHello():
