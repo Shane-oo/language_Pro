@@ -16,7 +16,7 @@
     <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
     <!-- Feature shins navbar up top-->
 </head>
-<body>
+<body class = "moduleLearn">
     <div class = "wholeBar">
     <div class = "progress_bar2">
         <div id = "module2Bar">0%</div>
@@ -149,8 +149,10 @@
                    <p id="grade2"></p>
        
             </div>
-
-            <button onclick = "saveProgress()" type = "button" class = "next">Finish</button>
+            <form action = '/updateProgress/{{current_user.id}}' method = "POST">
+            <button type = 'submit' type = "button" class = "next" progress = "{{current_user.progress}}" href = 'module_page'>
+                Finish</button>
+            </form>
         </div>
    
 

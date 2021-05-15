@@ -45,10 +45,8 @@ function unmove(){
 
 
 function saveProgress(){
-  // Save progress
-  //location.href="{{ url_for('user', email=current_user.email)}}"
-  //Go back to module_page
-  //location.href='module_page';
+  
+  location.href='module_page';
 }
 
 
@@ -124,10 +122,23 @@ document.getElementById("form4").onsubmit=function() {
 }
 }
 // Disable buttons if progress is not enough on Module Page
-//window.onload= function(){
-  //let buttons = document.querySelector(".start_button_text");
-  //buttons.disabled = true;
-//}
+function startHandler(){
+    location.href = 'learnHello'
+}
+function startHandler2(){
+  var progressVal = document.getElementById("progress");
+  progressVal.innerHTML = progressVal.textContent;
+  console.log(progressVal.innerHTML)
+  if(progressVal.innerHTML<1){
+    alert("Module Not Unlocked Please Complete Above Modules")
+    location.href = 'module_page';
+  }
+  else{
+    location.href = 'learnHello'
+  }
+}
+
+  //document.getElementById("startBut1gra").innerHTML = "result";
 
 //play sounds
 var hola = new Audio("/static/sounds/hola.m4a"); 

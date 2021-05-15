@@ -119,11 +119,16 @@
    text-align: center;
    position: relative;
    transition: all .35s;
+   
+   cursor: pointer;
   }
+
+
 
   .start_button_text span{
     position: relative;
     z-index:2;
+    
   }
   .start_button_text:after{
     position: absolute;

@@ -55,7 +55,7 @@ def signupPage2():
 
     #adding user to db 
     if form.validate_on_submit():
-        user = User(email=form.email.data, firstname = form.firstname.data, lastname=form.lastname.data)
+        user = User(email=form.email.data, firstname = form.firstname.data, lastname=form.lastname.data,progress = 0)
         user.set_password(form.password.data)
         db.session.add(user)
         db.session.commit()
@@ -75,9 +75,22 @@ def user(email):
 @app.route('/module_page')
 @login_required  # protects a view function against anonymous users
 def module_page():
-   # progress = User.query.filter_by(progress=progress).first_or_404()
     return render_template('module_page.html')
 
-@app.route('/learnHello')
+@app.route('/learnHello/')
 def learnHello():
+
     return render_template('learningQuizzes/learnHello.html')
+
+@app.route('/updateProgress/<int:id>',methods=['POST'])
+def updateProgress(id):
+    user_to_update = User.query.get_or_404(id)
+    if request.method == "POST":
+        user_to_update.progress = user_to_update.progress+1
+        try:
+            db.session.commit()
+            return redirect('/module_page')
+        except:
+            return "error updating progress"
+    else:
+        return render_template('learningQuizzes/learnHello.html')

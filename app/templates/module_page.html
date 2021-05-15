@@ -6,6 +6,7 @@
     <!--CSS FILES-->
 	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
     <!--JS FILES-->
+    
     <script src="{{url_for('static', filename='js/module_page.js')}}"></script>
 
     <title> Language Pro - Modules</title>
@@ -19,7 +20,9 @@
             <!--Could say more greetings here if we decide to go with more languages-->
         </h2>
         <h2>
-            Your progress is = {{current_user.progress}}
+            Showing Account for {{current_user.firstname}}
+            <br>
+            Modules completed = <span id = "progress">{{current_user.progress}}</span>/10
         </h2>
         <br>
         <h6>
@@ -80,9 +83,10 @@
                 <p>
                     <h3>Hello / hola</h3>
                     <br>
-                    <h3>How to say hello</h3>
-                    <div class = "start_button">
-                        <a class="start_button_text" href = "learnHello"><span>Start</span></a>
+                    <h3>How to say hello 2</h3>
+                    <div class = "start_button" >
+                        
+                        <a class="start_button_text"  href = 'learnHello'><span>Start</span></a>
                     </div>
                 
             </div>
@@ -98,7 +102,7 @@
                 <br>
                 <h3>Introducing yourself</h3>
                     <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                        <a class="start_button_text"onclick="startHandler2()" ><span>Start</span></a>
                     </div>
                 </p>
             </div>
