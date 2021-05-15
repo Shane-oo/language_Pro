@@ -78,6 +78,6 @@ def module_page():
    # progress = User.query.filter_by(progress=progress).first_or_404()
     return render_template('module_page.html')
 
-@app.route('/learnHello/')
+@app.route('/learnHello')
 def learnHello():
     return render_template('learningQuizzes/learnHello.html')
