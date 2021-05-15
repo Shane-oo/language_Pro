@@ -56,56 +56,47 @@
     
     <div class = "welcome">
         <h1>¡HOLA!<br> WELCOME TO LANGUAGE PRO </h1>    
-    </div>
-    <div class = "images">
-        <img src = "/static/spanish.jpg" alt="Spanish picture">    
+        <img class = "images" src = "/static/spanish.jpg" alt="Spanish picture">
     </div>
     
+    <hr>
     
     <div class="grid">
-        <div class = "images">
-            <img src = static/Aircraft.png" alt="Aircraft picture">    
-        </div>
         <!-- First Grid -->
         <div class= "bg-grey">
-            
             <h1 class = "grid-heading">TRAVELLING IN SPANISH</h1>
             <h3 class= "grid-subline">Why learn Spanish?</h3>
             <p class="grid-paragraph">
-                Did you know 22 countries around the world speaks Spanish?<br>
-                Spanish is spoken in countries such as Argentina, Bolivia, Chile, Colombia, <br> 
-                Costa Rica, Cuba, Dominican Republic, Ecuador, Equatorial Guinea, El Salvador, <br>
-                Guatemala, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Spain, <br>
+                Did you know 22 countries around the world speaks Spanish?
+                Spanish is spoken in countries such as Argentina, Bolivia, Chile, Colombia,  
+                Costa Rica, Cuba, Dominican Republic, Ecuador, Equatorial Guinea, El Salvador, 
+                Guatemala, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Spain, 
                 Uruguay, and Venezuela. <br>
             </p>
+            <img class = "images" src = "/static/Aircraft.png" alt="Spanish picture"><br>
+            <hr>
         </div>
-        <hr>
+
         <!-- Second Grid -->
-        <div>
-            <div class="bg-yellow">
-                <h1 class = "grid-heading" id = "about">ABOUT OUR COURSE</h1>
-                <h3 class= "grid-subline">Want to pick up Spanish?</h3>
-                <p class="grid-paragraph">
-                    Travelling to a country without knowing their language can be tough, 
-                    but learning a new language is not easy either. <br>
-                    This course covers the basics of Spanish, 
-                    so that you will be able to do basic conversations as you travel to a Spanish speaking country!<br>
-                    Our course incudes:</p>
-                <div class = "grid-paragraph">
-                    <li>Different categories of Spanish phrases</li>
-                    <li>Audio included for accurate pronounciation</li>
-                    <li>Test at the end to assess your knowledge</li>
-                    <li>Certificate upon completion of the course</li>
-                </div>
+        <div class="bg-yellow">
+            <h1 class = "grid-heading" id = "about">ABOUT OUR COURSE</h1>
+            <h3 class= "grid-subline">Want to pick up Spanish?</h3>
+            <p class="grid-paragraph">
+                Travelling to a country without knowing their language can be tough, 
+                but learning a new language is not easy either. <br>
+                This course covers the basics of Spanish, 
+                so that you will be able to do basic conversations as you travel to a Spanish speaking country!<br>
+                Our course incudes:</p>
+            <div class = "grid-paragraph">
+                <li>Different categories of Spanish phrases</li>
+                <li>Audio included for accurate pronounciation</li>
+                <li>Test at the end to assess your knowledge</li>
+                <li>Certificate upon completion of the course</li>
+                <button id = "now" onclick= "location.href='loginTest';">START LEARNING NOW!</button>
             </div>
         </div>
-        <hr>
-    </div>
-    <p> this is between the block content markers.</p>
-        
-    {% endblock %}
-    <!-- <p>This do be the body of the homePage</p> -->
-    
+    </div>       
+    {% endblock %}  
 </body>
 
 </html>

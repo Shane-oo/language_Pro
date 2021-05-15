@@ -30,3 +30,4 @@ function sentenceNew(){
     } else { 
         document.getElementById("sentence").innerHTML = phrase[rand]; 
     }
+}

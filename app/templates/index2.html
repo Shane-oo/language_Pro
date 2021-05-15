@@ -6,38 +6,51 @@
 <head>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src= "{{ url_for('static',filename='homepage_script.js') }}"></script>
+    <script src= "{{ url_for('static',filename='homepage_scripts.js') }}"></script>
 </head>
 
 <body>
-    <body>
-        <div class = "topnav" id = newTopnav>
-            <div id = "logo"><h4>LANGUAGE PRO</h4></div>
-                <div class ="myTopnav">
-                    {% if current_user.is_anonymous %}
-                    <a href="loginPage">Login/Sign Up</a>
-                    {% else %}
-                    <a href="{{ url_for('user', firstname=current_user.firstname)}}">Profile</a>
-                    <a href="{{ url_for('logout') }}">Logout</a>
-                    {% endif %}
-                    <a href="#about">About</a>   
-                    <a href="module_page">Module Page</a>
-                    <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a>
-                </div>
+    <!-- <div class = "topnav" id = newTopnav>
+        <div class = "logo"><a href="index">LANGUAGE PRO</a></div>
+        {% if current_user.is_anonymous %}
+            <div class ="myTopnav">
+                <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a>
+                <a href="loginTest">Login</a>
+                <a href="signupPage2">Sign Up</a>
+                <a href="#about">About</a>   
+                <a href="module_page">Module</a>       
+            </div> 
+            {% else %}
+                <a href="{{ url_for('user', firstname=current_user.firstname)}}">Profile</a>
+                <a href="module_page">Modules</a>
+                <a href="logout">Log Out</a>
             </div>
+            <h4 id= hiUser>Hi, {{ current_user.firstname }}!</h4>
         </div>
-    <!-- <div>
-        LanguagePro:
-        <a href="{{ url_for('home') }}">Home</a> -->
+        {% endif %}
+    </div> -->
+    <div class = "topnav" id = newTopnav>
+        <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a>
 
-        <!-- {% if current_user.is_anonymous %}
-        <a href="{{ url_for('loginTest') }}">Login</a> -->
-        <!-- {% else %}
-        <a href="{{ url_for('user', firstname=current_user.firstname)}}">Profile</a>
-        <a href="{{ url_for('logout') }}">Logout</a>
-        {% endif %} -->
+        {% if current_user.is_anonymous %}
+        <div class = "logo"><a href="index">LANGUAGE PRO</a></div>
+        <div class ="myTopnav">
+            <a href="loginTest">Login</a>
+            <a href="signupPage2">Sign Up</a>
+            <a href="index#about">About</a>   
+            <a href="module_page">Module</a>       
+        </div> 
+        {% else %}
+        <h4 id= hiUser>Hi, {{ current_user.firstname }}!</h4>
+        <div class = "logo logoCenter"><a href="index">LANGUAGE PRO</a></div>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a> -->
+        <div class ="myTopnav">
+            <a href="module_page">Modules</a>
+            <a href="logout">Log Out</a>
+        </div>
+        {% endif %}
     </div>
-    <!-- <h1>WELCOME TO LANGUAGE PRO </h1> -->
+
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul>
@@ -50,10 +63,9 @@
     {% block content %}{% endblock %}
 
     <footer>       
-        <h1>SPANISH SLANG OF THE DAY</h1>             
-        <p id="sentence"></p>
-        <button style="" onclick="sentenceNew()">Get a New Slang <i class="fa fa-refresh" aria-hidden="true"></i></button>
+        <h1>SPANISH SLANG OF THE DAY</h1><br>             
+        <p id="sentence"></p><br>
+        <button onclick="sentenceNew()">GET A NEW SLANG!</button>
     </footer>
 </body>
-
 </html>
