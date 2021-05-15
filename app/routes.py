@@ -70,14 +70,14 @@ def user(email):
     user = User.query.filter_by(email=email).first_or_404()
 
     return render_template('user.html', user=user)
-@app.route('/learnHello')
-@login_required
-def learnHello():
-    return render_template('/learningQuizzes/learnHello.html')
+
 # Route to module page
-@app.route('/module_page/')
+@app.route('/module_page')
 @login_required  # protects a view function against anonymous users
 def module_page():
    # progress = User.query.filter_by(progress=progress).first_or_404()
     return render_template('module_page.html')
 
+@app.route('/learnHello/')
+def learnHello():
+    return render_template('learningQuizzes/learnHello.html')
