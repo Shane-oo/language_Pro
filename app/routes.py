@@ -75,7 +75,7 @@ def login_Final_2():
 @app.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('home'))
+    return redirect(url_for('index'))
 
 
 @app.route('/forgetPass')
@@ -103,7 +103,7 @@ def sign_up_3():
     if current_user.is_authenticated:
         return redirect(url_for('home'))
 
-    if request.method == 'POST': 
+    if request.method == 'POST' :  
         #adding user to db 
         firstname = request.form.get('firstname')
         lastname = request.form.get('lastname')
@@ -114,21 +114,18 @@ def sign_up_3():
 
         if user : 
             flash('Email address already exists!')
-            return redirect(url_for(login_Final_2))
+            return redirect(url_for('login_Final_2'))
         
-        new_user = User(firstname =  firstname, lastname=lastname, email=email)
+        new_user = User(firstname = firstname, lastname=lastname, email=email)
         new_user.set_password(password)
 
         db.session.add(new_user)
         db.session.commit()
         flash('Congratulations, you are now a registered user!')
-        return redirect(url_for(login_Final_2))
+        return redirect(url_for('login_Final_2'))
     return render_template('sign_up_3.html', title='Register')
+
     
-    
-
-
-
 #user profile view 
 @app.route('/user')
 @login_required  # protects a view function against anonymous users
