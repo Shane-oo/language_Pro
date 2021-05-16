@@ -24,64 +24,73 @@
     </div>
     </div>
     <div class = "wordLearn">
-        <div class = "content" id = "content-1"name = "content" style = "display: block;">
-       <h3><span class = "heading">¡Hola!</span></h3>
+        <div class = "content" id = "content-1" name = "content" style = "display: block;">
+       <h3><span class = "heading">Introducing Yourself</span></h3>
         <br>
         <br>
         <p>
-            Spanish is the native language of more than 450 million
-            people and the official language in 21 countries worldwide – 
-            Mastering Spanish means you'll be understood whether you go
-            despite any regional differences there may be.
+            An introduction tells people who you are. It often also conveys your basic personal information, 
+            such as your profession and your relationship to the people or person you’re meeting.
+            This is just as true in the Spanish-speaking world as it is in your hometown.
             <br>
-            And it all starts with...
+            And while saying “hello, my name is…” may seem like the simplest thing in the world,
+             it’s not. At least, not for English speakers learning Spanish!
         </p>
-        <p>
-            <!-- sound currently works on chrome, safari and firefox-->
-            <button class = "sayWord" onclick="hola.play()">Hola</button>
-        </p>
-        <p>
-            This is the most basic of the greetings,
-            Remember the h is silent!
-        </p>
+
+        <div class ="imageForIntroduceMod">
+            <img  src ="/static/images/IntroduceImage.png" alt="Man reaching for handshake"/>
+        </div>
         </div>
 
-        <div class = "content"id = "content-2" name = "content">
-            <h3><span class = "heading">Buenos días</span></h3>
-            <p> Literally meaning “good day,” it can also mean “good morning.” “Buenos días” is usually used until noon.
+        <div class = "content"id = "content-2" name = "content" >
+            <h3><span class = "heading">My Name Is...</span></h3>
+            <br>
+            <p> To say “my name is” in Spanish, you just need to say the word “Mi nombre es” followed by your name.
             </p>
+            <br>
             <p>
-                <button class = "sayWord" onclick="buenosDias.play()">Buenos días</button>
-            </p>
-            <p>
-                Perfect for those early risers, you'll find a lot of your travel tours or if you plan on hiking,
-                will start in the morning so its ideal to say good morning with Buenos días
-            </p>
-            <div class ="imageForHolaMod">
-                <img  src ="/static/images/goodMorningPeru.jpeg" alt="Sunrise in Llanganuco Valley, Peru"/>
-            </div>
-        </div>
-        <div class = "content"id = "content-3" name = "content">
-            <h3><span class = "heading">Buenas tardes</span></h3>
-            <p>If you want to say “good afternoon,” and it’s one o’clock or later in the day, you can say “buenas tardes.”
-                In Spain it may be used until later in the evening, while in most Latin American countries 
-                and the Caribbean, it may be used until the sun goes down.
-            </p>
-            <p>
-                <button class = "sayWord" onclick="buenasTardes.play()">Buenas tardes</button>
+                <button class = "sayWord" onclick="myNameIs.play()">Mi nombre es</button>
             </p>
         </div>
-        <div class = "content"id = "content-4" name = "content">
-            <h3><span class = "heading">Buenas noches</span></h3>
-            <p>For saying "good evening". This phrase also means “goodnight.” 
-                But always be mindful of the context since you could be saying goodbye.
+        <div class = "content"id = "content-3" name = "content" >
+            <h3><span class = "heading">Pleased To Meet You.</span></h3>
+            <br>
+            <p>After the person responds, you may say, "Mucho gusto" or "MOOCH-oh GOOSE-toh."
+                The phrase means "much pleasure" or, less literally, "pleased to meet you."
             </p>
             <p>
-                <button class = "sayWord" onclick="buenasNoches.play()">Buenas noches</button>
+                <br>
+                <button class = "sayWord" onclick="niceToMeetYou.play()">Mucho gusto</button>
             </p>
-            <div class ="imageForHolaMod">
-                <img  src ="/static/images/sunsetMexico.png" alt="Sunset in Mexico"/>
+        </div>
+        <div class = "content"id = "content-4" name = "content" >
+            <h3><span class = "heading">Introducing Others</span></h3>
+            <br>
+            <p>Sometimes you’ll be called upon to introduce others to a person or group.
+                <br>
+                Just say Este Es "Name"
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="thisIs.play()">Este Es</button>
+            </p>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/friend.png" alt="Two Friends Travelling"/>
             </div>
+
+        </div>
+        <div class = "content"id = "content-5" name = "content" >
+            <h3><span class = "heading">I Am From</span></h3>
+            <br>
+            <p>So, where are you from? America? Europe? Africa? Asia?
+            Just stick the name of your country after the phrase "soy de".
+            <br>
+            For example soy de Australia
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="iAmFromAus.play()">soy de Australia</button>
+            </p>
         </div>
         
         
@@ -149,7 +158,7 @@
        
             </div>
             <!-- /updateProgress/{{current_user.id}}/MODULE_NUMBER-->
-            <form action = '/updateProgress/{{current_user.id}}/1' method = "POST" >
+            <form action = '/updateProgress/{{current_user.id}}/4' method = "POST" >
             <button id="sumbitButt" type = 'submit'  class = "next"  progress = "{{current_user.progress}}" >
                 Finish</button>
             </form>

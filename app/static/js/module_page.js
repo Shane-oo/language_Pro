@@ -84,7 +84,7 @@ function startHandler(moduleClicked){
         break;
       }
       else{
-        location.href = 'learnHello';
+        location.href = 'learnHowAreYou';
         break;
       }
     case 4:
@@ -93,25 +93,25 @@ function startHandler(moduleClicked){
         break;
       }
       else{
-        location.href = 'learnHello';
+        location.href = 'learnGoodbye';
         break;
       }
     case 5:
-    if(progressVal.innerHTML<3){
+    if(progressVal.innerHTML<4){
       alert("Module Not Unlocked Please Complete Above Modules")
       break;
     }
     else{
-      location.href = 'learnHello';
+      location.href = 'learnNumbers';
       break;
     }
     case 6:
-      if(progressVal.innerHTML<3){
+      if(progressVal.innerHTML<5){
         alert("Module Not Unlocked Please Complete Above Modules")
         break;
       }
       else{
-        location.href = 'learnHello';
+        location.href = 'learnSimpleQuestions';
         break;
       }
   }

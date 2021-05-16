@@ -87,6 +87,25 @@ def learnHello():
 def learnIntroduce():
 
     return render_template('learningQuizzes/learnIntroduce.html')
+@app.route('/learnHowAreYou/')
+def learnHowAreYou():
+
+    return render_template('learningQuizzes/learnHowAreYou.html')
+@app.route('/learnGoodbye/')
+def learnGoodbye():
+
+    return render_template('learningQuizzes/learnGoodbye.html')
+@app.route('/learnNumbers/')
+def learnNumbers():
+
+    return render_template('learningQuizzes/learnNumbers.html')
+@app.route('/learnSimpleQuestions/')
+def learnSimpleQuestions():
+
+    return render_template('learningQuizzes/learnSimpleQuestions.html')
+
+
+
 @app.route('/updateProgress/<int:id>/<int:moduleFin>',methods=['POST'])
 def updateProgress(id,moduleFin):
     user_to_update = User.query.get_or_404(id)
