@@ -82,6 +82,11 @@ def learnHello():
 
     return render_template('learningQuizzes/learnHello.html')
 
+    
+@app.route('/learnIntroduce/')
+def learnIntroduce():
+
+    return render_template('learningQuizzes/learnIntroduce.html')
 @app.route('/updateProgress/<int:id>/<int:moduleFin>',methods=['POST'])
 def updateProgress(id,moduleFin):
     user_to_update = User.query.get_or_404(id)

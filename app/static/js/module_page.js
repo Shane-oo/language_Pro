@@ -75,7 +75,7 @@ function startHandler(moduleClicked){
         break;
       }
       else{
-        location.href = 'learnHello';
+        location.href = 'learnIntroduce';
         break;
       }
     case 3:
