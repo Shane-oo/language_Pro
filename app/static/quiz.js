@@ -257,6 +257,4 @@ let questions = [
         ]
     }
 
-
-
 ]

@@ -14,16 +14,16 @@
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.8);
 }
  
 .start_button button{
     font-size: 30px;
     width: 230px;
     font-weight:600;
-    color: rgb(122, 112, 250);
+    color: whitesmoke;
     border-radius: 15px;
-    background-color: rgb(231, 239, 255);
+    background-color: #aa151b;
     cursor: pointer;
 }
 
@@ -377,4 +377,12 @@
     .topnav{
         visibility: hidden;
     }
+}
+
+footer{
+    display: none;
+}
+
+.topnav{
+    display: none;
 }
