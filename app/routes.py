@@ -87,6 +87,7 @@ def updateProgress(id,moduleFin):
     user_to_update = User.query.get_or_404(id)
     if request.method == "POST":
         currentProgress = user_to_update.progress
+        # Dont update if its a module thats already been completed
         if(currentProgress<moduleFin):
             user_to_update.progress = user_to_update.progress+1
             try:

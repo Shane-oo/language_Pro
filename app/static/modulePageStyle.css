@@ -94,12 +94,12 @@
   
   
 .module_talk{
-    border: 1px solid #ddd;
+    
     font-size: 32px;
     text-align: center;
   }
 .module_talk h3{
-    text-align: left;
+    text-align: center;
     font-style: oblique;
 }
 
@@ -108,7 +108,7 @@
     
    display: block;
    width:200px;
-   height: 100px;
+   height: 50px;
    line-height: 40px;
    font-size:1em;
    font-family: 'Lato';
@@ -116,7 +116,7 @@
    color:#fff;
    border: 1px solid #ddd;
    border-radius: 20px;
-   
+   background-color: #1E90FF;
    text-align: center;
    position: relative;
    transition: all .35s;
@@ -138,7 +138,7 @@
     left: 0;
     width:0;
     height: 100%;
-    background-color:grey;
+    background-color:rgb(9, 216, 2);
     border-radius: 20px;
     transition: all .35s;
   }
@@ -251,7 +251,9 @@
     Padding-left:250px;
   }
   .main{
-    border: 1px solid black;
+    
+    padding:5em;
+    
   }
 
   .wordLearn{
