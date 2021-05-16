@@ -838,6 +838,18 @@ hr {
     cursor: pointer;
     border-radius: 20px;
   }
+.tableWord{
+    padding: 10px;
+    margin: 00px;   
+    font-family: 'Lato';
+    font-size: large;
+    background-color:#00BFFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    width:200px;
+    height:50px;
+  }
   /* next and previous buttons*/
   /*--------------------------------------------------*/
   .next {

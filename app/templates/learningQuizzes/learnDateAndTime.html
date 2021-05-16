@@ -5,7 +5,7 @@
     <div class = "container">
 <head>
     <!--CSS FILES-->
-	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     <!--JS FILES-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
@@ -25,61 +25,95 @@
     </div>
     <div class = "wordLearn">
         <div class = "content" id = "content-1" name = "content" style = "display: block;">
-       <h3><span class = "heading">Saying Goodbye</span></h3>
+       <h3><span class = "heading">Telling the Time In Spanish</span></h3>
         <br>
         <br>
         <p>
-            You’ve already learned how to say hello in Spanish, so now it’s time to start saying goodbye.
+            Even though everybody has a cellphone these days, there will probably 
+            come a moment in your life when you will need to ask someone what the time is.
         </p>
-
-        <div class ="imageForIntroduceMod">
-            <img  src ="/static/images/goodbye.png" alt="Couple waving goodbye"width= 600 height =400/>
-        </div>
         </div>
 
         <div class = "content"id = "content-2" name = "content" >
-            <h3><span class = "heading">Adiós</span></h3>
+            <h3><span class = "heading">Asking the Time</span></h3>
             <br>
-            <p> There are two very common Spanish goodbye words that you can use with close friends and family members.
+            <p> 
+                What time is it? (Literally "What hour is it?")
                 <br>
-                Adiós. / “Bye.”
+                
+                <button class = "sayWord" onclick="whatTimeIsIt.play()">¿Qué hora es?</button>
                 <br>
-                You can say this to friends, family, or close coworkers at any time of day. It’s used both in Spain and in Latin America. 
                 <br>
-                Chao. / “Bye bye.”
+                Or, Do you have the time?
+           
                 <br>
-                As you probably know, this one comes from the Italian word ciao. It’s used in a lot of places in Europe and in Latin America.
+                <button class = "sayWord" onclick="doYouHaveTheTime.play()">¿Tiene hora?</button>
             </p>
-            <br>
-            <p>
-                <button class = "sayWord" onclick="adios.play()">Adiós</button>
-                <button class = "sayWord" onclick="chao.play()">Chao</button>
-            </p>
+            
+          
         </div>
         <div class = "content"id = "content-3" name = "content" >
-            <h3><span class = "heading">Hasta luego</span></h3>
+            <h3><span class = "heading">How to say what the time is</span></h3>
             <br>
-            <p>Hasta luego is an informal phrase that literally means “until then.” It’s used like “see you later” is used in English, but it isn’t literal.
-                That is, you can use it even if you don’t plan to see the person in the near future.
-                This phrase is very common, so it’s one of the most common goodbyes you’re likely to hear.
-            </p>
-            <p>
-                <br>
-                <button class = "sayWord" onclick="seeYouLater.play()">Hasta luego</button>
-            </p>
+            
+                <table style="width: 95%; ">
+                    <tr>
+                      <th>Spanish &nbsp &nbsp English </th>
+                      
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord" onclick="itsOneOClock.play()">Es la una</button>&nbsp It's one'o'clock </td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord" onclick="itsTwoOClock.play()">Son las dos</button>&nbsp It's two'o'clock </td>
+                        </tr>
+                    <tr>
+                        <td><button class = "tableWord"onclick="itsThreeOClock.play()"> Son las tres</button>&nbsp It's three'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class ="tableWord"onclick="itsFourOClock.play()">Son las cuatro</button>&nbsp It's four'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord" onclick="itsFiveOClock.play()">Son las cinco</button>&nbsp It's five'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord"onclick="itsSixOClock.play()">Son las seis</button>&nbsp It's six'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord"onclick="itsSevenOClock.play()">Son las siete</button>&nbsp It's seven'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord" onclick="itsEightOClock.play()">Son las ocho</button>&nbsp It's eight'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord" onclick="itsNineOClock.play()">Son las nueve</button>&nbsp It's nine'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord" onclick="itsTenOClock.play()">Son las diez</button>&nbsp It's ten'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord" onclick="itsElevenOClock.play()">Son las once</button>&nbsp It's eleven'o'clock</td>
+                    </tr>
+                    <tr>
+                        <td><button class = "tableWord" onclick="itsTwelveOClock.play()">Son las doce</button>&nbsp It's twelve'o'clock</td>
+                    </tr>
+                    </table>
+            
         </div>
         <div class = "content"id = "content-4" name = "content" >
-            <h3><span class = "heading">Cuídate</span></h3>
+            <h3><span class = "heading">Time of Day</span></h3>
             <br>
-            <p>Yes, saying “goodbye” is polite, but sometimes you may want to say 
-                something warmer before parting ways with a friend or someone you appreciate.
-                “Take care”, “have a good day”, and “have fun” all have equivalents in Spanish.
+            <p> 
+                You might also hear:
                 <br>
-                Cuídate is Spanish for “take care”.
-            </p>
-            <p>
+                It's noon / midday
                 <br>
-                <button class = "sayWord" onclick="takeCare.play()">Cuídate</button>
+                <button class = "sayWord" onclick="itsNoon.play()">Es el mediodía</button>
+                <br>
+                <br>
+                Or, It's midnight
+                <br>
+                <button class = "sayWord" onclick="itsMidnight.play()">Es la medianoche</button>
             </p>
             
         </div>
@@ -97,44 +131,35 @@
             
             <div class = "multiChoice">
                 <p>
-                <h4>You're friend is leaving. What do you say?</h4>
-    
-                <img src="/static/images/waveGoodbye.png" class = "left" width="700" height="400" >
+                <h4>The time is 16:00 and someone asks ¿Qué hora es?</h4>
                 </p>
                 <p>
                     
-                    <input type ="radio" name ="question1" value = "33.33"/><button class = "testWord" onclick="takeCare.play()">Hear in Spanish 1</button>
-                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="niceToMeetYou.play()">Hear in Spanish 2</button>
-                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="goodThanksYou.play()">Hear in Spanish 3</button>
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="itsTwelveOClock.play()">Hear in Spanish 1</button>
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="itsSevenOClock.play()">Hear in Spanish 2</button>
+                    <input type ="radio" name ="question1" value = "33.33"/><button class = "testWord" onclick="itsFourOClock.play()">Hear in Spanish 3</button>
                     <br>
                     
                     
                   
                 </p>
                 <p>
-                <h4>What is the most common form of goodbye you will hear on your travels?</h4>
+                <h4>Es el mediodía means midday or midnight?</h4>
                 </p>
                 <p>
                     
-                    <input type ="radio" name ="question2" value = "0"/>Hola
-                    <input type ="radio" name ="question2" value = "0"/>Chao
-                    <input type ="radio" name ="question2" value = "33.33"/>Hasta luego
-                    <br>
-                   
-                    
-                   
+                    <input type ="radio" name ="question2" value = "33.33"/>Midday
+                    <input type ="radio" name ="question2" value = "0"/>Midnight
                 </p>
                 <p>
                     <h4>What does this word translate to?</h4>
-                   
-                    <button class = "sayWord" onclick="adios.play()">Adiós</button>
+                    <button class = "sayWord" onclick="itsNineOClock.play()">Click Me! <br>Question 3</button>
                     <br>
                 </p>
                 <p>
-                    
-                    <input type ="radio" name ="question3" value = "33.33"/>Goodbye
-                    <input type ="radio" name ="question3" value = "0"/>Goodnight
-                    <input type ="radio" name ="question3" value = "0"/>Good day
+                    <input type ="radio" name ="question3" value = "0"/>It's four'o'clock
+                    <input type ="radio" name ="question3" value = "0"/>It's seven'o'clock
+                    <input type ="radio" name ="question3" value = "33.33"/>It's nine'o'clock
                     <br>
                     
                 </p>
