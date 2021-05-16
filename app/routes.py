@@ -148,6 +148,11 @@ def learnGoodbye():
 def learnNumbers():
 
     return render_template('learningQuizzes/learnNumbers.html')
+
+@app.route('/learnDateAndTime')
+def learnDateAndTime():
+    return render_template('learningQuizzes/learnDateAndTime.html')
+    
 @app.route('/learnSimpleQuestions/')
 def learnSimpleQuestions():
 

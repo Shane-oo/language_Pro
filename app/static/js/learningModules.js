@@ -38,7 +38,11 @@ function move() {
     console.log(elem)
       if (width<100) {
         var value = 100/($('[id^=content-][name=content]').length);
-        width+=value;
+        width+=Math.round(value);
+        // Math.round not reliable to add up to 100 exactly
+        if(width > 90){
+          width=100;
+        }
         console.log(width)
         elem.style.width = width + "%";
         elem.innerHTML = width*1 + "%";
@@ -50,7 +54,7 @@ function unmove(){
   console.log(elem)
     if (width<100) {
       var value = 100/($('[id^=content-][name=content]').length);
-      width-=value;
+      width-=Math.round(value);
       elem.style.width = width + "%";
       elem.innerHTML = width*1 + "%";
     }

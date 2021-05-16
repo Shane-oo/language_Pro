@@ -739,6 +739,16 @@ hr {
   color: white;
   font-family: 'Lato';
 }
+#moduleBar7{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
 
 /*--------------------------------------------------*/
 

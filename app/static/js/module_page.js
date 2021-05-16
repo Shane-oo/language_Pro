@@ -115,6 +115,15 @@ function startHandler(moduleClicked){
         break;
       }
       else{
+        location.href = 'learnDateAndTime';
+        break;
+      }
+      case 7:
+      if(progressVal.innerHTML<6){
+        alert("Module Not Unlocked Please Complete Above Modules")
+        break;
+      }
+      else{
         location.href = 'learnSimpleQuestions';
         break;
       }
