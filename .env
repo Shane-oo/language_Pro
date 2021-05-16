@@ -1,2 +1,2 @@
 FLASK_APP=languagePro.py
-FLASK_DEBUG = 0
+FLASK_DEBUG = 1

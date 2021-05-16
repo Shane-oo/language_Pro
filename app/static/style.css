@@ -200,7 +200,9 @@ hr {
 }
 
 /* LOGIN AND SIGN UP PAGE CSS */
-body {font-family: Arial, Helvetica, sans-serif;}
+.loginSignUpBody {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .underlineHover {
   color: #92badd;
@@ -412,11 +414,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
     width:40%;
   }
   
-  /* SIGN UP CSS */ 
+  /* SIGN UP CSS 
   * {
     box-sizing: border-box;
   }
-  
+  */ 
   .formContent {
     border-radius: 5px;
     background: #fff;
@@ -472,8 +474,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin-bottom: 25px;
   }
   
-  
+
 /*Module style*/
+/*------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 .desc_module_page{
     text-align: center;
@@ -592,7 +595,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     font-style: oblique;
 }
 
-.start_button{
+.start_button_mod{
     /* button attributes */
  
    display: block;
@@ -633,12 +636,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
   box-shadow: inset 0 0 0 100px rgb(9, 216, 2);
   
 }
-  .start_button_text span{
+  .start_button_mod_text span{
     position: relative;
     z-index:2;
     
   }
-  .start_button_text:after{
+  .start_button_mod_text:after{
     position: absolute;
     content: "";
     top: 0;
@@ -649,10 +652,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
     border-radius: 20px;
     transition: all .70s;
   }
-  .start_button_text:hover{
+  .start_button_mod_text:hover{
     color: #fff;
   }
-  .start_button_text:hover:after{
+  .start_button_mod_text:hover:after{
       width:100%;
   }
 .progress_bar{
@@ -727,7 +730,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 /*--------------------------------------------------*/
-.images{
+
+.images_mod{
 
     max-width: 100%;
     
@@ -737,7 +741,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     
     
 }
-.images:hover {
+.images_mod:hover {
     box-shadow: 5px 4px 10px grey;
   }
  

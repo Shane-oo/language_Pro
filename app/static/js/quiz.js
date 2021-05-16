@@ -1,4 +1,5 @@
 var begin_button = document.querySelector(".start_button button");
+console.log(begin_button)
 var info_box = document.querySelector(".Information_box");
 var quit_button = info_box.querySelector(".buttons .exit_button");
 var restart_button = info_box.querySelector(".buttons .continue_button");

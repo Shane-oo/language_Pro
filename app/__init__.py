@@ -20,4 +20,5 @@ login.login_view = 'loginTest' # <- 'login' is the page name
 
 
 from app import routes, models
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)

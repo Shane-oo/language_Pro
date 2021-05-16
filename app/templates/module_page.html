@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
-
+<head>
+  
+    <!--JS FILES
+    
+    <script src="{{url_for('static', filename='/js/module_page.js')}}"></script>
+-->
+    <title> Language Pro - Modules</title>
+    <!--icon bug-->
+   
+</head>
 
 <div class = "container1">
 <body class="bodyModulePage">
@@ -16,6 +25,7 @@
     {% block content %}
 
     <div class="desc_module_page">
+        <br>
         <h2>Welcome to the Module page! Or should I say ¡Bienvenido a la página del módulo!
             <!--Could say more greetings here if we decide to go with more languages-->
         </h2>
@@ -41,14 +51,14 @@
                     Costa Rica
                     <a target="_blank" href="https://travel.usnews.com/Costa_Rica/">
                  
-                    <img class ="imagesMod" id = "costaRica" src ="/static/images/CostaRica.png" alt="Costa Rica"/>
+                    <img class ="images_mod" id = "costaRica" src ="/static/images/CostaRica.png" alt="Costa Rica"/>
                </a>
                 </div>
                 <div class = "imgCol">
                     Mexico
                     <a target="_blank" href="https://www.nomadicmatt.com/travel-guides/mexico-travel-tips/">
                  
-                        <img class ="imagesMod" id = "Mexico" src ="/static/images/Mexico.jpg" alt="Mexico"/>
+                        <img class ="images_mod" id = "Mexico" src ="/static/images/Mexico.jpg" alt="Mexico"/>
                    </a>
 
                 </div>
@@ -56,7 +66,7 @@
                     Peru
                     <a target="_blank" href="https://www.nomadicmatt.com/travel-guides/peru-travel-tips/">
                  
-                        <img class ="imagesMod" id = "Mexico" src ="/static/images/Peru.jpeg" alt="Peru"/>
+                        <img class ="images_mod" id = "Mexico" src ="/static/images/Peru.jpeg" alt="Peru"/>
                    </a>
                 </div>
 
@@ -88,9 +98,9 @@
                     <div>
                     <h4>Saying Hello In Spanish</h4>
                     </div>
-                    <div class = "start_button" >
+                    <div class = "start_button_mod" >
                         
-                        <a class="start_button_text"   onclick="startHandler(1)" ><span>Start</span></a>
+                        <a class="start_button_mod_text"   onclick="startHandler(1)" ><span>Start</span></a>
                     </div>
                 
             </div>
@@ -105,8 +115,8 @@
                <div>
                 <h4>Introducing Yourself</h4>
                 </div>
-                    <div class = "start_button">
-                        <a class="start_button_text" onclick="startHandler(2)" ><span>Start</span></a>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text" onclick="startHandler(2)" ><span>Start</span></a>
                     </div>
             
             </div>
@@ -120,8 +130,8 @@
                 <div>
                 <h4>Asking How They Are</h4>
                 </div>
-                    <div class = "start_button">
-                        <a class="start_button_text"  onclick="startHandler(3)"><span>Start</span></a>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text"  onclick="startHandler(3)"><span>Start</span></a>
                     </div>
             </div>
                 <div class = "progress_bar">
@@ -134,8 +144,8 @@
                 <div>
                 <h4>Saying Goodbye</h4>
                 </div>
-                    <div class = "start_button">
-                        <a class="start_button_text" onclick="startHandler(4)"><span>Start</span></a>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text" onclick="startHandler(4)"><span>Start</span></a>
                     </div>
             </div>
                 <div class = "progress_bar">
@@ -162,8 +172,8 @@
                 <div>
                     <h4>Essential Numbers</h4>
                 </div>
-                    <div class = "start_button">
-                        <a class="start_button_text" onclick="startHandler(5)"  ><span>Start</span></a>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text" onclick="startHandler(5)"  ><span>Start</span></a>
                     </div>
             </div>
            <div class = "progress_bar">
@@ -191,8 +201,8 @@
                 <div>
                     <h4>Learn Simple Questions</h4>
                     </div>
-                    <div class = "start_button">
-                        <a class="start_button_text"  onclick="startHandler(6)"><span>Start</span></a>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text"  onclick="startHandler(6)"><span>Start</span></a>
                     </div>
                 
             </div>
