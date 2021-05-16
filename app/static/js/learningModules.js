@@ -113,3 +113,5 @@ var niceToMeetYou = new Audio("/static/sounds/niceToMeetYou.m4a");
 var thisIs = new Audio("/static/sounds/thisIs.m4a");
 var iAmFromAus = new Audio("/static/sounds/iAmFromAus.m4a")
 var myNameIsShane = new Audio("/static/sounds/myNameIsShane.m4a"); 
+var thisIsIffah = new Audio("/static/sounds/thisIsIffah.m4a");
+var myNameIsShin = new Audio("/static/sounds/myNameIsShin.m4a");
