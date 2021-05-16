@@ -69,10 +69,22 @@
     width:95%;
     background-color:#00BFFF;
     border-radius: 20px;    
-    display:flex;
-    justify-content:space-between;
-   
+    
+
+  display:flex;
+  flex-direction:row;
+
+
   }
+  .module_title > div
+{
+  flex:1 1 auto;
+
+  text-align:center;
+  
+  margin:5px;  /* and that, will result in a 10px gap */
+}
+  
 
   .test{
     background-color: 	rgba(199,3,24,255);
@@ -108,9 +120,9 @@
     /* button attributes */
  
    display: block;
-   width:200px;
-   height: 50px;
-   line-height: 40px;
+   width:150px;
+   height: 75px;
+   line-height: 75px;
    font-size:1em;
    font-family: 'Lato';
    text-decoration: none;
@@ -287,6 +299,16 @@
   }
   .content{
     display:none;
+  }
+  .end .sayWord{
+    padding: 50px;
+    margin: 00px;   
+    font-size: 1em;
+    font-family: 'Lato';
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
   }
 
   /* next and previous buttons*/

@@ -4,12 +4,13 @@
 <div class = "QuizContainer">
     <div class = "container">
 <head>
+    
     <!--CSS FILES-->
 	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
     <!--JS FILES-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
- 
+    
 
     <title> Language Pro - Learn Hola</title>
     <!--icon bug-->
@@ -109,24 +110,20 @@
             
             <div class = "multiChoice">
                 <p>
-                <button class = "sayWordtestm1" onclick="hola.play()">
-                <img src="/static/images/holaPhoto.png" class = "left" width="500" height="400" >
-                </button>
+                    <button class = "sayWord" onclick="myNameIsShane.play()">Click Me! <br>Question 1</button>
                 </p>
                 <p>
                     
-                    <input type ="radio" name ="question1" value = "0"/>Good Bye
-                    <input type ="radio" name ="question1" value = "33.33"/>Hello
-                    <input type ="radio" name ="question1" value = "0"/>Good Morning
+                    <input type ="radio" name ="question1" value = "0"/>This is Shane
+                    <input type ="radio" name ="question1" value = "33.33"/>My name is Shane
+                    <input type ="radio" name ="question1" value = "0"/>Please to meet you
                     <br>
                     
                     
                   
                 </p>
                 <p>
-                <button class = "sayWordtestm1" onclick="buenasNoches.play()">
-                <img src="/static/images/goodnight.png" width="500" height="400">
-                </button>
+                    <button class = "sayWord" onclick="thisIsJoe.play()">Click Me! <br>Question 2</button>
                 </p>
                 <p>
                     
@@ -139,8 +136,7 @@
                    
                 </p>
                 <p>
-                <button class = "sayWordtestm1" onclick="buenosDias.play()">
-                <img src="/static/images/goodMorningPhoto.png" width="500" height="400"></button>
+                    <button class = "sayWord" onclick="idk.play()">Click Me! <br>Question 3</button>
                 </p>
                 <p>
                     
