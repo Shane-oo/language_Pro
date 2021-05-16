@@ -424,7 +424,7 @@ hr {
     width:40%;
   }
   
-  /* SIGN UP CSS 
+  /* SIGN UP CSS I COMMENTED THIS OUT CAUSE IT AFFECTED MODULE_PAGE
   * {
     box-sizing: border-box;
   }
@@ -562,16 +562,16 @@ hr {
 
   display:flex;
   flex-direction:row;
+  min-width: 0;
 
 
   }
   .module_title > div
 {
   flex:1 1 auto;
-
+  min-width: 0;
   text-align:center;
-  
-  margin:5px;  /* and that, will result in a 10px gap */
+  margin:20px;  /* and that, will result in a 10px gap */
 }
   
 
@@ -674,7 +674,8 @@ hr {
   text-align: center;
   border-radius: 13px;
   position: relative;
-  margin: auto;
+  /* Makes it appear nice under panel */
+  width :97.9%;
 }
 /*All module bars that will be updated with progress*/
 /*--------------------------------------------------*/

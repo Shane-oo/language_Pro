@@ -3,27 +3,27 @@
     font-family: cursive;
 }
 
-.start_button, .Information_box, .quiz_section, .quiz_result, .outerlayer-cert{
+.start_button, .Information_box, .quiz_section, .quiz_result, .my-cert{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%); 
 }
 
-.Information_box.activeinformation, .quiz_section.activequiz, .quiz_result.activeresult, .outerlayer-cert.activecert{
+.Information_box.activeinformation, .quiz_section.activequiz, .quiz_result.activeresult, .my-cert.activecert{
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0.8);
 }
  
 .start_button button{
     font-size: 30px;
     width: 230px;
     font-weight:600;
-    color: rgb(122, 112, 250);
+    color: whitesmoke;
     border-radius: 15px;
-    background-color: rgb(231, 239, 255);
+    background-color: #aa151b;
     cursor: pointer;
 }
 
@@ -209,26 +209,26 @@
     pointer-events: none;
 }
 
-.quiz_section footer{
+.quiz_section .quiz_footer{
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.quiz_section footer .quiz_remaining span{
+.quiz_section .quiz_footer .quiz_remaining span{
     display:flex;
     align-items: center;  
     user-select: none; 
     font-size: 20px;
 }
 
-.quiz_section footer .quiz_remaining span p{
+.quiz_section .quiz_footer .quiz_remaining span p{
     font-weight: bold;
     padding: 3px;
 }
  
-.quiz_section footer .next_button{
+.quiz_section .quiz_footer .next_button{
     display: none;
     padding: 15px;
     font-size: 15px;
@@ -239,7 +239,7 @@
     color:whitesmoke;
 }
 
-.quiz_section footer .next_button:hover{
+.quiz_section .quiz_footer .next_button:hover{
     background: rgb(250, 67, 47);
 }
 
@@ -287,6 +287,12 @@
     cursor: pointer;
 }
 
+.my-cert{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
 .outerlayer-cert{
     margin: auto;
     width: max-content;
@@ -295,9 +301,6 @@
     border: 10px solid goldenrod;
     text-align: center;
     background: gold;
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .innerlayer-cert{
@@ -344,4 +347,42 @@
 .word-dated{
     font-style: italic;
     font-size: 25px;
+}
+
+.print_button{
+    cursor: pointer;
+    text-align: right;
+    padding: 10px;
+}
+
+.print_button .printit{
+    padding:5px;
+    border-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media print{
+    .printit {
+        visibility: hidden;
+    }
+    .quiz_page {
+        visibility: hidden;
+    }
+    footer{
+        visibility: hidden;
+    }
+    .topnav{
+        visibility: hidden;
+    }
+}
+
+footer{
+    display: none;
+}
+
+.topnav{
+    display: none;
 }

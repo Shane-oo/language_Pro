@@ -57,48 +57,33 @@
             </p>
         </div>
         <div class = "content"id = "content-3" name = "content" >
-            <h3><span class = "heading">Pleased To Meet You.</span></h3>
+            <h3><span class = "heading">Hasta luego</span></h3>
             <br>
-            <p>After the person responds, you may say, "Mucho gusto" or "MOOCH-oh GOOSE-toh."
-                The phrase means "much pleasure" or, less literally, "pleased to meet you."
+            <p>Hasta luego is an informal phrase that literally means “until then.” It’s used like “see you later” is used in English, but it isn’t literal.
+                That is, you can use it even if you don’t plan to see the person in the near future.
+                This phrase is very common, so it’s one of the most common goodbyes you’re likely to hear.
             </p>
             <p>
                 <br>
-                <button class = "sayWord" onclick="niceToMeetYou.play()">Mucho gusto</button>
+                <button class = "sayWord" onclick="seeYouLater.play()">Hasta luego</button>
             </p>
         </div>
         <div class = "content"id = "content-4" name = "content" >
-            <h3><span class = "heading">Introducing Others</span></h3>
+            <h3><span class = "heading">Cuídate</span></h3>
             <br>
-            <p>Sometimes you’ll be called upon to introduce others to a person or group.
+            <p>Yes, saying “goodbye” is polite, but sometimes you may want to say 
+                something warmer before parting ways with a friend or someone you appreciate.
+                “Take care”, “have a good day”, and “have fun” all have equivalents in Spanish.
                 <br>
-                Just say Este Es "Name"
+                Cuídate is Spanish for “take care”.
             </p>
             <p>
                 <br>
-                <button class = "sayWord" onclick="thisIs.play()">Este Es</button>
+                <button class = "sayWord" onclick="takeCare.play()">Cuídate</button>
             </p>
-            <div class ="imageForIntroduceMod">
-                <img  src ="/static/images/friend.png" alt="Two Friends Travelling"/>
-            </div>
-
-        </div>
-        <div class = "content"id = "content-5" name = "content" >
-            <h3><span class = "heading">I Am From</span></h3>
-            <br>
-            <p>So, where are you from? America? Europe? Africa? Asia?
-            Just stick the name of your country after the phrase "soy de".
-            <br>
-            For example soy de Australia
-            </p>
-            <p>
-                <br>
-                <button class = "sayWord" onclick="iAmFromAus.play()">soy de Australia</button>
-            </p>
+            
         </div>
         
-        
-    
         <button onclick="unmove()"type = "button" class = "back" id = "button_slide slide_right">Back</button>
         
         <button onclick = "move()" type = "button" class = "next">Next</button>
@@ -109,48 +94,47 @@
             <h3><span class = "heading">Finished!</span></h3>
             <p>Lets test what you've learnt so far in this module</p>
             <br>
-            <p>Click the Images to hear the Spanish word and Select the what you think it is in English below image</p>
             
             <div class = "multiChoice">
                 <p>
-                <button class = "sayWordtestm1" onclick="hola.play()">
-                <img src="/static/images/holaPhoto.png" class = "left" width="500" height="400" >
-                </button>
+                <h4>You're friend is leaving. What do you say?</h4>
+    
+                <img src="/static/images/waveGoodbye.png" class = "left" width="700" height="400" >
                 </p>
                 <p>
                     
-                    <input type ="radio" name ="question1" value = "0"/>Good Bye
-                    <input type ="radio" name ="question1" value = "33.33"/>Hello
-                    <input type ="radio" name ="question1" value = "0"/>Good Morning
+                    <input type ="radio" name ="question1" value = "33.33"/><button class = "testWord" onclick="takeCare.play()">Hear in Spanish 1</button>
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="niceToMeetYou.play()">Hear in Spanish 2</button>
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="goodThanksYou.play()">Hear in Spanish 3</button>
                     <br>
                     
                     
                   
                 </p>
                 <p>
-                <button class = "sayWordtestm1" onclick="buenasNoches.play()">
-                <img src="/static/images/goodnight.png" width="500" height="400">
-                </button>
+                <h4>What is the most common form of goodbye you will hear on your travels?</h4>
                 </p>
                 <p>
                     
-                    <input type ="radio" name ="question2" value = "33.33"/>Good Evening
-                    <input type ="radio" name ="question2" value = "0"/>Hello
-                    <input type ="radio" name ="question2" value = "0"/>Good Morning
+                    <input type ="radio" name ="question2" value = "0"/>Hola
+                    <input type ="radio" name ="question2" value = "0"/>Chao
+                    <input type ="radio" name ="question2" value = "33.33"/>Hasta luego
                     <br>
                    
                     
                    
                 </p>
                 <p>
-                <button class = "sayWordtestm1" onclick="buenosDias.play()">
-                <img src="/static/images/goodMorningPhoto.png" width="500" height="400"></button>
+                    <h4>What does this word translate to?</h4>
+                   
+                    <button class = "sayWord" onclick="adios.play()">Adiós</button>
+                    <br>
                 </p>
                 <p>
                     
-                    <input type ="radio" name ="question3" value = "0"/>Hello
+                    <input type ="radio" name ="question3" value = "33.33"/>Goodbye
                     <input type ="radio" name ="question3" value = "0"/>Goodnight
-                    <input type ="radio" name ="question3" value = "33.33"/>Good day
+                    <input type ="radio" name ="question3" value = "0"/>Good day
                     <br>
                     
                 </p>
