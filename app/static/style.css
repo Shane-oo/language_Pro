@@ -1,11 +1,10 @@
-/* BASE PAGE CSS */
-.topnav {
-    font-family: 'Cuprum','Lato', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
+/* BASE PAGE CSS */
 .topnav {
     overflow: hidden;
     background-color: #aa151b;
@@ -85,13 +84,6 @@
     letter-spacing: 2px;
 }
 
-.QOTD{
-    box-sizing:border-box;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
 .fbutton {
     background-color: white;
     border: none;
@@ -111,10 +103,19 @@
     color: black;
 }
 
+#quote{
+  text-decoration: underline;
+}
+
+#sentence{
+  padding: 10px 0px;
+}
+#contacts{
+  padding-top: 20px;
+}
+
 footer{
-    padding: 64px;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 30px;
     background-color: #302d2da2;
     color: white;
     text-align: center;
@@ -123,6 +124,10 @@ footer{
 }
 
 /* MAIM HOME PAGE CSS - BEFORE LOGIN */
+.indexPage{
+  font-family: 'Lato', sans-serif, 'Cuprum';
+}
+
 .indexImg{
     padding-top: 10px; 
     display: block;
@@ -177,13 +182,12 @@ footer{
 }
 
 /* line across the page to section different things */
-hr { 
-    display: block; 
-    margin-left: 10px;
-    margin-right: 10px;
-    overflow: hidden; 
-    border-style: inset; 
-    border-width: 1px;
+hr {
+  display: flex;
+  /* max-width: 1065px; */
+  max-width: 1300px;
+  border-bottom: 2px solid #e5e5e5;
+  margin: 12px auto;
 }
 
 #now{
