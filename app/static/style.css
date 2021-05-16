@@ -6,11 +6,6 @@
 
 /* BASE PAGE CSS */
 .topnav {
-    
-
-}
-
-.topnav {
     overflow: hidden;
     background-color: #aa151b;
     float: right;
@@ -88,13 +83,6 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
-/* .QOTD{
-    box-sizing:border-box;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-} */
 
 .fbutton {
     background-color: white;
