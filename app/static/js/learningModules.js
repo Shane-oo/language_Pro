@@ -119,3 +119,5 @@ var howAreYou = new Audio("/static/sounds/howAreYou.m4a");
 var goodThanksYou = new Audio("/static/sounds/goodThanksYou.m4a");
 var soSo = new Audio("/static/sounds/soSo.m4a");
 var helloHowAreYou1 = new Audio("/static/sounds/helloHowAreYou1.m4a");
+var adios = new Audio("/static/sounds/adios.m4a");
+var chao = new Audio("/static/sounds/chao.m4a");
