@@ -1,6 +1,6 @@
 <!-- HOME PAGE BEFROE LOG IN -->
 {% extends "base.html" %}
-<body>
+<body class= "indexPage">
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul>
@@ -44,13 +44,12 @@
                 but learning a new language is not easy either. <br>
                 This course covers the basics of Spanish, 
                 so that you will be able to do basic conversations as you travel to a Spanish speaking country!</p>
-            <p class= "gird-paragraph">Our course incudes:</p>
             <div class = "grid-paragraph">
+                <p>Our course incudes:</p>
                 <li>Different categories of Spanish phrases</li>
                 <li>Audio included for accurate pronounciation</li>
                 <li>Test at the end to assess your knowledge</li>
                 <li>Certificate upon completion of the course</li>
-                <!-- SHIN EDIT-->
                 {% if current_user.is_anonymous %}
                 <button id = "now" onclick= "location.href='login'">START LEARNING NOW!</button>
                 {% else %}
