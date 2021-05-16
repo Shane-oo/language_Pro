@@ -120,6 +120,7 @@ footer{
     text-align: center;
     align-items: center;
     letter-spacing: 2px;
+    position: static;
 }
 
 /* MAIM HOME PAGE CSS - BEFORE LOGIN */
