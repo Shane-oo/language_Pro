@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<div class = "QuizContainer">
+    <div class = "container">
+<head>
+    <!--CSS FILES-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
+    <!--JS FILES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
+ 
+
+    <title> Language Pro - Learn Goodbye</title>
+    <!--icon bug-->
+    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
+    <!-- Feature shins navbar up top-->
+</head>
+<body class = "moduleLearn">
+    <div class = "wholeBar">
+    <div class = "progress_bar2">
+        <div id = "module2Bar">0%</div>
+            <br>
+    </div>
+    </div>
+    <div class = "wordLearn">
+        <div class = "content" id = "content-1" name = "content" style = "display: block;">
+       <h3><span class = "heading">Saying Goodbye</span></h3>
+        <br>
+        <br>
+        <p>
+            You’ve already learned how to say hello in Spanish, so now it’s time to start saying goodbye.
+        </p>
+
+        <div class ="imageForIntroduceMod">
+            <img  src ="/static/images/goodbye.png" alt="Couple waving goodbye"width= 600 height =400/>
+        </div>
+        </div>
+
+        <div class = "content"id = "content-2" name = "content" >
+            <h3><span class = "heading">Adiós</span></h3>
+            <br>
+            <p> There are two very common Spanish goodbye words that you can use with close friends and family members.
+                <br>
+                Adiós. / “Bye.”
+                <br>
+                You can say this to friends, family, or close coworkers at any time of day. It’s used both in Spain and in Latin America. 
+                <br>
+                Chao. / “Bye bye.”
+                <br>
+                As you probably know, this one comes from the Italian word ciao. It’s used in a lot of places in Europe and in Latin America.
+            </p>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="adios.play()">Adiós</button>
+                <button class = "sayWord" onclick="chao.play()">Chao</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-3" name = "content" >
+            <h3><span class = "heading">Pleased To Meet You.</span></h3>
+            <br>
+            <p>After the person responds, you may say, "Mucho gusto" or "MOOCH-oh GOOSE-toh."
+                The phrase means "much pleasure" or, less literally, "pleased to meet you."
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="niceToMeetYou.play()">Mucho gusto</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-4" name = "content" >
+            <h3><span class = "heading">Introducing Others</span></h3>
+            <br>
+            <p>Sometimes you’ll be called upon to introduce others to a person or group.
+                <br>
+                Just say Este Es "Name"
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="thisIs.play()">Este Es</button>
+            </p>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/friend.png" alt="Two Friends Travelling"/>
+            </div>
+
+        </div>
+        <div class = "content"id = "content-5" name = "content" >
+            <h3><span class = "heading">I Am From</span></h3>
+            <br>
+            <p>So, where are you from? America? Europe? Africa? Asia?
+            Just stick the name of your country after the phrase "soy de".
+            <br>
+            For example soy de Australia
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="iAmFromAus.play()">soy de Australia</button>
+            </p>
+        </div>
+        
+        
+    
+        <button onclick="unmove()"type = "button" class = "back" id = "button_slide slide_right">Back</button>
+        
+        <button onclick = "move()" type = "button" class = "next">Next</button>
+
+    </div>
+        
+         <div class = "end">
+            <h3><span class = "heading">Finished!</span></h3>
+            <p>Lets test what you've learnt so far in this module</p>
+            <br>
+            <p>Click the Images to hear the Spanish word and Select the what you think it is in English below image</p>
+            
+            <div class = "multiChoice">
+                <p>
+                <button class = "sayWordtestm1" onclick="hola.play()">
+                <img src="/static/images/holaPhoto.png" class = "left" width="500" height="400" >
+                </button>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question1" value = "0"/>Good Bye
+                    <input type ="radio" name ="question1" value = "33.33"/>Hello
+                    <input type ="radio" name ="question1" value = "0"/>Good Morning
+                    <br>
+                    
+                    
+                  
+                </p>
+                <p>
+                <button class = "sayWordtestm1" onclick="buenasNoches.play()">
+                <img src="/static/images/goodnight.png" width="500" height="400">
+                </button>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question2" value = "33.33"/>Good Evening
+                    <input type ="radio" name ="question2" value = "0"/>Hello
+                    <input type ="radio" name ="question2" value = "0"/>Good Morning
+                    <br>
+                   
+                    
+                   
+                </p>
+                <p>
+                <button class = "sayWordtestm1" onclick="buenosDias.play()">
+                <img src="/static/images/goodMorningPhoto.png" width="500" height="400"></button>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question3" value = "0"/>Hello
+                    <input type ="radio" name ="question3" value = "0"/>Goodnight
+                    <input type ="radio" name ="question3" value = "33.33"/>Good day
+                    <br>
+                    
+                </p>
+                <form id = "form4" action = " ">
+                    <input type = "submit" class = "showResults"value="Show Results">
+                </form>
+                   <p>Your score is: <span id="grade">__</span></p>
+                   <p id="grade2"></p>
+       
+            </div>
+            <!-- /updateProgress/{{current_user.id}}/MODULE_NUMBER-->
+            <form action = '/updateProgress/{{current_user.id}}/4' method = "POST" >
+            <button id="sumbitButt" type = 'submit'  class = "next"  progress = "{{current_user.progress}}" >
+                Finish</button>
+            </form>
+        </div>
+   
+
+</body>
+</div>
+</div>
+</html>

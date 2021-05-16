@@ -119,5 +119,56 @@ def signUp():
     return render_template('signUp.html', title='Register')
 
     
+#-----------------------------------#
+# Route to module page
+@app.route('/module_page')
+@login_required  # protects a view function against anonymous users
+def module_page():
+    return render_template('module_page.html')
+
+@app.route('/learnHello/')
+def learnHello():
+
+    return render_template('learningQuizzes/learnHello.html')
+
+    
+@app.route('/learnIntroduce/')
+def learnIntroduce():
+
+    return render_template('learningQuizzes/learnIntroduce.html')
+@app.route('/learnHowAreYou/')
+def learnHowAreYou():
+
+    return render_template('learningQuizzes/learnHowAreYou.html')
+@app.route('/learnGoodbye/')
+def learnGoodbye():
+
+    return render_template('learningQuizzes/learnGoodbye.html')
+@app.route('/learnNumbers/')
+def learnNumbers():
+
+    return render_template('learningQuizzes/learnNumbers.html')
+@app.route('/learnSimpleQuestions/')
+def learnSimpleQuestions():
+
+    return render_template('learningQuizzes/learnSimpleQuestions.html')
 
 
+
+@app.route('/updateProgress/<int:id>/<int:moduleFin>',methods=['POST'])
+def updateProgress(id,moduleFin):
+    user_to_update = User.query.get_or_404(id)
+    if request.method == "POST":
+        currentProgress = user_to_update.progress
+        # Dont update if its a module thats already been completed
+        if(currentProgress<moduleFin):
+            user_to_update.progress = user_to_update.progress+1
+            try:
+                db.session.commit()
+                return redirect('/module_page')
+            except:
+                return "error updating progress"
+        else:
+            return redirect('/module_page')
+    else:
+        return render_template('learningQuizzes/learnHello.html')
