@@ -1,29 +1,7 @@
-// Progress bars for module
-var width = 0;
-function move() {
-   
-    var elem = document.getElementById("module2Bar");
-    console.log(elem)
-      if (width<100) {
-        width+=25
-        elem.style.width = width + "%";
-        elem.innerHTML = width*1 + "%";
-      }
-}
-function unmove(){
-     
-  var elem = document.getElementById("module2Bar");
-  console.log(elem)
-    if (width<100) {
-      width-=25;
-      elem.style.width = width + "%";
-      elem.innerHTML = width*1 + "%";
-    }
-  
-}
 
 
 
+//$('[id^=content-][name=content]').length;
 //content next and previous
 var counter = 1;
 $('body').on('click', '.next', function() { 
@@ -35,8 +13,8 @@ $('body').on('click', '.next', function() {
   if(counter>1){
     $('.back').show();
   }
-  //when module finised
-  if(counter>4){
+  //when module finised, content-number finished
+  if(counter>$('[id^=content-][name=content]').length){
     $('.wordLearn').hide();
     $('.end').show();
   };
@@ -52,6 +30,32 @@ $('body').on('click','.back',function(){
     }
 
 });
+// Progress bars for module
+
+var width = 0;
+function move() {
+    var elem = document.getElementById("module2Bar");
+    console.log(elem)
+      if (width<100) {
+        var value = 100/($('[id^=content-][name=content]').length);
+        width+=value;
+        console.log(width)
+        elem.style.width = width + "%";
+        elem.innerHTML = width*1 + "%";
+      }
+}
+function unmove(){
+     
+  var elem = document.getElementById("module2Bar");
+  console.log(elem)
+    if (width<100) {
+      var value = 100/($('[id^=content-][name=content]').length);
+      width-=value;
+      elem.style.width = width + "%";
+      elem.innerHTML = width*1 + "%";
+    }
+  
+}
 
 // Show Results
 window.onload = function() {
@@ -104,4 +108,7 @@ var hola = new Audio("/static/sounds/hola.m4a");
 var buenosDias = new Audio("/static/sounds/buenosDias.m4a");
 var buenasTardes = new Audio("/static/sounds/buenasTardes.m4a");
 var buenasNoches = new Audio("/static/sounds/buenasNoches.m4a");
-
+var myNameIs = new Audio("/static/sounds/myNameIs.m4a"); 
+var niceToMeetYou = new Audio("/static/sounds/niceToMeetYou.m4a"); 
+var thisIs = new Audio("/static/sounds/thisIs.m4a");
+var iAmFromAus = new Audio("/static/sounds/iAmFromAus.m4a")

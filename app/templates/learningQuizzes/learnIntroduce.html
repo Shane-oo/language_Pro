@@ -24,7 +24,7 @@
     </div>
     </div>
     <div class = "wordLearn">
-        <div class = "content" id = "content-1" style = "display: block;">
+        <div class = "content" id = "content-1" name = "content" style = "display: block;">
        <h3><span class = "heading">Introducing Yourself</span></h3>
         <br>
         <br>
@@ -42,38 +42,55 @@
         </div>
         </div>
 
-        <div class = "content"id = "content-2">
-            <h3><span class = "heading">My Name is...</span></h3>
-            <p> To say “my name is” in Spanish, you just need the word “Mi nombre es” followed by your name.
+        <div class = "content"id = "content-2" name = "content" >
+            <h3><span class = "heading">My Name Is...</span></h3>
+            <br>
+            <p> To say “my name is” in Spanish, you just need to say the word “Mi nombre es” followed by your name.
             </p>
+            <br>
             <p>
-                <button class = "sayWord" onclick="buenosDias.play()">Mi nombre es</button>
-            </p>
-            <div class ="imageForHolaMod">
-                <img  src ="/static/images/goodMorningPeru.jpeg" alt="Sunrise in Llanganuco Valley, Peru"/>
-            </div>
-        </div>
-        <div class = "content"id = "content-3">
-            <h3><span class = "heading">Buenas tardes</span></h3>
-            <p>If you want to say “good afternoon,” and it’s one o’clock or later in the day, you can say “buenas tardes.”
-                In Spain it may be used until later in the evening, while in most Latin American countries 
-                and the Caribbean, it may be used until the sun goes down.
-            </p>
-            <p>
-                <button class = "sayWord" onclick="buenasTardes.play()">Buenas tardes</button>
+                <button class = "sayWord" onclick="myNameIs.play()">Mi nombre es</button>
             </p>
         </div>
-        <div class = "content"id = "content-4">
-            <h3><span class = "heading">Buenas noches</span></h3>
-            <p>For saying "good evening". This phrase also means “goodnight.” 
-                But always be mindful of the context since you could be saying goodbye.
+        <div class = "content"id = "content-3" name = "content" >
+            <h3><span class = "heading">Pleased To Meet You.</span></h3>
+            <br>
+            <p>After the person responds, you may say, "Mucho gusto" or "MOOCH-oh GOOSE-toh."
+                The phrase means "much pleasure" or, less literally, "pleased to meet you."
             </p>
             <p>
-                <button class = "sayWord" onclick="buenasNoches.play()">Buenas noches</button>
+                <br>
+                <button class = "sayWord" onclick="niceToMeetYou.play()">Mucho gusto</button>
             </p>
-            <div class ="imageForHolaMod">
-                <img  src ="/static/images/sunsetMexico.png" alt="Sunset in Mexico"/>
+        </div>
+        <div class = "content"id = "content-4" name = "content" >
+            <h3><span class = "heading">Introducing Others</span></h3>
+            <br>
+            <p>Sometimes you’ll be called upon to introduce others to a person or group.
+                <br>
+                Just say Este Es "Name"
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="thisIs.play()">Este Es</button>
+            </p>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/friend.png" alt="Two Friends Travelling"/>
             </div>
+
+        </div>
+        <div class = "content"id = "content-5" name = "content" >
+            <h3><span class = "heading">I Am From</span></h3>
+            <br>
+            <p>So, where are you from? America? Europe? Africa? Asia?
+            Just stick the name of your country after the phrase "soy de".
+            <br>
+            For example soy de Australia
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="iAmFromAus.play()">soy de Australia</button>
+            </p>
         </div>
         
         

@@ -283,6 +283,7 @@
     background-color: black;
     color: white;
     cursor: pointer;
+    border-radius: 20px;
   }
   .content{
     display:none;
