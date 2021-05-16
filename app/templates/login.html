@@ -1,4 +1,4 @@
-{% extends "index2.html" %}
+{% extends "base.html" %}
 
 {% block content %}
 <div class='wrapper fadeInDown'>
@@ -10,7 +10,7 @@
         </div>
 
         <!-- Login Form -->
-        <form action="/login_Final_2" method="POST">
+        <form action="/login" method="POST">
             <input type='text' id='txt' class='fadeIn second' name='email' placeholder='email'>
             <input type='password' id='txt' class='fadeIn third' name='password' placeholder="password">
 
@@ -23,7 +23,7 @@
         </div>
         <!-- Create new account -->
         <div id="loginFooter">
-            <a class="underlineHover" href="{{ url_for('sign_up_3') }}">Create account!</a>
+            <a class="underlineHover" href="{{ url_for('signUp') }}">Create account!</a>
         </div>
     </div>
 </div>

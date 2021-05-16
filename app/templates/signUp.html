@@ -1,4 +1,4 @@
-{% extends "index2.html" %}
+{% extends "base.html" %}
 {% block content %}
 
 <div class='wrapper'>
@@ -7,7 +7,7 @@
         <p>Please fill in this form to create an account with Language Pro.</p>
         <hr>
             <!-- sign up form -->
-            <form action="/sign_up_3" method="POST">
+            <form action="/signUp" method="POST">
     
                 <label for="fname"><b>First Name</b></label>
                 <input type="text" id="txt1" placeholder="First Name" name="firstname" required>
