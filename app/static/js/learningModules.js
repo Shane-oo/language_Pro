@@ -115,3 +115,7 @@ var iAmFromAus = new Audio("/static/sounds/iAmFromAus.m4a")
 var myNameIsShane = new Audio("/static/sounds/myNameIsShane.m4a"); 
 var thisIsIffah = new Audio("/static/sounds/thisIsIffah.m4a");
 var myNameIsShin = new Audio("/static/sounds/myNameIsShin.m4a");
+var howAreYou = new Audio("/static/sounds/howAreYou.m4a");
+var goodThanksYou = new Audio("/static/sounds/goodThanksYou.m4a");
+var soSo = new Audio("/static/sounds/soSo.m4a");
+var helloHowAreYou1 = new Audio("/static/sounds/helloHowAreYou1.m4a");
