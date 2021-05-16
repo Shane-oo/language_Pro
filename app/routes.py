@@ -5,8 +5,6 @@ from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User
 from werkzeug.urls import url_parse
 
-
-
 @app.route('/')
 @app.route('/index2')
 def index2():
@@ -69,14 +67,10 @@ def login_Final_2():
     if current_user.is_authenticated:
         return redirect(url_for('home'))
 
-
-
-
 @app.route('/logout')
 def logout():
     logout_user()
     return redirect(url_for('index'))
-
 
 @app.route('/forgetPass')
 def forgetPass():
