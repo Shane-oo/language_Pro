@@ -1,0 +1,22 @@
+{% extends "index2.html" %}
+{% block content %}
+
+<div class='wrapper'>
+    <div class='formContent'>
+        <h1 id = >Forgot your password?</h1>
+        <p>Please enter your email.</p>
+        <hr>
+            <!-- forgot pass form -->
+            <form action="/forgot_pass" method="POST">
+                <input type="email" id="txt1" placeholder="Enter Email" name="email" required>
+                <br>
+                
+                <div id="formBtn">
+                    <input type="reset" id='btnreset' value="Clear">
+                    <input type="submit" id='btnsubmit' value='Submit'>
+                </div>
+            </form>
+    </div>
+</div>
+
+{% endblock %}
