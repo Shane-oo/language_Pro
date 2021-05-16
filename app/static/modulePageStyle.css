@@ -137,8 +137,26 @@
    cursor: pointer;
   }
 
-
-
+.showResults{
+  color: black;
+  border: 2px solid rgb(9, 216, 2);
+  border-radius: 10px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+  -webkit-transition: ease-out 1.0s;
+  -moz-transition: ease-out 1.0s;
+  transition: ease-out 1.5s;
+  
+}
+.showResults:hover {
+  box-shadow: inset 0 0 0 100px rgb(9, 216, 2);
+  
+}
   .start_button_text span{
     position: relative;
     z-index:2;
@@ -310,7 +328,15 @@
     cursor: pointer;
     border-radius: 20px;
   }
-
+  .testWord{
+    padding: 10px;
+    margin: 00px;   
+    font-family: 'Lato';
+    background-color:#00BFFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
   /* next and previous buttons*/
   /*--------------------------------------------------*/
   .next {
