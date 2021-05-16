@@ -1,5 +1,6 @@
+/* BASE PAGE CSS */
 * {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -17,7 +18,7 @@
     display: block;
     color: #f2f2f2;
     text-align: right;
-    padding: 14px 16px;
+    padding: 16px 14px;
     text-decoration: none;
     font-size: 17px;
     margin: 10px;
@@ -27,12 +28,17 @@
     float: right;
 }
 
-#logo{
+.logo{
     color: white;
     letter-spacing: 4px;
-    font-size: 22px;
     float: left;
-    padding: 20px 30px;
+    font-weight: bolder;
+}
+
+.logoCenter{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
   
 .topnav a:hover {
@@ -48,41 +54,98 @@
     display: none;
 }
   
-@media screen and (max-width: 700px) {
-    .topnav a {display: none;}
+@media screen and (max-width: 790px) {
     .topnav a.icon {
-    float: right;
-    display: block;
+        float: right;
+        display: block;
     }
+    .myTopnav a{display: none;}
+    .topnav.logo{display: block!important;}
 }
   
-@media screen and (max-width: 700px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-    .topnav.responsive a {
-    float: none;
-    display: flex;
-    text-align: left;
+@media screen and (max-width: 790px) {
+    .topnav.responsive.icon {position: relative;}
+    .topnav.responsive a{
+        float: none;
+        display: flex;
+        position: relative;
+        text-align: center;
+        justify-content: flex-end;
     }
 }
 
-/* BODY  */
-#spanishpic{
-    padding-top: 64px;
-    padding-bottom: 10px;
+#hiUser{
+    float: left;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    padding: 16px 14px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.QOTD{
+    box-sizing:border-box;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+button {
+    background-color: #white;
+    border: none;
+    border-radius: 4px;
+    color: #302d2da2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+}
+
+footer{
+    padding: 64px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #302d2da2;
+    color: white;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+/* MAIM HOME PAGE CSS - BEFORE LOGIN */
+.images{
+    padding-top: 10px; 
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 790px;
+    height: auto;
+}
+
+.welcome{
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    color:rgb(24, 23, 23);
 }
 
 .grid{
     float: center;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .grid-heading{
@@ -98,20 +161,22 @@
     font-weight: 5px;
     text-align: center;
 }
+
 .grid-paragraph{
-    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    font-size: 20px;
     text-align: center;
     font-style: italic;
     line-height: 2;
 }
 
 .bg-grey{
-    /* background-color:#CCCCCC; */
     color: black;
 }
 
 .bg-yellow{
-    /* background-color:#F1BF00; */
     color:black;
 }
 
@@ -125,20 +190,290 @@ hr {
     border-width: 1px;
 }
 
-.QOTD{
-    box-sizing:border-box;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+#now{
+    padding: 20px 40px;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(61, 58, 58);
+    border-radius: 10px;
 }
 
-footer{
-    padding: 128px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #1a1010a2;
+#now:hover {
+    background-color: #ce3b40;
     color: white;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 2px;
 }
+
+/* LOGIN AND SIGN UP PAGE CSS */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.underlineHover {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}  
+
+#btnreset, #btnsubmit, #btn{
+  background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+}
+
+#btnsubmit:hover, #btn:hover, #btnreset:hover  {
+  background-color: #39ace7;
+}
+
+#btnsubmit:active, #btn:active, #btnreset:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+/* LOGIN CSS */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #loginContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #loginFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+    
+    
+  /* login textbox */ 
+  #txt{
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 70%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  
+  #txt:focus{
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  #txt:placeholder {
+    color: #cccccc;
+  }
+  
+  
+  /* login animations */
+  
+  /* Simple CSS3 Fade-in-down Animation */
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  /* Forget password style */
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+  }
+  
+  .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
+  
+  
+  *:focus {
+      outline: none;
+  } 
+  
+  #icon {
+    width:40%;
+  }
+  
+  /* SIGN UP CSS */ 
+  * {
+    box-sizing: border-box;
+  }
+  
+  .formContent {
+    border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+    margin : auto; 
+    width : 70%;
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px 10px 10px 10px;
+  }
+  
+  #formBtn{
+    text-align: center;
+  }
+  
+  #txt1{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #f6f6f6;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #f6f6f6;
+    color: #0d0d0d;
+  }
+  
+  #txt1:focus{
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  #txt1:placeholder {
+    color: #cccccc;
+  }
+  
+  #lbl {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* set style for select */ 
+  #sequrity-qs {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid #f6f6f6;
+    background: #f6f6f6;
+  }
+  
+  
+  #line1 {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  
