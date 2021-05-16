@@ -28,8 +28,8 @@
 <body>
     <div class="topnav" id=newTopnav>
         <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a>
-        {% if current_user.is_anonymous %}
         <div class="logo"><a href="index">LANGUAGE PRO</a></div>
+        {% if current_user.is_anonymous %}
         <div class="myTopnav">
             <a href="login">Login</a>
             <a href="signUp">Sign Up</a>
@@ -38,7 +38,6 @@
         </div>
         {% else %}
         <h4 id=hiUser>Hi, {{ current_user.firstname }}!</h4>
-        <div class="logo logoCenter"><a href="index">LANGUAGE PRO</a></div>
         <div class="myTopnav">
             <a href="index#about">About</a>
             <a href="module_page">Modules</a>
@@ -65,7 +64,7 @@
     <footer>
         <h1>SPANISH QUOTE OF THE DAY</h1><br>
         <p id="sentence"></p><br>
-        <button onclick="sentenceNew()">GET A NEW SLANG!</button>
+        <button class = "fbutton" conclick="sentenceNew()">GET A NEW QUOTE</button>
     </footer>
 </body>
 
