@@ -14,7 +14,7 @@
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0.9);
 }
  
 .start_button button{
@@ -366,6 +366,15 @@
 
 @media print{
     .printit {
+        visibility: hidden;
+    }
+    .quiz_page {
+        visibility: hidden;
+    }
+    footer{
+        visibility: hidden;
+    }
+    .topnav{
         visibility: hidden;
     }
 }
