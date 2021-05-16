@@ -7,7 +7,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel = "stylesheet" href ='https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap'>
     <!-- alert bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="{{ url_for('static',filename='homepage_scripts.js') }}"></script>
@@ -15,28 +15,8 @@
 </head>
 
 <body>
-    <!-- <div class = "topnav" id = newTopnav>
-        <div class = "logo"><a href="index">LANGUAGE PRO</a></div>
-        {% if current_user.is_anonymous %}
-            <div class ="myTopnav">
-                <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a>
-                <a href="loginTest">Login</a>
-                <a href="signupPage2">Sign Up</a>
-                <a href="#about">About</a>   
-                <a href="module_page">Module</a>       
-            </div> 
-            {% else %}
-                <a href="{{ url_for('user', firstname=current_user.firstname)}}">Profile</a>
-                <a href="module_page">Modules</a>
-                <a href="logout">Log Out</a>
-            </div>
-            <h4 id= hiUser>Hi, {{ current_user.firstname }}!</h4>
-        </div>
-        {% endif %}
-    </div> -->
     <div class="topnav" id=newTopnav>
         <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a>
-
         {% if current_user.is_anonymous %}
         <div class="logo"><a href="index">LANGUAGE PRO</a></div>
         <div class="myTopnav">
@@ -48,8 +28,8 @@
         {% else %}
         <h4 id=hiUser>Hi, {{ current_user.firstname }}!</h4>
         <div class="logo logoCenter"><a href="index">LANGUAGE PRO</a></div>
-        <!-- <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a> -->
         <div class="myTopnav">
+            <a href="index#about">About</a>
             <a href="module_page">Modules</a>
             <a href="logout">Log Out</a>
         </div>
@@ -72,7 +52,7 @@
     {% block content %}{% endblock %}
 
     <footer>
-        <h1>SPANISH SLANG OF THE DAY</h1><br>
+        <h1>SPANISH QUOTE OF THE DAY</h1><br>
         <p id="sentence"></p><br>
         <button onclick="sentenceNew()">GET A NEW SLANG!</button>
     </footer>

@@ -1,6 +1,6 @@
 /* BASE PAGE CSS */
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cuprum','Lato', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -93,7 +93,7 @@
 }
 
 button {
-    background-color: #white;
+    background-color: white;
     border: none;
     border-radius: 4px;
     color: #302d2da2;
@@ -161,9 +161,7 @@ footer{
 }
 
 .grid-paragraph{
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 10px;
+    padding: 0px 200px;
     font-size: 20px;
     text-align: center;
     font-style: italic;

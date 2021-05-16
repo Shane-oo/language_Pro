@@ -1,47 +1,5 @@
 <!-- HOME PAGE BEFROE LOG IN -->
 {% extends "index2.html" %}
-<!-- <!DOCTYPE html>
-<html lang='en'>
-<meta charset="utf-8"> -->
-<!-- <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="#">Langauge Pro</a>
-            </div>
-            <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="{{ url_for('home') }}">Main</a></li>
-                    {% if current_user.is_anonymous %}
-                    <li><a href="{{ url_for('loginTest') }}">Login</a></li>
-                    {% else %}
-                    <li><a href="{{ url_for('user', email=current_user.email) }}">Home</a></li> -->
-                    <!-- <li><a href="{{ url_for('logout') }}">Logout</a></li> 
-                    {% endif %}
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-    </nav>
-
-    <section class="home">
-    </section>
-</head>  -->
-
 <body>
     {% with messages = get_flashed_messages() %}
     {% if messages %}
@@ -85,14 +43,14 @@
                 Travelling to a country without knowing their language can be tough, 
                 but learning a new language is not easy either. <br>
                 This course covers the basics of Spanish, 
-                so that you will be able to do basic conversations as you travel to a Spanish speaking country!<br>
-                Our course incudes:</p>
+                so that you will be able to do basic conversations as you travel to a Spanish speaking country!</p>
+            <p class= "gird-paragraph">Our course incudes:</p>
             <div class = "grid-paragraph">
                 <li>Different categories of Spanish phrases</li>
                 <li>Audio included for accurate pronounciation</li>
                 <li>Test at the end to assess your knowledge</li>
                 <li>Certificate upon completion of the course</li>
-                <button id = "now" onclick= "location.href='loginTest';">START LEARNING NOW!</button>
+                <button id = "now" onclick= "location.href='login_Final_2';">START LEARNING NOW!</button>
             </div>
         </div>
     </div>       
