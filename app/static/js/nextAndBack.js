@@ -97,3 +97,11 @@ document.getElementById("form4").onsubmit=function() {
 }
 }
 }
+
+
+//play sounds
+var hola = new Audio("/static/sounds/hola.m4a"); 
+var buenosDias = new Audio("/static/sounds/buenosDias.m4a");
+var buenasTardes = new Audio("/static/sounds/buenasTardes.m4a");
+var buenasNoches = new Audio("/static/sounds/buenasNoches.m4a");
+

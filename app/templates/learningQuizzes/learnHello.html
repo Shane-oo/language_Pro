@@ -149,8 +149,8 @@
                    <p id="grade2"></p>
        
             </div>
-            <form action = '/updateProgress/{{current_user.id}}' method = "POST">
-            <button type = 'submit' type = "button" class = "next" progress = "{{current_user.progress}}" href = 'module_page'>
+            <form action = '/updateProgress/{{current_user.id}}/1' method = "POST" name = "learnHelloForm">
+            <button id="sumbitButt" type = 'submit'  class = "next"  progress = "{{current_user.progress}}" >
                 Finish</button>
             </form>
         </div>

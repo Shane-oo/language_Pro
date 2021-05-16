@@ -82,15 +82,19 @@ def learnHello():
 
     return render_template('learningQuizzes/learnHello.html')
 
-@app.route('/updateProgress/<int:id>',methods=['POST'])
-def updateProgress(id):
+@app.route('/updateProgress/<int:id>/<int:moduleFin>',methods=['POST'])
+def updateProgress(id,moduleFin):
     user_to_update = User.query.get_or_404(id)
     if request.method == "POST":
-        user_to_update.progress = user_to_update.progress+1
-        try:
-            db.session.commit()
+        currentProgress = user_to_update.progress
+        if(currentProgress<moduleFin):
+            user_to_update.progress = user_to_update.progress+1
+            try:
+                db.session.commit()
+                return redirect('/module_page')
+            except:
+                return "error updating progress"
+        else:
             return redirect('/module_page')
-        except:
-            return "error updating progress"
     else:
         return render_template('learningQuizzes/learnHello.html')
