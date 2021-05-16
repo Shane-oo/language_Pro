@@ -4,6 +4,7 @@ from app.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User
 from werkzeug.urls import url_parse
+from app.email import send_password_reset_email
 
 
 
@@ -55,7 +56,7 @@ def login_Final_2():
         user = User.query.filter_by(email=email).first()
 
         if user is None or not user.check_password(password):
-            flash('Invalid username or password')
+            flash('Invalid username or password','danger')
             return redirect(url_for('login_Final_2'))
         login_user(user)
         next_page = request.args.get('next')
@@ -70,7 +71,39 @@ def login_Final_2():
         return redirect(url_for('home'))
 
 
+@app.route('/forgot_pass', methods =['GET', 'POST'])
+def forgot_pass():
+    if current_user.is_authenticated:
+        return redirect(url_for('index'))
 
+    if request.method == 'POST' : 
+        email = request.form.get('email')
+        user = User.query.filter_by(email=email).first()
+
+        if user : 
+            send_password_reset_email(user)
+            flash('Check your email for the instructions to reset your password', 'success')
+            return redirect(url_for('login_Final_2'))
+    
+    return render_template('forgot_pass.html')
+
+@app.route('/pass_request/<token>', methods=['GET', 'POST'])
+def pass_request(token, new_password):
+    if current_user.is_authenticated:
+        return redirect(url_for('index'))
+
+    user = User.verify_reset_password_token(token)
+
+    if request.method == 'POST' : 
+        password = request.form.get('new_password')
+        print(password)
+        user.set_password(password)
+        db.session.commit()
+
+        flash('Your password has been reset!', 'success')
+        return redirect(url_for('login_Final_2'))
+
+    return render_template('pass_request.html')
 
 @app.route('/logout')
 def logout():
@@ -78,9 +111,10 @@ def logout():
     return redirect(url_for('index'))
 
 
-@app.route('/forgetPass')
-def forgetPass():
-    return render_template('forgetPass.html')
+# @app.route('/forgetPass')
+# def forgetPass():
+
+#     return render_template('forgetPass.html')
 
 # @app.route('/signupPage2', methods=['GET', 'POST'])
 # def signupPage2():
@@ -101,7 +135,7 @@ def forgetPass():
 @app.route('/sign_up_3', methods=['GET', 'POST'])
 def sign_up_3():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('index'))
 
     if request.method == 'POST' :  
         #adding user to db 
@@ -113,7 +147,7 @@ def sign_up_3():
         user = User.query.filter_by(email=email).first()
 
         if user : 
-            flash('Email address already exists!')
+            flash('Email address already exists!','warning')
             return redirect(url_for('login_Final_2'))
         
         new_user = User(firstname = firstname, lastname=lastname, email=email)
@@ -121,7 +155,7 @@ def sign_up_3():
 
         db.session.add(new_user)
         db.session.commit()
-        flash('Congratulations, you are now a registered user!')
+        flash('Congratulations, you are now a registered user!', 'success')
         return redirect(url_for('login_Final_2'))
     return render_template('sign_up_3.html', title='Register')
 
