@@ -19,28 +19,28 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // Progress bars for module
-var width = 0;
-function move() {
+//var width = 0;
+//function move() {
    
-    var elem = document.getElementById("module2Bar");
-    console.log(elem)
-      if (width<100) {
-        width+=25
-        elem.style.width = width + "%";
-        elem.innerHTML = width*1 + "%";
-      }
-}
-function unmove(){
+  //  var elem = document.getElementById("module2Bar");
+    //console.log(elem)
+      //if (width<100) {
+        //width+=25
+        //elem.style.width = width + "%";
+        //elem.innerHTML = width*1 + "%";
+      //}
+//}
+//function unmove(){
      
-  var elem = document.getElementById("module2Bar");
-  console.log(elem)
-    if (width<100) {
-      width-=25;
-      elem.style.width = width + "%";
-      elem.innerHTML = width*1 + "%";
-    }
+  //var elem = document.getElementById("module2Bar");
+  //console.log(elem)
+    //if (width<100) {
+      //width-=25;
+      //elem.style.width = width + "%";
+      //elem.innerHTML = width*1 + "%";
+    //}
   
-}
+//}
 //window.onload = function() {
   //updateProgressBars();
 //}
@@ -51,7 +51,7 @@ function updateProgressBars(){
  
   value = progressVal.innerHTML;
   var prefix = 'moduleBar';
-  
+  var width = 0;
   for(var i = 1; elem = document.getElementById(prefix + i); i++) {
     // Module is complete
     console.log(value)
@@ -82,78 +82,78 @@ function updateProgressBars(){
 }
 
 //content next and previous
-var counter = 1;
-$('body').on('click', '.next', function() { 
-  $('.content').hide();
+//var counter = 1;
+//$('body').on('click', '.next', function() { 
+  //$('.content').hide();
 
-  counter++;
-  $('#content-'+counter+'').show();
+  //counter++;
+  //$('#content-'+counter+'').show();
 
-  if(counter>1){
-    $('.back').show();
-  }
+ // if(counter>1){
+   // $('.back').show();
+  //}
   //when module finised
-  if(counter>4){
-    $('.wordLearn').hide();
-    $('.end').show();
-  };
-});
+  //if(counter>4){
+    //$('.wordLearn').hide();
+    //$('.end').show();
+  //};
+//});
 //clicked previous
-$('body').on('click','.back',function(){
-  counter--;
-  $('.content').hide()
-  var id = counter;
-  $('#content-'+id).show();
-    if(counter<2){
-      $('.back').hide();
-    }
+//$('body').on('click','.back',function(){
+  //counter--;
+  //$('.content').hide()
+  //var id = counter;
+  //$('#content-'+id).show();
+   // if(counter<2){
+     // $('.back').hide();
+    //}
 
-});
+//});
 
 // Show Results
-window.onload = function() {
-  if(document.getElementById("form4")!=null){
-document.getElementById("form4").onsubmit=function() {
+//window.onload = function() {
+  //if(document.getElementById("form4")!=null){
+//document.getElementById("form4").onsubmit=function() {
   //check that all questions are answered
-  for(var i = 1 ; i <= 3 ; i++)
-  {
-      var radios = document.getElementsByName('question'+i);
-      var checked = false;
-      for (var j = 0, length = radios.length; j < length; j++) 
-      {
+  //for(var i = 1 ; i <= 3 ; i++)
+  //{
+    ///  var radios = document.getElementsByName('question'+i);
+      //var checked = false;
+      //for (var j = 0, length = radios.length; j < length; j++) 
+      //{
 
-         if (radios[j].checked) 
-         {
-          checked = true;
-          break;
-         }
+        // if (radios[j].checked) 
+         //{
+          //checked = true;
+          //break;
+         //}
 
 
-       }
-       if(!checked)
-       {
-         alert('Please answer question '+i);
+       //}
+       //if(!checked)
+       //{
+         //alert('Please answer question '+i);
          
-         return false; //stops page from refreshing
-       }
-}
-  if(checked==true){
-  question1Res = parseInt(document.querySelector('input[name = "question1"]:checked').value);
-  question2Res = parseInt(document.querySelector('input[name = "question2"]:checked').value);
-  question3Res = parseInt(document.querySelector('input[name = "question3"]:checked').value);
-  }
+         //return false; //stops page from refreshing
+       //}
+//}
+  //if(checked==true){
+  //question1Res = parseInt(document.querySelector('input[name = "question1"]:checked').value);
+  //question2Res = parseInt(document.querySelector('input[name = "question2"]:checked').value);
+  //question3Res = parseInt(document.querySelector('input[name = "question3"]:checked').value);
+  //}
  
-  result = question1Res+question2Res+question3Res;
+  //result = question1Res+question2Res+question3Res;
   
-  if(result == 99){
-    result =100;
-  }
-  document.getElementById("grade").innerHTML = result;
-  return false; //stops page from refreshing
+  //if(result == 99){
+    //result =100;
+  //}
+ // document.getElementById("grade").innerHTML = result;
+  //return false; //stops page from refreshing
 
-}
-}
-}
+//}
+//}
+//}
 // Disable buttons if progress is not enough on Module Page
 
     //location.href = 'learnHello'
