@@ -1,12 +1,11 @@
 var begin_button = document.querySelector(".start_button button");
-console.log(begin_button)
 var info_box = document.querySelector(".Information_box");
-var quit_button = info_box.querySelector(".buttons .exit_button");
-var restart_button = info_box.querySelector(".buttons .continue_button");
+var quit_button = document.querySelector(".buttons .exit_button");
+var restart_button = document.querySelector(".buttons .continue_button");
 var quiz = document.querySelector(".quiz_section");
-var countdown_time = quiz.querySelector(".quiz_time .second");
-var times_up = quiz.querySelector("header .countdown");
-var certificate = document.querySelector(".outerlayer-cert");
+var countdown_time = document.querySelector(".quiz_time .second");
+var times_up = document.querySelector("header .countdown");
+var certificate = document.querySelector(".my-cert");
 
 var quiz_options = document.querySelector(".quiz_options");
 
@@ -36,10 +35,15 @@ var next_button = quiz.querySelector(".next_button");
 var quiz_result = document.querySelector(".quiz_result");
 var restart_quiz = quiz_result.querySelector(".buttons .continue_button");
 var exit_quiz = quiz_result.querySelector(".buttons .exit_button");
+var print_button = document.querySelector(".print_button .printit");
 
 
 restart_quiz.onclick = ()=>{
     window.location.reload();
+}
+
+print_button.onclick = ()=>{
+    window.print();
 }
 
 exit_quiz.onclick = ()=>{
@@ -184,8 +188,73 @@ function GetDate() {
 GetDate(); 
 
 function show_percentage(){
-    var pre_precentage = certificate.querySelector(".innerlayer-cert");
-    var percentage = pre_precentage.querySelector(".mark-cert");
+    var pre_precentage = certificate.querySelector(".outerlayer-cert");
+    var pre_precentage2 = pre_precentage.querySelector(".innerlayer-cert");
+    var percentage = pre_precentage2.querySelector(".mark-cert");
     let percentagetag = '<span>with result of <a>'+user_results/questions.length * 100 +'%</a></span>' 
     percentage.innerHTML = percentagetag;
 }
+
+//question bank
+let questions = [
+    {
+        Number: 1,
+        Question: "What is your name?",
+        Answer: "I dont know",
+        Options: [
+            "I dont know",
+            "hahah",
+            "tell me",
+            "just trying"
+        ]
+    },
+
+    {
+        Number: 2,
+        Question: "Where do you live?",
+        Answer: "I dont know",
+        Options: [
+            "I dont know",
+            "what?",
+            "privacy",
+            "bleh"
+        ]
+    },
+
+    {
+        Number: 3,
+        Question: "hahahha?",
+        Answer: "I dont know",
+        Options: [
+            "I dont know",
+            "heheh",
+            "hohoh",
+            "kukukuk"
+        ]
+    },
+
+    {
+        Number: 4,
+    Question: "how many members?",
+    Answer: "four of us",
+    Options: [
+        "1",
+        "2",
+        "3",
+        "four of us"
+        ]
+    },
+
+    {
+        Number: 5,
+    Question: "How to say ola",
+    Answer: "ola",
+    Options: [
+        "loa",
+        "ola",
+        "aol",
+        "oal"
+        ]
+    }
+
+]

@@ -2,7 +2,6 @@
 window.onload = function() {
 var acc = document.getElementsByClassName("accordion");
 var i;
-console.log(acc)
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -16,12 +15,16 @@ for (i = 0; i < acc.length; i++) {
     }
 
     updateProgressBars();
+    sentenceNew();
 }
 
 
 
 function updateProgressBars(){
   var progressVal = document.getElementById("progress");
+  if(progressVal==null){
+    return false;
+  }
   progressVal.innerHTML = progressVal.textContent;
  
   value = progressVal.innerHTML;
