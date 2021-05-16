@@ -1,5 +1,5 @@
 /* BASE PAGE CSS */
-* {
+.topnav {
     font-family: 'Cuprum','Lato', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -92,7 +92,7 @@
     align-items:center;
 }
 
-button {
+.Abut {
     background-color: white;
     border: none;
     border-radius: 4px;
@@ -107,7 +107,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.Abut:hover {
     color: black;
 }
 
@@ -473,3 +473,798 @@ body {font-family: Arial, Helvetica, sans-serif;}
   }
   
   
+/*Module style*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+.desc_module_page{
+    text-align: center;
+    font-size: 2em;
+    padding: 2em;
+    font-family: 'Lato';
+}
+.bodyModulePage{
+    font-family:'Lato';
+    
+}
+
+.container1 {
+    max-width:1500px;
+    margin:0 auto;
+    padding:2em 0 2em 0;
+  }
+.accordion {
+    position: relative;
+    background-color:#00BFFF;
+    font-weight: 700;
+    padding:2em;
+    display:block;
+     
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ddd;
+    text-align: center;
+    outline: none;
+    font-size: 1.5em;
+    transition: background-color 0.4s ease-in-out;
+    border-bottom:1px solid;
+    border-radius: 20px;
+  }
+
+  .active, .accordion:hover {
+    background-color:#1E90FF;
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    font-size: 1em;
+    line-height:1.5em;
+    overflow: hidden;
+    max-height:0;
+    transition: max-height 0.2s ease-out;
+
+    
+  }
+.module_title{
+    height:auto;
+    overflow:hidden; 
+    max-height:50em;
+    transition:max-height 1s;  
+
+    text-align: center;
+    font-weight: 700;
+   
+    color: #fff;
+    font-size: 1.5em;
+    border: 1px solid #ddd;
+    border-style:solid; 
+    border-color:#fff; 
+    padding: 1em;
+    border-width: medium;
+    width:95%;
+    background-color:#00BFFF;
+    border-radius: 20px;    
+    
+
+  display:flex;
+  flex-direction:row;
+
+
+  }
+  .module_title > div
+{
+  flex:1 1 auto;
+
+  text-align:center;
+  
+  margin:5px;  /* and that, will result in a 10px gap */
+}
+  
+
+  .test{
+    background-color: 	rgba(199,3,24,255);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 150px;
+    border: none;
+    text-align: middle;
+    outline: none;
+    font-size: 50px;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .active, .test:hover {
+    background-color: #1E90FF;
+
+  }
+  
+  
+.module_talk{
+    
+    font-size: 32px;
+    text-align: center;
+  }
+.module_talk h3{
+    text-align: center;
+    font-style: oblique;
+}
+
+.start_button{
+    /* button attributes */
+ 
+   display: block;
+   width:150px;
+   height: 75px;
+   line-height: 75px;
+   font-size:1em;
+   font-family: 'Lato';
+   text-decoration: none;
+   color:#fff;
+  
+   border-radius: 20px;
+   background-color: #1E90FF;
+   text-align: center;
+   position: relative;
+   transition: all .25s;
+   
+   cursor: pointer;
+  }
+
+.showResults{
+  color: black;
+  border: 2px solid rgb(9, 216, 2);
+  border-radius: 10px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+  -webkit-transition: ease-out 1.0s;
+  -moz-transition: ease-out 1.0s;
+  transition: ease-out 1.5s;
+  
+}
+.showResults:hover {
+  box-shadow: inset 0 0 0 100px rgb(9, 216, 2);
+  
+}
+  .start_button_text span{
+    position: relative;
+    z-index:2;
+    
+  }
+  .start_button_text:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background-color:rgb(9, 216, 2);
+    border-radius: 20px;
+    transition: all .70s;
+  }
+  .start_button_text:hover{
+    color: #fff;
+  }
+  .start_button_text:hover:after{
+      width:100%;
+  }
+.progress_bar{
+  background-color: grey;
+  padding:3px;
+  text-align: center;
+  border-radius: 13px;
+  position: relative;
+  margin: auto;
+}
+/*All module bars that will be updated with progress*/
+/*--------------------------------------------------*/
+#moduleBar1{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar2{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar3{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar4{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar5{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar6{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+
+/*--------------------------------------------------*/
+.images{
+
+    max-width: 100%;
+    
+    height: auto;
+    border: 0.5px solid #ddd;
+    border-radius: 20px;
+    
+    
+}
+.images:hover {
+    box-shadow: 5px 4px 10px grey;
+  }
+ 
+  /* Three image containers*/
+.imgCol {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .imgRow {
+    display: flex;
+  }
+  .dests{
+    Padding-left:275px;
+  }
+  .dests1{
+    Padding-left:250px;
+  }
+  .main{
+    
+    padding:5em;
+    
+  }
+
+  .wordLearn{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    
+    font-family: 'Lato';
+ 
+  }
+  .wordLearn  .heading{
+    border: 1px;
+    border-style:solid; 
+    border-color:black; 
+    border-width: medium;
+    padding: 30px;
+    margin: 00px;   
+    border-radius: 10px;
+  }
+
+  .wordLearn  .sayWord{
+    padding: 50px;
+    margin: 00px;   
+    font-size: 1em;
+    font-family: 'Lato';
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .content{
+    display:none;
+  }
+  .end .sayWord{
+    padding: 50px;
+    margin: 00px;   
+    font-size: 1em;
+    font-family: 'Lato';
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .testWord{
+    padding: 10px;
+    margin: 00px;   
+    font-family: 'Lato';
+    background-color:#00BFFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  /* next and previous buttons*/
+  /*--------------------------------------------------*/
+  .next {
+    color: black;
+    border: 2px solid rgb(9, 216, 2);
+    border-radius: 10px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+    -webkit-transition: ease-out 1.0s;
+    -moz-transition: ease-out 1.0s;
+    transition: ease-out 1.5s;
+    float: right;
+  }
+  .next:hover {
+    box-shadow: inset 400px 0 0 0 rgb(9, 216, 2);
+    
+  }
+  .back{
+    display:none;
+    color: black;
+    border: 2px solid rgb(9, 216, 2);
+    border-radius: 10px;
+    padding: 18px 36px;
+    
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+    -webkit-transition: ease-out 1.0s;
+    -moz-transition: ease-out 1.0s;
+    transition: ease-out 1.5s;
+    float: left;
+  }
+  .back:hover {
+    box-shadow: inset -400px 0 0 0 rgb(9, 216, 2);
+  }
+  .end{
+    display:none;
+  }
+  /*--------------------------------------------------*/
+  #module2Bar{
+    width: 0%;
+    height:30px;
+    background-color: rgb(9, 216, 2);
+    border-radius: 10px;
+    height:20px;
+    text-align: center; /* To center it horizontally (if you want) */
+    color: black;
+    font-family: 'Lato';
+}
+.progress_bar2{
+  background-color: black;
+  padding:3px;
+  text-align: center;
+  border-radius: 13px;
+  position: relative;
+}
+.wholeBar{
+  margin: auto;
+  width: 50%;
+}
+
+.imageForHolaMod{
+  max-width: 100%;
+  height:auto;
+}
+.imageForIntroduceMod{
+  max-width: 100%;
+  height:auto;
+}
+.end{
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  
+  font-family: 'Lato';
+
+}
+.end .heading{
+  border: 1px;
+  border-style:solid; 
+  border-color:black; 
+  border-width: medium;
+  padding: 30px;
+  margin: 00px;   
+  border-radius: 10px;
+}
+.sayWordtestm1{
+  width:"200";
+  height:"200";
+
+}
+.multiChoice{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img.left {float: left;}
+
+
+/*--------------------------*/
+/*Quiz style*/
+.quiz_page{
+  background-color: #aa151b;
+  font-family: cursive;
+}
+
+.start_button, .Information_box, .quiz_section, .quiz_result, .outerlayer-cert{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) 
+}
+
+.Information_box.activeinformation, .quiz_section.activequiz, .quiz_result.activeresult, .outerlayer-cert.activecert{
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.start_button button{
+  font-size: 30px;
+  width: 230px;
+  font-weight:600;
+  color: rgb(122, 112, 250);
+  border-radius: 15px;
+  background-color: rgb(231, 239, 255);
+  cursor: pointer;
+}
+
+.Information_box{
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 550px;
+  background: rgb(231, 239, 255) ;
+  border-radius: 15px;
+}
+
+.Information_box .Information_title{
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 3px dotted salmon;
+}
+
+.Information_box .Information_list{
+  padding: 20px 35px; 
+}
+
+.Information_box .Information_list .information{
+  padding: 5px;
+  font-size: 20px;
+}
+
+.Information_box .Information_list .information span{
+  font-weight: bold;
+  color: red
+  ;
+}
+
+.Information_box .buttons{
+  padding: 30px;
+  text-align: center;
+  border-top: 3px dotted salmon;
+}
+
+.Information_box .buttons button{
+  padding:5px;
+  border-color: gray;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.buttons button.exit_button{
+  color:salmon;
+  background: whitesmoke;
+}
+
+.buttons button.exit_button:hover{
+  background: salmon;
+  color: whitesmoke;
+}
+
+.buttons button.continue_button{
+  color: salmon;
+  background: whitesmoke;
+}
+
+.buttons button.continue_button:hover{
+  background: salmon;
+  color: whitesmoke;
+}
+
+.quiz_section{
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 550px;
+  background: rgb(231, 239, 255);
+  border-radius: 15px;
+}
+
+.quiz_section header{
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px dotted red;
+}
+
+.quiz_section header .quiz_title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.quiz_section header .quiz_time{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  background: salmon;
+  border-radius: 15px;
+}
+
+.quiz_section header .quiz_time .countdown{
+  font-size: 15px;
+  user-select: none;
+  color: whitesmoke;
+}
+
+.quiz_section header .quiz_time .second{
+  font-size: 16px;
+  background: tomato;
+  border-radius: 50%;
+  width: 25px;
+  text-align: center;
+  user-select: none;
+  color: whitesmoke;
+}
+
+.quiz_section section{
+  padding: 20px 35px;
+}
+
+.quiz_section section .quiz_question{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  ;
+}
+
+.quiz_section section .quiz_options{
+  padding: 20px;
+  display: block;
+}
+
+.quiz_section section .quiz_options .option{
+  background: whitesmoke;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quiz_section section .quiz_options .option:last-child{
+  margin-bottom: 0px;
+}
+
+.quiz_section section .quiz_options .option:hover{
+  color: whitesmoke;
+  background: tomato;
+}
+
+.quiz_section section .quiz_options .option .icon{
+  border-radius: 80%;
+  border: 1px solid;
+  text-align: center;
+  width: 20px;
+  pointer-events: none;
+}
+
+.quiz_section section .quiz_options .option .icon.tick{
+  color: green;
+  border-color:green;
+  background-color: rgb(143, 216, 143);
+}
+
+.quiz_section section .quiz_options .option .icon.cross{
+  color: red;
+  border-color:red;
+  background-color: rgb(248, 185, 185);
+}
+
+.quiz_section section .quiz_options .option.correct{
+  background: lightgreen;
+}
+
+.quiz_section section .quiz_options .option.incorrect{
+  background: rgb(250, 160, 160);
+}
+
+.quiz_section section .quiz_options .option.nomoreoptions{
+  pointer-events: none;
+}
+
+.quiz_section footer{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz_section footer .quiz_remaining span{
+  display:flex;
+  align-items: center;  
+  user-select: none; 
+  font-size: 20px;
+}
+
+.quiz_section footer .quiz_remaining span p{
+  font-weight: bold;
+  padding: 3px;
+}
+
+.quiz_section footer .next_button{
+  display: none;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  background: salmon;
+  border-radius: 5px;
+  cursor: pointer;
+  color:whitesmoke;
+}
+
+.quiz_section footer .next_button:hover{
+  background: rgb(250, 67, 47);
+}
+
+.quiz_result{
+  background: rgb(231, 239, 255);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.quiz_result .completed{
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+}
+
+.quiz_result .score span{
+  margin: 10px;
+  font-size: 15px;
+  display: flex;
+}
+
+.quiz_result .score span a{
+  font-weight: bold;
+  padding: 0 5px;
+} 
+
+.quiz_result .buttons{
+  display: flex;
+  padding: 10px;
+}
+
+.quiz_result .buttons button{
+  padding: 5 10px;
+  font-size: 15px;
+  margin: 0 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.outerlayer-cert{
+  margin: auto;
+  width: max-content;
+  height: 650px;
+  padding: 30px;
+  border: 10px solid goldenrod;
+  text-align: center;
+  background: gold;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.innerlayer-cert{
+  margin: auto;
+  width:max-content;
+  height: 570px; 
+  padding: 30px; 
+  text-align:center; 
+  border: 5px dotted goldenrod;
+  border-radius: 30px;
+}
+
+.firstline-cert{
+  font-weight: bold;
+  font-size: 70px;
+  font-family: 'Dancing Script';
+}
+
+.name-cert{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.wording-cert{
+  font-style: italic;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.mark-cert{
+  font-size: 25px;
+  padding: 10px;
+}
+
+.mark-cert a{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.date-cert{
+  font-size: 30px;
+}
+
+.word-dated{
+  font-style: italic;
+  font-size: 25px;
+}

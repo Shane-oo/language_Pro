@@ -172,3 +172,8 @@ def updateProgress(id,moduleFin):
             return redirect('/module_page')
     else:
         return render_template('learningQuizzes/learnHello.html')
+
+@app.route('/quiz/')
+def quiz():
+
+    return render_template('quiz.html')

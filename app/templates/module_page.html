@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang='en'>
-<meta charset="utf-8">
-<div class = "container">
-<head>
-    <!--CSS FILES-->
-	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
-    <!--JS FILES-->
-    
-    <script src="{{url_for('static', filename='js/module_page.js')}}"></script>
+{% extends "base.html" %}
 
-    <title> Language Pro - Modules</title>
-    <!--icon bug-->
-    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
-    <!-- Feature shins navbar up top-->
-</head>
+
+
+<div class = "container1">
 <body class="bodyModulePage">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}
+
     <div class="desc_module_page">
         <h2>Welcome to the Module page! Or should I say ¡Bienvenido a la página del módulo!
             <!--Could say more greetings here if we decide to go with more languages-->
@@ -41,14 +41,14 @@
                     Costa Rica
                     <a target="_blank" href="https://travel.usnews.com/Costa_Rica/">
                  
-                    <img class ="images" id = "costaRica" src ="/static/images/CostaRica.png" alt="Costa Rica"/>
+                    <img class ="imagesMod" id = "costaRica" src ="/static/images/CostaRica.png" alt="Costa Rica"/>
                </a>
                 </div>
                 <div class = "imgCol">
                     Mexico
                     <a target="_blank" href="https://www.nomadicmatt.com/travel-guides/mexico-travel-tips/">
                  
-                        <img class ="images" id = "Mexico" src ="/static/images/Mexico.jpg" alt="Mexico"/>
+                        <img class ="imagesMod" id = "Mexico" src ="/static/images/Mexico.jpg" alt="Mexico"/>
                    </a>
 
                 </div>
@@ -56,7 +56,7 @@
                     Peru
                     <a target="_blank" href="https://www.nomadicmatt.com/travel-guides/peru-travel-tips/">
                  
-                        <img class ="images" id = "Mexico" src ="/static/images/Peru.jpeg" alt="Peru"/>
+                        <img class ="imagesMod" id = "Mexico" src ="/static/images/Peru.jpeg" alt="Peru"/>
                    </a>
                 </div>
 
@@ -200,9 +200,9 @@
                 <div id = "moduleBar6">0%</div>
             </div>
         </div>
-        <button class = "test" onclick="document.location.href=this.getAttribute('href');" href="test1_page">
+        <button class = "test" onclick="document.location.href=this.getAttribute('href');" href="quiz">
         Test your knowlege</button>
         </div>
-</body>
+        {% endblock %}  
+    </body>
 </div>
-</html>

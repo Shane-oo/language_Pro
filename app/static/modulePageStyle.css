@@ -10,7 +10,7 @@
     
 }
 
-.container {
+.container1 {
     max-width:1500px;
     margin:0 auto;
     padding:2em 0 2em 0;
@@ -251,7 +251,7 @@
 }
 
 /*--------------------------------------------------*/
-.images{
+.imagesMod{
 
     max-width: 100%;
     
@@ -261,7 +261,7 @@
     
     
 }
-.images:hover {
+.imagesMod:hover {
     box-shadow: 5px 4px 10px grey;
   }
  
