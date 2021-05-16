@@ -5,9 +5,7 @@
 <script src = "static/quiz.js"></script>
 <script src = "static/quiz_questions.js"></script> -->
 
-
-
-<body onload = "GetDate();" class = quiz_page>
+<body onload = "GetDate();" class = "quiz_page">
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul>
@@ -69,12 +67,12 @@
                 </div> -->
             </div>
         </section>
-        <div class= "quizFooter">
+        <div class = "quiz_footer">
             <div class = "quiz_remaining">
                 <!-- <span><p>2</p>of<p>5</p>Questions remaining</span> -->
             </div>
             <button class = "next_button">Next</button>
-        </div>>
+        </div>
     </div>
 
     <div class = "quiz_result">
@@ -88,33 +86,26 @@
         </div>
     </div>
 
-    <div class = 'outerlayer-cert'>
-        <div class ='innerlayer-cert'>
-            <div class = 'firstline-cert'>
-                <span>Certificate of Completion</span>
+    <div class = "my-cert">
+        <div class = 'outerlayer-cert'>
+            <div class ='innerlayer-cert'>
+                <div class = 'firstline-cert'>Certificate of Completion</div>
+                <div class = 'wording-cert'>This is awarded to</div>
+                <div class = 'name-cert'>Joe Win Tan</div>
+                <div class = 'wording-cert'>for completing LanguagePro Spanish course</div>
+                <div class = 'mark-cert'>
+                    <span>with result of <a>100%</a></span> 
+                </div>
+                <div class = 'word-dated'>dated</div>
+                <div class = "date-cert" id = "demo"></div>
             </div>
-            <div class = 'wording-cert'>
-                <span>This is awarded to</span>
-            </div>
-            <div class = 'name-cert'>
-                <span>{{ current_user.firstname }} {{ current_user.lastname }}</span>
-            </div>
-            <div class = 'wording-cert'>
-                <span>for completing LanguagePro Spanish course</span>
-            </div>
-            <div class = 'mark-cert'>
-                <span>with result of <a>100%</a></span> 
-            </div>
-            <div class = 'word-dated'>
-                <span>dated</span>
-            </div>
-            <div class = "date-cert" id = "demo"></div>
         </div>
-    </div>     
-    
+        <div class="print_button">
+            <button class = "printit">Print</button> 
+        </div>   
+    </div> 
+
     <script src= "{{ url_for('static',filename='quiz.js') }}"></script>
-    <script src= "{{ url_for('static',filename='quiz_question.js') }}"></script>
-    
     {% endblock %}  
 </body>
 
