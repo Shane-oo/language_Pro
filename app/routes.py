@@ -5,6 +5,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User
 from werkzeug.urls import url_parse
 from app.email import send_password_reset_email
+from app.forms import ResetPasswordForm
 
 
 
@@ -21,29 +22,6 @@ def index():
 @login_required  # to protect some pages nd only allow access to authenticated user
 def home():
     return render_template("home.html", title='Main Page')
-
-
-# @app.route('/loginTest', methods=['GET', 'POST'])
-# def loginTest():
-#     form = LoginForm()
-#     if request.method == 'POST':
-#         if form.validate_on_submit():
-#             user = User.query.filter_by(email=form.email.data).first()
-#             if user is None or not user.check_password(form.password.data):
-#                 flash('Invalid username or password')
-#                 return redirect(url_for('loginTest'))
-#             login_user(user, remember=form.remember_me.data)
-#             next_page = request.args.get('next')
-
-#             if not next_page or url_parse(next_page).netloc != '':
-#                 # page user enters after log in
-#                 next_page = url_for('home')
-#             return redirect(next_page)
-
-#     # check if user is logged in yet - false if logged in and true if isn't
-#     if current_user.is_authenticated:
-#         return redirect(url_for('home'))
-#     return render_template('loginTest.html', form=form)
 
 @app.route('/login_Final_2', methods=['GET', 'POST'])
 def login_Final_2():
@@ -87,50 +65,49 @@ def forgot_pass():
     
     return render_template('forgot_pass.html')
 
-@app.route('/pass_request/<token>', methods=['GET', 'POST'])
-def pass_request(token, new_password):
+# @app.route('/pass_request/<token>', methods=['GET', 'POST'])
+# def pass_request(token):
+#     if current_user.is_authenticated:
+#         return redirect(url_for('index'))
+
+#     user = User.verify_reset_password_token(token)
+
+#     if not user:
+#         return redirect(url_for('index'))
+
+#     if request.method == 'POST' : 
+#         password = request.form.get('password')
+#         user.set_password(password)
+#         db.session.commit()
+
+#         flash('Your password has been reset!', 'success')
+#         return redirect(url_for('login_Final_2'))
+
+#     return render_template('pass_request.html')
+
+@app.route('/reset_password2/<token>', methods=['GET', 'POST'])
+def reset_password2(token):
     if current_user.is_authenticated:
         return redirect(url_for('index'))
 
     user = User.verify_reset_password_token(token)
 
-    if request.method == 'POST' : 
-        password = request.form.get('new_password')
-        print(password)
-        user.set_password(password)
+    if not user:
+        return redirect(url_for('index'))
+        
+    form = ResetPasswordForm()
+
+    if form.validate_on_submit():
+        user.set_password(form.password.data)
         db.session.commit()
-
-        flash('Your password has been reset!', 'success')
+        flash('Your password has been reset.')
         return redirect(url_for('login_Final_2'))
-
-    return render_template('pass_request.html')
+    return render_template('reset_password2.html', form=form)
 
 @app.route('/logout')
 def logout():
     logout_user()
     return redirect(url_for('index'))
-
-
-# @app.route('/forgetPass')
-# def forgetPass():
-
-#     return render_template('forgetPass.html')
-
-# @app.route('/signupPage2', methods=['GET', 'POST'])
-# def signupPage2():
-#     if current_user.is_authenticated:
-#         return redirect(url_for('home'))
-#     form = RegistrationForm()
-
-#     #adding user to db 
-#     if form.validate_on_submit():
-#         user = User(email=form.email.data, firstname = form.firstname.data, lastname=form.lastname.data)
-#         user.set_password(form.password.data)
-#         db.session.add(user)
-#         db.session.commit()
-#         flash('Congratulations, you are now a registered user!')
-#         return redirect(url_for('loginTest'))
-#     return render_template('signupPage2.html', title='Register', form=form)
 
 @app.route('/sign_up_3', methods=['GET', 'POST'])
 def sign_up_3():
