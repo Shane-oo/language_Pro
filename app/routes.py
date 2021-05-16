@@ -109,7 +109,7 @@ def signUp():
             flash('Email address already exists!','warning')
             return redirect(url_for('login'))
         
-        new_user = User(firstname = firstname, lastname=lastname, email=email)
+        new_user = User(firstname = firstname, lastname=lastname, email=email, progress = 0)
         new_user.set_password(password)
 
         db.session.add(new_user)
