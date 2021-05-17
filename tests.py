@@ -56,7 +56,7 @@ class UserModelCase(unittest.TestCase):
 
         # res = self.client().post('/signUp', {"Angela", "Wei", "joe@test.com"})
         # request.method == 'POST' 
-        response = signUp().get('/redirect_me/', follow=True)
+        signUp().get('/redirect_me/', follow=True)
         self.assertEqual(res.status_code, 201)
         # self.assertEqual(signUp(), redirect(url_for('login')))
         # self.assertEqual(u1.sign_up_3(), render_template('sign_up_3.html', title='Register'))
@@ -101,6 +101,29 @@ class UserModelCase(unittest.TestCase):
 
     #     rv = login(client, flaskr.app.config['USERNAME'], flaskr.app.config['PASSWORD'] + 'x')
     #     assert b'Invalid password' in rv.data
+
+# BACK TO MODELS.PY
+@login.user_loader
+    def load_user(id):
+        return User.query.get(int(id))
+    
+    def get_reset_password_token(self, expires_in=600):
+        return jwt.encode(
+            {'reset_password': self.id, 'exp': time() + expires_in},
+            app.config['SECRET_KEY'], algorithm='HS256')
+
+    @staticmethod
+    def verify_reset_password_token(token):
+        try:
+            id = jwt.decode(token, app.config['SECRET_KEY'],
+                            algorithms=['HS256'])['reset_password']
+        except:
+            return
+        return User.query.get(id)
+
+    self.assertEqual()
+
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

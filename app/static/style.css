@@ -1,15 +1,17 @@
-/**{
+*{
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
-*/
+
 /* BASE PAGE CSS */
 .topnav {
     overflow: hidden;
     background-color: #aa151b;
     float: right;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
   
 .topnav a {

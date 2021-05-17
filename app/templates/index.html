@@ -16,8 +16,13 @@
         <h1>¡HOLA!<br> WELCOME TO LANGUAGE PRO </h1>    
         <img class = "indexImg" id="espanol" src = "/static/images/spanish.jpg" alt="Spanish picture"><br>
         <div class = getStarted>
+            {% if current_user.is_anonymous %}
             <button id = "now" onclick= "location.href='signUp'">GET STARTED</button>
-            <button id = "now" onclick= "location.href='Login'">I ALREADY HAVE AN ACCOUNT</button>
+            <button id = "now" onclick= "location.href='signUp'">GET STARTED</button>
+            <button id = "now" onclick= "location.href='login'">I ALREADY HAVE AN ACCOUNT</button>
+            
+        {% else %}
+        {% endif %}
         </div>
     </div>
     
