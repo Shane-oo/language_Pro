@@ -8,15 +8,12 @@
         {% block title %}Module 7{%endblock%}
     </title>
     <!--CSS FILES-->
-	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     <!--JS FILES-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
  
-
-    <title> Language Pro - Learn Questions</title>
-    <!--icon bug-->
-    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
+ 
     <!-- Feature shins navbar up top-->
 </head>
 <body class = "moduleLearn">
@@ -110,48 +107,44 @@
             <h3><span class = "heading">Finished!</span></h3>
             <p>Lets test what you've learnt so far in this module</p>
             <br>
-            <p>Click the Images to hear the Spanish word and Select the what you think it is in English below image</p>
+    
             
             <div class = "multiChoice">
+                <h4>What Does this Translate to?</h4>
+                <br>
                 <p>
-                <button class = "sayWordtestm1" onclick="hola.play()">
-                <img src="/static/images/holaPhoto.png" class = "left" width="500" height="400" >
+                <button class = "sayWord" onclick="whatMovie.play()">Hear in Spanish
                 </button>
                 </p>
                 <p>
                     
-                    <input type ="radio" name ="question1" value = "0"/>Good Bye
-                    <input type ="radio" name ="question1" value = "33.33"/>Hello
-                    <input type ="radio" name ="question1" value = "0"/>Good Morning
+                    <input type ="radio" name ="question1" value = "0"/>Who are you living with?
+                    <input type ="radio" name ="question1" value = "33.33"/>Which movie do you want to watch?
+                    <input type ="radio" name ="question1" value = "0"/>When are we leaving?
                     <br>
-                    
-                    
-                  
                 </p>
+                <h4>What Does this Translate to?</h4>
+                <br>
                 <p>
-                <button class = "sayWordtestm1" onclick="buenasNoches.play()">
-                <img src="/static/images/goodnight.png" width="500" height="400">
-                </button>
+                <button class = "sayWord" onclick="whereAreYou.play()">Hear in Spanish</button>
                 </p>
                 <p>
                     
-                    <input type ="radio" name ="question2" value = "33.33"/>Good Evening
-                    <input type ="radio" name ="question2" value = "0"/>Hello
-                    <input type ="radio" name ="question2" value = "0"/>Good Morning
+                    <input type ="radio" name ="question2" value = "33.33"/>Where are you?
+                    <input type ="radio" name ="question2" value = "0"/>What is that?
+                    <input type ="radio" name ="question2" value = "0"/>When are we leaving?
                     <br>
                    
                     
                    
                 </p>
                 <p>
-                <button class = "sayWordtestm1" onclick="buenosDias.play()">
-                <img src="/static/images/goodMorningPhoto.png" width="500" height="400"></button>
+                <button class = "sayWord" onclick="whatIsThat.play()">Hear in Spanish</button>
                 </p>
                 <p>
-                    
-                    <input type ="radio" name ="question3" value = "0"/>Hello
-                    <input type ="radio" name ="question3" value = "0"/>Goodnight
-                    <input type ="radio" name ="question3" value = "33.33"/>Good day
+                    <input type ="radio" name ="question3" value = "0"/>Which movie do you want to watch?
+                    <input type ="radio" name ="question3" value = "0"/>Who are you living with?
+                    <input type ="radio" name ="question3" value = "33.33"/>What is that?
                     <br>
                     
                 </p>
