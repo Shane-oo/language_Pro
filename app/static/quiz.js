@@ -200,9 +200,9 @@ let questions = [
     {
         Number: 1,
         Question: "How are you? in Spanish",
-        Answer: "cómo estás",
+        Answer: "¿Cómo estás?",
         Options: [
-            "cómo estás",
+            "¿Cómo estás?",
             "Hola",
             "Salud",
             "Gracias"
@@ -223,37 +223,37 @@ let questions = [
 
     {
         Number: 3,
-        Question: "hahahha?",
-        Answer: "I dont know",
+        Question: "Good morning in Spanish",
+        Answer: "Buenos días",
         Options: [
-            "I dont know",
-            "heheh",
-            "hohoh",
-            "kukukuk"
+            "Gracias",
+            "Adiós",
+            "Buenos días",
+            "Mucho gusto"
         ]
     },
 
     {
         Number: 4,
-    Question: "how many members?",
-    Answer: "four of us",
+    Question: "Nice to Meet you in Spanish",
+    Answer: "Mucho gusto",
     Options: [
-        "1",
-        "2",
-        "3",
-        "four of us"
+        "cómo estás",
+        "Mucho gusto",
+        "Hola",
+        "Lo siento"
         ]
     },
 
     {
         Number: 5,
-    Question: "How to say ola",
-    Answer: "ola",
+    Question: "My name is...in Spanish",
+    Answer: "Me llamo…",
     Options: [
-        "loa",
-        "ola",
-        "aol",
-        "oal"
+        "Buenas tardes",
+        "Salud",
+        "Buenas noches",
+        "Me llamo…"
         ]
     }
 
