@@ -1,7 +1,6 @@
 *{
   margin: 0px;
   padding: 0px;
-  
 }
 
 /* BASE PAGE CSS */
@@ -103,13 +102,10 @@
   color: black;
 }
 
-#quote{
-text-decoration: underline;
-}
-
 #sentence{
 padding: 10px 0px;
 }
+
 #contacts{
 padding-top: 20px;
 }
@@ -121,13 +117,10 @@ footer{
   text-align: center;
   align-items: center;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* MAIM HOME PAGE CSS - BEFORE LOGIN */
-#espanol{
-width: 790px;
-}
-
 .indexPage{
 font-family: 'Lato', sans-serif, 'Cuprum';
 }
@@ -138,6 +131,8 @@ font-family: 'Lato', sans-serif, 'Cuprum';
   margin-left: auto;
   margin-right: auto;
   height: auto;
+  max-width: 790px;
+  height: auto; 
 }
 
 .welcome{
@@ -194,7 +189,7 @@ border-bottom: 2px solid #e5e5e5;
 margin: 12px auto;
 }
 
-#now{
+.now{
   padding: 20px 40px;
   font-size: 16px;
   color: white;
@@ -204,7 +199,7 @@ margin: 12px auto;
   border-color: rgba(0,0,0,.2);
 }
 
-#now:hover {
+.now:hover {
   background-color: #ce3b40;
   color: white;
 }
@@ -231,8 +226,8 @@ display: inline-block;
 text-transform: uppercase;
 text-align: center;
 font-size: 13px;
--webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+-webkit-box-shadow: 0 10px 30px 0 rgba(233, 100, 95, 0.4);
+box-shadow: 0 10px 30px 0 rgba(233, 100, 95, 0.4);
 -webkit-border-radius: 5px 5px 5px 5px;
 border-radius: 5px 5px 5px 5px;
 margin: 5px 20px 40px 20px;
@@ -959,18 +954,18 @@ margin-right: auto;
 /*--------------------------*/
 /*Quiz style*/
 .quiz_page{
-background-color: #aa151b;
-font-family: cursive;
+background-color: white;
+font-family: 'Lato', sans-serif, 'Cuprum';
 }
 
-.start_button, .Information_box, .quiz_section, .quiz_result, .outerlayer-cert{
+.start_button, .Information_box, .quiz_section, .quiz_result, .my_cert{
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%) 
+transform: translate(-50%, -50%);
 }
 
-.Information_box.activeinformation, .quiz_section.activequiz, .quiz_result.activeresult, .outerlayer-cert.activecert{
+.Information_box.activeinformation, .quiz_section.activequiz, .quiz_result.activeresult, .my_cert.activecert{
 z-index: 5;
 opacity: 1;
 pointer-events: auto;
@@ -1247,6 +1242,12 @@ border-radius: 5px;
 cursor: pointer;
 }
 
+.my_cert{
+opacity: 0;
+pointer-events: none;
+transform: translate(-50%, -50%) scale(0.9);
+}
+
 .outerlayer-cert{
 margin: auto;
 width: max-content;
@@ -1255,9 +1256,6 @@ padding: 30px;
 border: 10px solid goldenrod;
 text-align: center;
 background: gold;
-opacity: 0;
-pointer-events: none;
-transform: translate(-50%, -50%) scale(0.9);
 }
 
 .innerlayer-cert{
@@ -1304,4 +1302,25 @@ font-size: 30px;
 .word-dated{
 font-style: italic;
 font-size: 25px;
+}
+
+@media print{
+  .printit {
+    visibility: hidden;
+  }
+}
+
+.print_button{
+  cursor: pointer;
+  text-align: right;
+  padding: 10px;
+}
+
+.print_button .printit{
+  padding:5px;
+  border-color: gray;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
 }
