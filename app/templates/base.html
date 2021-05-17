@@ -27,10 +27,10 @@
             <a href="login">Login</a>
             <a href="signUp">Sign Up</a>
             <a href="index#about">About</a>
-            <a href="module_page">Module</a>
+            <a href="module_page">Modules</a>
         </div>
         {% else %}
-        <h4 id=hiUser>Hola {{ current_user.firstname }}!</h4>
+        <h4 id=hiUser>¡HOLA! {{ current_user.firstname }},</h4>
         <div class="myTopnav">
             <a href="index#about">About</a>
             <a href="module_page">Modules</a>
@@ -51,16 +51,12 @@
         {% endif %}
     {% endwith %}
     </div>
-   
-    {% block content %}{% endblock %}
 
     <footer>
         <h2 id= "quote">SPANISH QUOTE OF THE DAY</h2>
         <h3 id="sentence"></h3>
         <button class = "fbutton" onclick="sentenceNew()">GET A NEW QUOTE</button>
-
         <h3 id="contacts">Contact us at <a>Language_pro@gmail.com</a></h3>
-        
     </footer>
 </body>
 
