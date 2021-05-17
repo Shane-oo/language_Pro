@@ -34,7 +34,11 @@
             <a href="module_page">Modules</a>
         </div>
         {% else %}
+<<<<<<< Updated upstream
         <h4 id=hiUser>Hi, {{ current_user.firstname }}!</h4>
+=======
+        <h4 id=hiUser>¡HOLA! {{ current_user.firstname }},</h4>
+>>>>>>> Stashed changes
         <div class="myTopnav">
             <a href="index#about">About</a>
             <a href="module_page">Modules</a>
@@ -52,19 +56,22 @@
                 </div>
             {% endfor %}
         {% endif %}
-    {% endwith %}
+        {% endwith %}
     </div>
-   
-    {% block content %}{% endblock %}
 
     <footer>
+<<<<<<< Updated upstream
         <h2 id= "quote">SPANISH QUOTE OF THE DAY</h2>
         <h3 id="sentence"></h3>
         <button class = "fbutton" onclick="sentenceNew()">GET A NEW QUOTE</button>
 
         <h3 id="contacts">Contact us at <a>Language_pro@gmail.com</a></h3>
         
+=======
+        <h1>SPANISH QUOTE OF THE DAY</h1><br>
+        <p id="sentence"></p><br>
+        <button class= "fButton" onclick="sentenceNew()">GET A NEW QUOTE</button>
+>>>>>>> Stashed changes
     </footer>
 </body>
-
 </html>

@@ -1,4 +1,29 @@
 //Function for accordions on module_page
+// TO MAKE BOTH WINDOW.ONLOAD WORKS - by shin
+// var prev_handler = window.onload;
+// window.onload = function () {
+//   if (prev_handler) {
+//       prev_handler();
+//   }
+//   // second code here...
+//   var acc = document.getElementsByClassName("accordion");
+//   var i;
+//   console.log(acc)
+//   for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function() {
+//       this.classList.toggle("active");
+//       var panel = this.nextElementSibling;
+//       if (panel.style.maxHeight) {
+//         panel.style.maxHeight = null;
+//       } else {
+//         panel.style.maxHeight = panel.scrollHeight + "px";
+//       }
+//     });
+//   }
+//     updateProgressBars();
+// }
+    
+// THIS IS YOUR ORIGINAL CODE
 window.onload = function() {
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -18,8 +43,6 @@ for (i = 0; i < acc.length; i++) {
     updateProgressBars();
     sentenceNew();
 }
-
-
 
 function updateProgressBars(){
   var progressVal = document.getElementById("progress");
