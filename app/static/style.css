@@ -960,7 +960,7 @@ margin-right: auto;
 /*Quiz style*/
 .quiz_page{
 background-color: #aa151b;
-font-family: cursive;
+font-family: 'Lato', sans-serif, 'Cuprum';
 }
 
 .start_button, .Information_box, .quiz_section, .quiz_result, .my_cert{
@@ -1307,4 +1307,25 @@ font-size: 30px;
 .word-dated{
 font-style: italic;
 font-size: 25px;
+}
+
+@media print{
+  .printit {
+    visibility: hidden;
+  }
+}
+
+.print_button{
+  cursor: pointer;
+  text-align: right;
+  padding: 10px;
+}
+
+.print_button .printit{
+  padding:5px;
+  border-color: gray;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
 }

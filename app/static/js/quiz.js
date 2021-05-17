@@ -47,6 +47,7 @@ print_button.onclick = ()=>{
 }
 
 exit_quiz.onclick = ()=>{
+    
     certificate.classList.add("activecert");
     quiz_result.classList.remove("activeresult");
     show_percentage();
@@ -192,7 +193,8 @@ function show_percentage(){
     var pre_precentage = certificate.querySelector(".outerlayer-cert");
     var pre_precentage2 = pre_precentage.querySelector(".innerlayer-cert");
     var percentage = pre_precentage2.querySelector(".mark-cert");
-    let percentagetag = '<span>with result of <a>'+user_results/questions.length * 100 +'%</a></span>' 
+    let percentagetag = '<span>with result of <a>'+Math.round(user_results/questions.length * 100) +'%</a></span>' 
+
     percentage.innerHTML = percentagetag;
 }
 
