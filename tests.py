@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 # from _typeshed import NoneType
->>>>>>> Stashed changes
 import unittest
     
 from app import app, db
@@ -48,9 +45,6 @@ class UserModelCase(unittest.TestCase):
     #     self.assertEqual(u1.testScore(), type(None))
     #     self.assertEqual(u2.testScore(), type(None))
 
-<<<<<<< Updated upstream
-    def test_signUp(self):
-=======
     # def HiUser(self):
     #     u = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
     #     db.session.add(u)
@@ -59,7 +53,6 @@ class UserModelCase(unittest.TestCase):
     #     print("debug- first name is correct")
 
     def test_signUp3(self):
->>>>>>> Stashed changes
         u1 = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
         u1.set_password('joewinpassword')
         db.session.add(u1)
@@ -69,81 +62,6 @@ class UserModelCase(unittest.TestCase):
         u2.set_password('joewinpassword')
         db.session.add(u2)
 
-<<<<<<< Updated upstream
-        # res = self.client().post('/signUp', {"Angela", "Wei", "joe@test.com"})
-        # request.method == 'POST' 
-        signUp().get('/redirect_me/', follow=True)
-        self.assertEqual(res.status_code, 201)
-        # self.assertEqual(signUp(), redirect(url_for('login')))
-        # self.assertEqual(u1.sign_up_3(), render_template('sign_up_3.html', title='Register'))
-        # self.assertEqual(u2.sign_up_3(), redirect(url_for('login_Final_2')))
-
-    # def test_loginFinal2(self):
-    #     u1 = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
-    #     u1.set_password('joewinpassword')
-    #     db.session.add(u1)
-    #     db.session.commit()
-
-    #     self.assertEqual(u1.login)
-
-    # def login(client, username, password):
-    #     return client.post('/login', data=dict(
-    #         username=username,
-    #         password=password
-    #     ), follow_redirects=True)
-
-    # def logout(client):
-    #     return client.get('/logout', follow_redirects=True)
-
-    # def test_login_logout(client): #Make sure login and logout works.
-
-    #     def login(client, username, password):
-    #         return client.post('/login', data=dict(
-    #             username=username,
-    #             password=password
-    #         ), follow_redirects=True)
-
-    #     def logout(client):
-    #         return client.get('/logout', follow_redirects=True)
-
-    #     rv = login(client, flaskr.app.config['USERNAME'], flaskr.app.config['PASSWORD'])
-    #     assert b'You were logged in' in rv.data
-
-    #     rv = logout(client)
-    #     assert b'You were logged out' in rv.data
-
-    #     rv = login(client, flaskr.app.config['USERNAME'] + 'x', flaskr.app.config['PASSWORD'])
-    #     assert b'Invalid username' in rv.data
-
-    #     rv = login(client, flaskr.app.config['USERNAME'], flaskr.app.config['PASSWORD'] + 'x')
-    #     assert b'Invalid password' in rv.data
-
-# BACK TO MODELS.PY
-@login.user_loader
-    def load_user(id):
-        return User.query.get(int(id))
-    
-    def get_reset_password_token(self, expires_in=600):
-        return jwt.encode(
-            {'reset_password': self.id, 'exp': time() + expires_in},
-            app.config['SECRET_KEY'], algorithm='HS256')
-
-    @staticmethod
-    def verify_reset_password_token(token):
-        try:
-            id = jwt.decode(token, app.config['SECRET_KEY'],
-                            algorithms=['HS256'])['reset_password']
-        except:
-            return
-        return User.query.get(id)
-
-    self.assertEqual()
-
-
-
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
-=======
         # request.method == 'POST' 
         self.assertEqual(sign_up_3(), redirect(url_for('login_Final_2')))
         # self.assertEqual(u1.sign_up_3(), render_template('sign_up_3.html', title='Register'))
@@ -162,4 +80,3 @@ if __name__ == "__main__":
 if __name__ == "__main__":
     unittest.main(verbosity=2)
     app.run()
->>>>>>> Stashed changes
