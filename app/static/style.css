@@ -419,11 +419,7 @@ transform: scale(0.95);
   width:40%;
 }
 
-/* SIGN UP CSS I COMMENTED THIS OUT CAUSE IT AFFECTED MODULE_PAGE
-* {
-  box-sizing: border-box;
-}
-*/ 
+/* SIGN UP CSS */ 
 .formContent {
   border-radius: 5px;
   background: #fff;
