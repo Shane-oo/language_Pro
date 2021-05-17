@@ -63,9 +63,6 @@ def forgot_pass():
 
 @app.route('/pass_request/<token>', methods=['GET', 'POST'])
 def pass_request(token):
-
-   
-
     if current_user.is_authenticated:
         return redirect(url_for('index'))
 

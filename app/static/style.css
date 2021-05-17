@@ -1,6 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  
 }
 
 /* BASE PAGE CSS */
@@ -102,6 +103,10 @@
   color: black;
 }
 
+#quote{
+text-decoration: underline;
+}
+
 #sentence{
 padding: 10px 0px;
 }
@@ -116,7 +121,6 @@ footer{
   text-align: center;
   align-items: center;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 /* MAIM HOME PAGE CSS - BEFORE LOGIN */
@@ -448,7 +452,6 @@ transform: scale(0.95);
   resize: vertical;
   background-color: #f6f6f6;
   color: #0d0d0d;
-  box-sizing: border-box;
 }
 
 #txt1:focus{
