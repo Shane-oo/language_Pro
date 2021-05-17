@@ -16,7 +16,7 @@ mail = Mail(app)
 
 #to ensure users log in when they enter a protected page 
 login = LoginManager(app)
-login.login_view = 'loginTest' # <- 'login' is the page name 
+login.login_view = 'login' # <- 'login' is the page name 
 
 
 from app import routes, models
