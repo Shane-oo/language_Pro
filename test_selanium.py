@@ -1,7 +1,8 @@
 import unittest, os, time, string, random
 from app import app, db
-form selenium import webdriver
+from selenium import webdriver
 
+#Unfourently ran out of time and was not able to comple selanium tests apologies
 class SystemTest(unittest, TestCase):
     driver = None
     #TEST IF WEBSITE WORKING FINE FOR CHROME'S USER
