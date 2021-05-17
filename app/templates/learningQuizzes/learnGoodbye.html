@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<div class = "QuizContainer">
+    <div class = "container">
+<head>
+    <title>
+        {% block title %}Module 4{%endblock%}
+    </title>
+    <!--CSS FILES-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
+    <!--JS FILES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
+ 
+
+    <title> Language Pro - Learn Goodbye</title>
+    <!--icon bug-->
+    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
+    <!-- Feature shins navbar up top-->
+</head>
+<body class = "moduleLearn">
+    <div class = "wholeBar">
+    <div class = "progress_bar2">
+        <div id = "module2Bar">0%</div>
+            <br>
+    </div>
+    </div>
+    <div class = "wordLearn">
+        <div class = "content" id = "content-1" name = "content" style = "display: block;">
+       <h3><span class = "heading">Saying Goodbye</span></h3>
+        <br>
+        <br>
+        <p>
+            You’ve already learned how to say hello in Spanish, so now it’s time to start saying goodbye.
+        </p>
+
+        <div class ="imageForIntroduceMod">
+            <img  src ="/static/images/goodbye.png" alt="Couple waving goodbye"width= 600 height =400/>
+        </div>
+        </div>
+
+        <div class = "content"id = "content-2" name = "content" >
+            <h3><span class = "heading">Adiós</span></h3>
+            <br>
+            <p> There are two very common Spanish goodbye words that you can use with close friends and family members.
+                <br>
+                Adiós. / “Bye.”
+                <br>
+                You can say this to friends, family, or close coworkers at any time of day. It’s used both in Spain and in Latin America. 
+                <br>
+                Chao. / “Bye bye.”
+                <br>
+                As you probably know, this one comes from the Italian word ciao. It’s used in a lot of places in Europe and in Latin America.
+            </p>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="adios.play()">Adiós</button>
+                <button class = "sayWord" onclick="chao.play()">Chao</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-3" name = "content" >
+            <h3><span class = "heading">Hasta luego</span></h3>
+            <br>
+            <p>Hasta luego is an informal phrase that literally means “until then.” It’s used like “see you later” is used in English, but it isn’t literal.
+                That is, you can use it even if you don’t plan to see the person in the near future.
+                This phrase is very common, so it’s one of the most common goodbyes you’re likely to hear.
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="seeYouLater.play()">Hasta luego</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-4" name = "content" >
+            <h3><span class = "heading">Cuídate</span></h3>
+            <br>
+            <p>Yes, saying “goodbye” is polite, but sometimes you may want to say 
+                something warmer before parting ways with a friend or someone you appreciate.
+                “Take care”, “have a good day”, and “have fun” all have equivalents in Spanish.
+                <br>
+                Cuídate is Spanish for “take care”.
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="takeCare.play()">Cuídate</button>
+            </p>
+            
+        </div>
+        
+        <button onclick="unmove()"type = "button" class = "back" id = "button_slide slide_right">Back</button>
+        
+        <button onclick = "move()" type = "button" class = "next">Next</button>
+
+    </div>
+        
+         <div class = "end">
+            <h3><span class = "heading">Finished!</span></h3>
+            <p>Lets test what you've learnt so far in this module</p>
+            <br>
+            
+            <div class = "multiChoice">
+                <p>
+                <h4>You're friend is leaving. What do you say?</h4>
+    
+                <img src="/static/images/waveGoodbye.png" class = "left" width="700" height="400" >
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question1" value = "33.33"/><button class = "testWord" onclick="takeCare.play()">Hear in Spanish 1</button>
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="niceToMeetYou.play()">Hear in Spanish 2</button>
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="goodThanksYou.play()">Hear in Spanish 3</button>
+                    <br>
+                    
+                    
+                  
+                </p>
+                <p>
+                <h4>What is the most common form of goodbye you will hear on your travels?</h4>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question2" value = "0"/>Hola
+                    <input type ="radio" name ="question2" value = "0"/>Chao
+                    <input type ="radio" name ="question2" value = "33.33"/>Hasta luego
+                    <br>
+                   
+                    
+                   
+                </p>
+                <p>
+                    <h4>What does this word translate to?</h4>
+                   
+                    <button class = "sayWord" onclick="adios.play()">Adiós</button>
+                    <br>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question3" value = "33.33"/>Goodbye
+                    <input type ="radio" name ="question3" value = "0"/>Goodnight
+                    <input type ="radio" name ="question3" value = "0"/>Good day
+                    <br>
+                    
+                </p>
+                <form id = "form4" action = " ">
+                    <input type = "submit" class = "showResults"value="Show Results">
+                </form>
+                   <p>Your score is: <span id="grade">__</span></p>
+                   <p id="grade2"></p>
+       
+            </div>
+            <!-- /updateProgress/{{current_user.id}}/MODULE_NUMBER-->
+            <form action = '/updateProgress/{{current_user.id}}/4' method = "POST" >
+            <button id="sumbitButt" type = 'submit'  class = "next"  progress = "{{current_user.progress}}" >
+                Finish</button>
+            </form>
+        </div>
+   
+
+</body>
+</div>
+</div>
+</html>

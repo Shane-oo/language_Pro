@@ -9,17 +9,15 @@
     font-family:'Lato';
     
 }
-.main{
-    
-}
-.container {
+
+.container1 {
     max-width:1500px;
     margin:0 auto;
     padding:2em 0 2em 0;
   }
 .accordion {
     position: relative;
-    background-color:#38cc70; 
+    background-color:#00BFFF;
     font-weight: 700;
     padding:2em;
     display:block;
@@ -39,7 +37,7 @@
   }
 
   .active, .accordion:hover {
-    background-color:#2fba64;
+    background-color:#1E90FF;
   }
   .panel {
     padding: 0 18px;
@@ -69,11 +67,24 @@
     padding: 1em;
     border-width: medium;
     width:95%;
-    background-color:#38cc70;
+    background-color:#00BFFF;
     border-radius: 20px;    
-    display:flex;
-    justify-content:space-between;
+    
+
+  display:flex;
+  flex-direction:row;
+
+
   }
+  .module_title > div
+{
+  flex:1 1 auto;
+
+  text-align:center;
+  
+  margin:5px;  /* and that, will result in a 10px gap */
+}
+  
 
   .test{
     background-color: 	rgba(199,3,24,255);
@@ -90,42 +101,66 @@
     border-radius: 50px;
   }
   .active, .test:hover {
-    background-color:#2fba64;
+    background-color: #1E90FF;
+
   }
   
   
 .module_talk{
-    border: 1px solid #ddd;
+    
     font-size: 32px;
     text-align: center;
   }
 .module_talk h3{
-    text-align: left;
+    text-align: center;
     font-style: oblique;
 }
 
 .start_button{
     /* button attributes */
-    
+ 
    display: block;
-   width:200px;
-   height: 100px;
-   line-height: 40px;
+   width:150px;
+   height: 75px;
+   line-height: 75px;
    font-size:1em;
    font-family: 'Lato';
    text-decoration: none;
    color:#fff;
-   border: 1px solid #ddd;
+  
    border-radius: 20px;
-   
+   background-color: #1E90FF;
    text-align: center;
    position: relative;
-   transition: all .35s;
+   transition: all .25s;
+   
+   cursor: pointer;
   }
 
+.showResults{
+  color: black;
+  border: 2px solid rgb(9, 216, 2);
+  border-radius: 10px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+  -webkit-transition: ease-out 1.0s;
+  -moz-transition: ease-out 1.0s;
+  transition: ease-out 1.5s;
+  
+}
+.showResults:hover {
+  box-shadow: inset 0 0 0 100px rgb(9, 216, 2);
+  
+}
   .start_button_text span{
     position: relative;
     z-index:2;
+    
   }
   .start_button_text:after{
     position: absolute;
@@ -134,8 +169,9 @@
     left: 0;
     width:0;
     height: 100%;
-    background-color:black;
-    transition: all .35s;
+    background-color:rgb(9, 216, 2);
+    border-radius: 20px;
+    transition: all .70s;
   }
   .start_button_text:hover{
     color: #fff;
@@ -144,19 +180,78 @@
       width:100%;
   }
 .progress_bar{
-        width: 100%;
-        background-color: rgba(182,0,34,255);
+  background-color: grey;
+  padding:3px;
+  text-align: center;
+  border-radius: 13px;
+  position: relative;
+  margin: auto;
 }
-#module1Bar{
-    width: 0%;
-    height:30px;
-    background-color: #04AA6D;
-    text-align: center; /* To center it horizontally (if you want) */
-    line-height: 30px; /* To center it vertically */
-    color: black;
+/*All module bars that will be updated with progress*/
+/*--------------------------------------------------*/
+#moduleBar1{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar2{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar3{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar4{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar5{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
+}
+#moduleBar6{
+  width: 0%;
+  height:30px;
+  background-color: rgb(9, 216, 2);
+  border-radius: 10px;
+  height:20px;
+  text-align: center; /* To center it horizontally (if you want) */
+  color: white;
+  font-family: 'Lato';
 }
 
-.images{
+/*--------------------------------------------------*/
+.imagesMod{
 
     max-width: 100%;
     
@@ -166,14 +261,14 @@
     
     
 }
-img:hover {
+.imagesMod:hover {
     box-shadow: 5px 4px 10px grey;
   }
  
   /* Three image containers*/
 .imgCol {
     flex: 33.33%;
-  padding: 5px;
+    padding: 5px;
   }
   
   /* Clear floats after image containers */
@@ -187,5 +282,162 @@ img:hover {
     Padding-left:250px;
   }
   .main{
-    border: 1px solid black;
+    
+    padding:5em;
+    
   }
+
+  .wordLearn{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    
+    font-family: 'Lato';
+ 
+  }
+  .wordLearn  .heading{
+    border: 1px;
+    border-style:solid; 
+    border-color:black; 
+    border-width: medium;
+    padding: 30px;
+    margin: 00px;   
+    border-radius: 10px;
+  }
+
+  .wordLearn  .sayWord{
+    padding: 50px;
+    margin: 00px;   
+    font-size: 1em;
+    font-family: 'Lato';
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .content{
+    display:none;
+  }
+  .end .sayWord{
+    padding: 50px;
+    margin: 00px;   
+    font-size: 1em;
+    font-family: 'Lato';
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .testWord{
+    padding: 10px;
+    margin: 00px;   
+    font-family: 'Lato';
+    background-color:#00BFFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  /* next and previous buttons*/
+  /*--------------------------------------------------*/
+  .next {
+    color: black;
+    border: 2px solid rgb(9, 216, 2);
+    border-radius: 10px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+    -webkit-transition: ease-out 1.0s;
+    -moz-transition: ease-out 1.0s;
+    transition: ease-out 1.5s;
+    float: right;
+  }
+  .next:hover {
+    box-shadow: inset 400px 0 0 0 rgb(9, 216, 2);
+    
+  }
+  .back{
+    display:none;
+    color: black;
+    border: 2px solid rgb(9, 216, 2);
+    border-radius: 10px;
+    padding: 18px 36px;
+    
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(9, 216, 2);
+    -webkit-transition: ease-out 1.0s;
+    -moz-transition: ease-out 1.0s;
+    transition: ease-out 1.5s;
+    float: left;
+  }
+  .back:hover {
+    box-shadow: inset -400px 0 0 0 rgb(9, 216, 2);
+  }
+  .end{
+    display:none;
+  }
+  /*--------------------------------------------------*/
+  #module2Bar{
+    width: 0%;
+    height:30px;
+    background-color: rgb(9, 216, 2);
+    border-radius: 10px;
+    height:20px;
+    text-align: center; /* To center it horizontally (if you want) */
+    color: black;
+    font-family: 'Lato';
+}
+.progress_bar2{
+  background-color: black;
+  padding:3px;
+  text-align: center;
+  border-radius: 13px;
+  position: relative;
+}
+.wholeBar{
+  margin: auto;
+  width: 50%;
+}
+
+.imageForHolaMod{
+  max-width: 100%;
+  height:auto;
+}
+.imageForIntroduceMod{
+  max-width: 100%;
+  height:auto;
+}
+.end{
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  
+  font-family: 'Lato';
+
+}
+.end .heading{
+  border: 1px;
+  border-style:solid; 
+  border-color:black; 
+  border-width: medium;
+  padding: 30px;
+  margin: 00px;   
+  border-radius: 10px;
+}
+.sayWordtestm1{
+  width:"200";
+  height:"200";
+
+}
+.multiChoice{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img.left {float: left;}

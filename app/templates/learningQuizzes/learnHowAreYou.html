@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<div class = "QuizContainer">
+    <div class = "container">
+<head>
+    <title>
+        {% block title %}Module 3{%endblock%}
+    </title>
+    <!--CSS FILES-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
+    <!--JS FILES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
+ 
+
+    <title> Language Pro - Learn How Are You</title>
+    <!--icon bug-->
+    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
+    <!-- Feature shins navbar up top-->
+</head>
+<body class = "moduleLearn">
+    <div class = "wholeBar">
+    <div class = "progress_bar2">
+        <div id = "module2Bar">0%</div>
+            <br>
+    </div>
+    </div>
+    <div class = "wordLearn">
+        <div class = "content" id = "content-1" name = "content" style = "display: block;">
+       <h3><span class = "heading">How are you?</span></h3>
+        <br>
+        <br>
+        <p>
+            “Hey, what’s up?”
+            <br>
+            “How’s it going?”
+            <br>
+            “How have you been?”
+            <br>
+            In our everyday encounters with other people, we use these phrases over and over.
+            <br>
+            They aren’t just simple questions—in fact, sometimes they aren’t really questions at all—but variations on a very commonplace greeting.
+            <br>
+            This type of greeting isn’t so different in Spanish.
+        </p>
+
+        <div class ="imageForIntroduceMod">
+            <img  src ="/static/images/conversation.png" width="800" 
+            height="500"alt="Friends Talking"/>
+        </div>
+        </div>
+
+        <div class = "content"id = "content-2" name = "content" >
+            <h3><span class = "heading">¿Cómo estás?</span></h3>
+            <br>
+            <p> Say “¿Cómo estás?” (koh-moh ehs-tahs) in most situations.
+                <br>
+                 "¿Cómo estás?" is the most basic way to say "How are you?".
+                This phrase is appropriate in almost any context when talking to almost any person, whether you previously knew them or not.
+            </p>
+            <br>
+            <p>
+                <button class = "sayWord" onclick= "howAreYou.play()">¿Cómo estás?</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-3" name = "content" >
+            <h3><span class = "heading">Responding to ¿Cómo estás?</span></h3>
+            <br>
+            
+            <p>
+                <br>
+                Just as you would respond to the question with "fine" or "good" in English, in Spanish you would most often answer "bien" (bee-ehn).
+                <br>
+                After you say "bien" (bee-ehn), always follow up with "gracias," (grah-see-ahs), which means thank you.
+                <br>
+                If you weren't the first person to ask, it's polite to ask "¿Y tú?" after responding 
+                to the other person's question. This literally means "And you?".
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="goodThanksYou.play()">Bien, gracias. ¿Y tú?</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-4" name = "content" >
+            <h3><span class = "heading">Más o menos</span></h3>
+            <br>
+            <p>Switch to "más o menos" (mahs oh meh-nohs) instead of bien, if you don't feel quite as enthusiastic.
+            </p>
+            <p>
+                <br>
+                <button class = "sayWord" onclick="soSo.play()">Más o menos</button>
+            </p>
+        
+
+        </div>
+      
+        
+        
+    
+        <button onclick="unmove()"type = "button" class = "back" id = "button_slide slide_right">Back</button>
+        
+        <button onclick = "move()" type = "button" class = "next">Next</button>
+
+    </div>
+        
+         <div class = "end">
+            <h3><span class = "heading">Finished!</span></h3>
+            <p>Lets test what you've learnt so far in this module</p>
+            <br>
+            <div class = "multiChoice">
+                <p>
+                    <h4>What Should you respond with?</h4>
+                
+                    <button class = "sayWord" onclick="helloHowAreYou1.play()">Click Me! <br>Question 1</button>
+                
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="niceToMeetYou.play()">Hear in Spanish 1</button>
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="thisIsIffah.play()">Hear in Spanish 2</button>
+                    <input type ="radio" name ="question1" value = "33.33"/><button class = "testWord" onclick="goodThanksYou.play()">Hear in Spanish 3</button>
+                    <br>
+                    
+                    
+                  
+                </p>
+                <p>
+                
+                    What would you say if you weren't good?
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question2" value = "0"/>Hola
+                    <input type ="radio" name ="question2" value = "33.33"/>Más o menos
+                    <input type ="radio" name ="question2" value = "0"/>Bien
+                    <br>
+                   
+                    
+                   
+                </p>
+                <p>
+                    <button class = "sayWord" onclick="hola.play()">Click Me! <br>Question 3</button>
+                </p>
+                <br>
+                <p>
+                    <input type ="radio" name ="question3" value = "33.33"/><button class = "testWord" onclick="helloHowAreYou1.play()">Hear in Spanish 1</button>
+                    <input type ="radio" name ="question3" value = "0"/><button class = "testWord" onclick="thisIsIffah.play()">Hear in Spanish 2</button>
+                    <input type ="radio" name ="question3" value = "0"/><button class = "testWord" onclick="buenasNoches.play()">Hear in Spanish 2</button>
+                    <br>
+                    
+                </p>
+                <form id = "form4" action = " ">
+                    <input type = "submit" class = "showResults"value="Show Results">
+                </form>
+                   <p>Your score is: <span id="grade">__</span></p>
+                   <p id="grade2"></p>
+       
+            </div>
+            <!-- /updateProgress/{{current_user.id}}/MODULE_NUMBER-->
+            <form action = '/updateProgress/{{current_user.id}}/3' method = "POST" >
+            <button id="sumbitButt" type = 'submit'  class = "next"  progress = "{{current_user.progress}}" >
+                Finish</button>
+            </form>
+        </div>
+   
+
+</body>
+</div>
+</div>
+</html>

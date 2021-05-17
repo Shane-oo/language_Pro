@@ -1,0 +1,117 @@
+
+<!-- <title>Test yourself</title> -->
+<!-- <link rel="stylesheet" href='quiz_style.css'>
+<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+<script src = "static/quiz.js"></script>
+<script src = "static/quiz_questions.js"></script> -->
+<head>
+     <!--Quiz-->
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+  
+</head>
+
+<body onload = "GetDate();" class = "quiz_page">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}
+
+    <div class = "start_button"><button>Press to Start</button></div>
+
+    <div class = "Information_box">
+        <div class = "Information_title">
+            <span>Things to take note before you begin...</span>
+        </div>
+        <div class = "Information_list">
+            <div class = 'information'>1. You will have <span>15 seconds</span> each question.</div>
+            <div class = 'information'>2. You cannot reselect once you've selected your answer.</div>
+            <div class = 'information'>3. Once your <span>15 seconds</span> is up, you cannot select any options.</div>
+            <div class = 'information'>4. You cannot exit once you begin.</div>
+            <div class = 'information'>5. Marks will be shown to you once you completed the quiz.</div>
+        </div>
+        <div class = "buttons">
+            <button class = "exit_button">Exit</button>
+            <button class = "continue_button">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class = "quiz_section">
+        <header>
+            <div class = "quiz_title">Good Luck on your test!</div>
+            <div class = "quiz_time">
+                <div class = "countdown">Countdown timer:</div>
+                <div class = "second">15</div>
+            </div>
+        </header>
+        <section>
+            <div class = "quiz_question">
+                <!-- <span>How to speak Spanish?</span> -->
+            </div>
+            <div class = "quiz_options">
+                <!-- <div class = "option">
+                    <span>Roll your tongue</span>
+                    <div class = "icon cross">&#10008;</div>
+                </div>
+                <div class = "option">
+                    <span>Open your mouth</span>
+                    <div class = "icon tick">&#10004;</div>
+                </div>
+                <div class = "option">
+                    <span>Just smile and do nothing</span>
+                    <div class = "icon cross">&#10008;</div>
+                </div>
+                <div class = "option">
+                    <span>Watch Money Heist</span>
+                    <div class = "icon cross">&#10008;</div>
+                </div> -->
+            </div>
+        </section>
+        <div class = "quiz_footer">
+            <div class = "quiz_remaining">
+                <!-- <span><p>2</p>of<p>5</p>Questions remaining</span> -->
+            </div>
+            <button class = "next_button">Next</button>
+        </div>
+    </div>
+
+    <div class = "quiz_result">
+        <div class = "completed">You have completed the quiz!</div>
+        <div class = "score">
+            <span>You got <a>5</a> out of <a>5</a> correct!</span>
+        </div>
+        <div class = "buttons">
+            <button class = "continue_button">Restart</button>
+            <button class = "exit_button">Get your certificate here!</button>
+        </div>
+    </div>
+
+    <div class = "my_cert">
+        <div class = 'outerlayer-cert'>
+            <div class ='innerlayer-cert'>
+                <div class = 'firstline-cert'>Certificate of Completion</div>
+                <div class = 'wording-cert'>This is awarded to</div>
+                <div class = 'name-cert'>{{ current_user.firstname }} {{ current_user.lastname }}</div>
+                <div class = 'wording-cert'>for completing LanguagePro Spanish course</div>
+                <div class = 'mark-cert'>
+                    <span>with result of <a>100%</a></span> 
+                </div>
+                <div class = 'word-dated'>dated</div>
+                <div class = "date-cert" id = "demo"></div>
+            </div>
+        </div>
+        <div class="print_button">
+            <button class = "printit">Print</button> 
+        </div>   
+    </div> 
+
+    <script src= "{{ url_for('static',filename='js/quiz.js') }}"></script>
+    {% endblock %}  
+</body>
+
+</html>
