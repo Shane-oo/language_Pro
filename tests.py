@@ -1,11 +1,9 @@
-# from _typeshed import NoneType
 import unittest
     
 from app import app, db
 from app.models import User
 from app import routes
 # from flaskr import flaskr
-
 
 class UserModelCase(unittest.TestCase):
 
@@ -76,6 +74,14 @@ class UserModelCase(unittest.TestCase):
         self.assertEqual(u1.login_Final_2)
 
     
+    def get_reset_password_token(self, expires_in=600):
+        return jwt.encode(
+            {'reset_password': self.id, 'exp': time() + expires_in},
+            app.config['SECRET_KEY'], algorithm='HS256')
+
+
+    def test_get_reset_password_token(self):
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

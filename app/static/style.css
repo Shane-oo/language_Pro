@@ -1,9 +1,13 @@
-*{
+/**{
   margin: 0px;
   padding: 0px;
+<<<<<<< HEAD
   
+=======
+  box-sizing: border-box;
+>>>>>>> parent of 260a5692 (bunch of files)
 }
-
+*/
 /* BASE PAGE CSS */
 .topnav {
   overflow: hidden;
