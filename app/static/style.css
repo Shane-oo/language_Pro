@@ -120,6 +120,8 @@ footer{
 /* MAIM HOME PAGE CSS - BEFORE LOGIN */
 .indexPage{
 font-family: 'Lato', sans-serif, 'Cuprum';
+margin: 0 px;
+padding: 0px;
 }
 
 .indexImg{
