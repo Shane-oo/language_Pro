@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<div class = "QuizContainer">
+    <div class = "container">
+<head>
+    <!--CSS FILES-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
+    <!--JS FILES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
+ 
+
+    <title> Language Pro - Learn Numbers</title>
+    <!--icon bug-->
+    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
+    <!-- Feature shins navbar up top-->
+</head>
+<body class = "moduleLearn">
+    <div class = "wholeBar">
+    <div class = "progress_bar2">
+        <div id = "module2Bar">0%</div>
+            <br>
+    </div>
+    </div>
+    <div class = "wordLearn">
+        <div class = "content" id = "content-1" name = "content" style = "display: block;">
+       <h3><span class = "heading">Money</span></h3>
+        <br>
+        <br>
+        <p>
+            The current currency since 2002 is the Euro.
+            <br>
+            Before the Euro was introduced it was the Spanish peseta that was used
+            <br>
+            In this module we're gonna go over the different coins and notes your're gonna be dealing with.
+        </p>
+
+        
+        </div>
+
+        <div class = "content"id = "content-2" name = "content" >
+            <h3><span class = "heading">Diez Centavos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/tenCents.png" alt="Ten centavos"/>
+            </div>
+            
+            <br>
+            <p>
+                <button class = "sayWord" onclick="tenCents.play()">diez centavos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-3" name = "content" >
+            <h3><span class = "heading">Veinte Centavos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/twentyCents.png" alt="Twenty centavos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="twentyCents.play()">Veinte Centavos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-4" name = "content" >
+            <h3><span class = "heading">Cincuenta Centavos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/fiftyCents.png" alt="Fifty centavos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="fiftyCents.play()">Cincuenta Centavos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-5" name = "content" >
+            <h3><span class = "heading">Un Peso</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/oneDollar.png" alt="One Peso"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="oneDollar.play()">Un Peso</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-6" name = "content" >
+            <h3><span class = "heading">Cinco Pesos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/fiveDollars.png" alt="Five Pesos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="fiveDollars.play()">Cinco Pesos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-7" name = "content" >
+            <h3><span class = "heading">Diez Pesos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/tenDollars.png" alt="Ten Pesos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="tenDollars.play()">Diez Pesos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-8" name = "content" >
+            <h3><span class = "heading">Veinte Pesos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/twentyDollars.png" alt="Twenty Pesos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="twentyDollars.play()">Veinte Pesos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-9" name = "content" >
+            <h3><span class = "heading">Cincuenta Pesos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/fiftyDollars.png" alt="Fifty Pesos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="fiftyDollars.play()">Cincuenta Pesos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-10" name = "content" >
+            <h3><span class = "heading">Cien Pesos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/hundredDollars.png" alt="Hundred Pesos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="hundredDollars.play()">Cien Pesos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-11" name = "content" >
+            <h3><span class = "heading">Doscientos Pesos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/twoHundredDollars.png" alt="Two Hundred Pesos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="twoHundredDollars.play()">Doscientos Pesos</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-12" name = "content" >
+            <h3><span class = "heading">Mil Pesos</span></h3>
+            <br>
+            <div class ="imageForIntroduceMod">
+                <img  src ="/static/images/oneThousandDollars.png" alt="One Thousand Pesos"/>
+            </div>
+            <br>
+            <p>
+                <button class = "sayWord" onclick="oneThousandDollars.play()">Mil Pesos</button>
+            </p>
+        </div>
+        <button onclick="unmove()"type = "button" class = "back" id = "button_slide slide_right">Back</button>
+        
+        <button onclick = "move()" type = "button" class = "next">Next</button>
+
+    </div>
+        
+         <div class = "end">
+            <h3><span class = "heading">Finished!</span></h3>
+            <p>Lets test what you've learnt so far in this module</p>
+            <br>
+            <p>Click the Images to hear the Spanish word and Select the what you think it is in English below image</p>
+            
+            <div class = "multiChoice">
+                <p>
+                    <h4>How much is this?</h4>
+                
+                    <img  src ="/static/images/fiftyDollarsHide.png" alt="Fifty Pesos"/>
+    
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="oneThousandDollars.play()">Hear in Spanish 1</button>
+                    <input type ="radio" name ="question1" value = "0"/><button class = "testWord" onclick="tenDollars.play()">>Hear in Spanish 2</button>
+                    <input type ="radio" name ="question1" value = "33.33"/><button class = "testWord" onclick="fiftyDollars.play()">>Hear in Spanish 3</button>
+                    <br>
+                    
+                    
+                  
+                </p>
+                <p>
+                    <h4>Doscientos Pesos - Cien Pesos = ? </h4>
+            
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question2" value = "0"/>Un Peso
+                    <input type ="radio" name ="question2" value = "33.33"/>Cien Pesos 
+                    <input type ="radio" name ="question2" value = "0"/>Mil Pesos
+                    <br>
+                </p>
+                <p>
+                    <h4> How much is this?</h4>
+                    <img  src ="/static/images/oneDollarHide.png" alt="One Peso"/>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question3" value = "33.33"/>One Peso
+                    <input type ="radio" name ="question3" value = "0"/>Fifty Centavos
+                    <input type ="radio" name ="question3" value = "0"/>Twenty centavos
+                    <br>
+                    
+                </p>
+                <form id = "form4" action = " ">
+                    <input type = "submit" class = "showResults"value="Show Results">
+                </form>
+                   <p>Your score is: <span id="grade">__</span></p>
+                   <p id="grade2"></p>
+       
+            </div>
+            <!-- /updateProgress/{{current_user.id}}/MODULE_NUMBER-->
+            <form action = '/updateProgress/{{current_user.id}}/5' method = "POST" >
+            <button id="sumbitButt" type = 'submit'  class = "next"  progress = "{{current_user.progress}}" >
+                Finish</button>
+            </form>
+        </div>
+   
+
+</body>
+</div>
+</div>
+</html>

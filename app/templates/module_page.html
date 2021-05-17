@@ -1,23 +1,36 @@
-<!DOCTYPE html>
-<html lang='en'>
-<meta charset="utf-8">
-<div class = "container">
-<head>
-    <!--CSS FILES-->
-	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='modulePageStyle.css') }}">
-    <!--JS FILES-->
-    <script src="{{url_for('static', filename='/js/module_page.js')}}"></script>
+{% extends "base.html" %}
 
+<head>
     <title> Language Pro - Modules</title>
     <!--icon bug-->
-    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
-    <!-- Feature shins navbar up top-->
+   
 </head>
+
+<div class = "container1">
 <body class="bodyModulePage">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}
+
     <div class="desc_module_page">
-        <h2>Welcome to the Module page! or should I say ¡Bienvenido a la página del módulo!
+        <br>
+        <h2>Welcome to the Module page! Or should I say ¡Bienvenido a la página del módulo!
             <!--Could say more greetings here if we decide to go with more languages-->
         </h2>
+        <h4>
+            <br>
+            Showing Account for {{current_user.firstname}}
+            <br>
+            
+            Modules Completed = <span id = "progress">{{current_user.progress}}</span>/7
+        </h4>
         <br>
         <h6>
             We all know Covid-19 put a massive halt to all travel, and the travelers out there are suffering, stuck at home 
@@ -34,14 +47,14 @@
                     Costa Rica
                     <a target="_blank" href="https://travel.usnews.com/Costa_Rica/">
                  
-                    <img class ="images" id = "costaRica" src ="/static/CostaRica.png" alt="Costa Rica"/>
+                    <img class ="images_mod" id = "costaRica" src ="/static/images/CostaRica.png" alt="Costa Rica"/>
                </a>
                 </div>
                 <div class = "imgCol">
                     Mexico
                     <a target="_blank" href="https://www.nomadicmatt.com/travel-guides/mexico-travel-tips/">
                  
-                        <img class ="images" id = "Mexico" src ="/static/Mexico.jpg" alt="Mexico"/>
+                        <img class ="images_mod" id = "Mexico" src ="/static/images/Mexico.jpg" alt="Mexico"/>
                    </a>
 
                 </div>
@@ -49,17 +62,11 @@
                     Peru
                     <a target="_blank" href="https://www.nomadicmatt.com/travel-guides/peru-travel-tips/">
                  
-                        <img class ="images" id = "Mexico" src ="/static/Peru.jpeg" alt="Peru"/>
+                        <img class ="images_mod" id = "Mexico" src ="/static/images/Peru.jpeg" alt="Peru"/>
                    </a>
                 </div>
 
             </div>
-
-
-
-
-
-            
        <br>
             Argentina, Columbia, Venezuela, Dominican Republic, Chile, Cuba, Bolivia, and the list goes on. 
         </h6>
@@ -67,7 +74,6 @@
     <div class="main">
     <!--Accordian drop down module menu for first module-->
     <div class = "module_talk">
-
         <p>
             <h3>Greetings</h3>
             Alright we're first gotta work on your people skills, how do we get the conversations started and how do we end them.
@@ -77,115 +83,121 @@
         </p>
     </div>
         <button class="accordion">Hello and goodbye / Hola y adiós</button>
+        
         <div class="panel">
             
             <div class = "module_title">
-                <p>
-                    <h3>Hello / hola</h3>
-                    <br>
-                    <h3>How to say hello</h3>
-                    <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                
+                    <div>
+                    <h3>HOLA</h3>
+                    </div>
+                    <div>
+                    <h4>Saying Hello In Spanish</h4>
+                    </div>
+                    <div class = "start_button_mod" >
+                        
+                        <a class="start_button_mod_text"   onclick="startHandler(1)" ><span>Start</span></a>
                     </div>
                 
             </div>
            <div class = "progress_bar">
-                <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
+                <div id = "moduleBar1">0%</div>
+            </div>
+            <div class = "module_title">
                 
-            </div>
-            <div class = "module_title">
-                <p>
-                <h3>I am / estoy</h3>
-                <br>
-                <h3>Introducing yourself</h3>
-                    <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                <div>
+                <h3>MI NOMBRE ES</h3>
+                </div>
+               <div>
+                <h4>Introducing Yourself</h4>
+                </div>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text" onclick="startHandler(2)" ><span>Start</span></a>
                     </div>
-                </p>
-            </div>
-                <div class = "progress_bar">
-                    <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
-            </div>
-            <div class = "module_title">
-                <p>
-                <h3>How are you? / ¿Cómo estás?</h3>
-                <br>
-                <h3>How to ask how they're going</h3>
-                    <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
-                    </div>
-                </p>
-            </div>
-                <div class = "progress_bar">
-                    <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
-            </div>
-            <div class = "module_title">
-                <p>
-                <h3>Goodbye / Adiós</h3>
-                <br>
-                <h3>Saying farewell</h3>
-                    <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
-                    </div>
-                </p>
-            </div>
-                <div class = "progress_bar">
-                    <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
-            </div>
-
             
+            </div>
+                <div class = "progress_bar">
+                    <div id = "moduleBar2">0%</div>
+            </div>
+            <div class = "module_title">
+                <div>
+                <h3>¿CÓMO ESTÁS?</h3>
+                </div>
+                <div>
+                <h4>Asking How They Are</h4>
+                </div>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text"  onclick="startHandler(3)"><span>Start</span></a>
+                    </div>
+            </div>
+                <div class = "progress_bar">
+                    <div id = "moduleBar3">0%</div>
+            </div>
+            <div class = "module_title">
+                <div>
+                <h3>ADIÓS</h3>
+                </div>
+                <div>
+                <h4>Saying Goodbye</h4>
+                </div>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text" onclick="startHandler(4)"><span>Start</span></a>
+                    </div>
+            </div>
+                <div class = "progress_bar">
+                    <div id = "moduleBar4">0%</div>
+            </div>
 
         </div>
         <div class = "module_talk">
-
             <p>
                 <h3>Counting</h3>
-                It's important to know the numbers in Spanish, a lot of the time you're going to be dealing with 
+                It's important to know numbers in Spanish, a lot of the time you're going to be dealing with 
                 money, time, dates, amounts, etc.
                 <br>
-                This module will ensure you so you never get ripped off, or that you never rock up to your tour an hour late
-                because you thought they said 9am not 8am.
+                This module will ensure you so you never get ripped off, or that you never rock up somewhere late or early.
             </p>
         </div>
         <!--Accordian drop down module menu for first module-->
         <button class="accordion">Counting / Contando</button>
         <div class="panel">
             <div class = "module_title">
-                <p>
-                    <h3>Hello / hola</h3>
-                    <br>
-                    <h3>How to say hello</h3>
-                    <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                <div>
+                    <h3>MONEY</h3>
+                </div>
+                <div>
+                    <h4>Dealing With Money</h4>
+                </div>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text" onclick="startHandler(5)"  ><span>Start</span></a>
                     </div>
-                
             </div>
            <div class = "progress_bar">
-                <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
-                
+                <div id = "moduleBar5">0%</div>
             </div>
-
-        
+            <div class = "module_title">
+                <div>
+                    <h3>DATES AND TIMES</h3>
+                </div>
+                <div>
+                    <h4>Knowing Dates and Times</h4>
+                </div>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text" onclick="startHandler(6)"  ><span>Start</span></a>
+                    </div>
+            </div>
+           <div class = "progress_bar">
+                <div id = "moduleBar6">0%</div>
+            </div>
         </div>
         <div class = "module_talk">
-
             <p>
                 <h3>Questions</h3>
                 Lastly we need to ask questions, where are we going? How much is this? Where am I? Who are you?
                 Where are you taking me?
                 <br>
                 It's good to know whats going on, and quesitons will help you in finding it out. This module features the 
-                the basic questions where you can easily get a yes or a no from someone in Spanish.
+                basic questions where you can easily get a yes or a no from someone in Spanish.
                 <br>
                 As well as the who? What? When? and how's?
             </p>
@@ -193,24 +205,26 @@
         <button class="accordion">Yes & No Questions / Sí y No Preguntas</button>
         <div class="panel">
             <div class = "module_title">
-                <p>
-                    <h3>Hello / hola</h3>
-                    <br>
-                    <h3>How to say hello</h3>
-                    <div class = "start_button">
-                        <a class="start_button_text" href = "#"><span>Start</span></a>
+                <div>
+                    <h3>ASKING QUESTIONS</h3>
+                </div>
+                <div>
+                    <h4>Learn Simple Questions</h4>
+                    </div>
+                    <div class = "start_button_mod">
+                        <a class="start_button_mod_text"  onclick="startHandler(7)"><span>Start</span></a>
                     </div>
                 
             </div>
            <div class = "progress_bar">
-                <div id = "module1Bar">0%</div>
-                    <br>
-                    <button onclick = "move()">Click Me</button>
+                <div id = "moduleBar7">0%</div>
             </div>
         </div>
-        <button class = "test" onclick="document.location.href=this.getAttribute('href');" href="test1_page">
+        <button class = "test" onclick="document.location.href=this.getAttribute('href');" href="quiz">
         Test your knowlege</button>
         </div>
-</body>
+        {% endblock %}  
+    </body>
+    
 </div>
-</html>
+
