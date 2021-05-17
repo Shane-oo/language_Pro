@@ -199,25 +199,25 @@ function show_percentage(){
 let questions = [
     {
         Number: 1,
-        Question: "What is your name?",
-        Answer: "I dont know",
+        Question: "How are you? in Spanish",
+        Answer: "cómo estás",
         Options: [
-            "I dont know",
-            "hahah",
-            "tell me",
-            "just trying"
+            "cómo estás",
+            "Hola",
+            "Salud",
+            "Gracias"
         ]
     },
 
     {
         Number: 2,
-        Question: "Where do you live?",
-        Answer: "I dont know",
+        Question: "Thank you in Spanish",
+        Answer: "Gracias",
         Options: [
-            "I dont know",
-            "what?",
-            "privacy",
-            "bleh"
+            "Gracias",
+            "Lo siento",
+            "Adiós",
+            "cómo estás"
         ]
     },
 
