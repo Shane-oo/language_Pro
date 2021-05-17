@@ -4,23 +4,19 @@ from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User
 from werkzeug.urls import url_parse
 from app.email import send_password_reset_email
+from app.form import ResetPasswordForm
+
 
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
 
-
-
-
-
 #module
 @app.route('/home')
 @login_required  # to protect some pages nd only allow access to authenticated user
 def home():
     return render_template("home.html", title='Main Page')
-
-
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -66,29 +62,43 @@ def forgot_pass():
     return render_template('forgot_pass.html')
 
 @app.route('/pass_request/<token>', methods=['GET', 'POST'])
-def pass_request(token, new_password):
+def pass_request(token):
+
+    # if current_user.is_authenticated:
+    #     return redirect(url_for('index'))
+
+    # user = User.verify_reset_password_token(token)
+
+    # if request.method == 'POST' : 
+    #     password = request.form.get('new_password')
+    #     user.set_password(password)
+    #     db.session.commit()
+
+    #     flash('Your password has been reset!', 'success')
+    #     return redirect(url_for('login'))
+    # return render_template('pass_request.html')
+
     if current_user.is_authenticated:
         return redirect(url_for('index'))
 
     user = User.verify_reset_password_token(token)
+    if not user:
+        return redirect(url_for('index'))
+    
+    form = ResetPasswordForm()
 
-    if request.method == 'POST' : 
-        password = request.form.get('new_password')
-        print(password)
-        user.set_password(password)
+    if form.validate_on_submit():
+        user.set_password(form.password.data)
         db.session.commit()
 
-        flash('Your password has been reset!', 'success')
+        flash('Your password has been reset.')
         return redirect(url_for('login'))
-
-    return render_template('pass_request.html')
+    return render_template('pass_request.html', form=form)
 
 @app.route('/logout')
 def logout():
     logout_user()
     return redirect(url_for('index'))
-
-
 
 
 @app.route('/signUp', methods=['GET', 'POST'])
@@ -148,11 +158,6 @@ def learnGoodbye():
 def learnNumbers():
 
     return render_template('learningQuizzes/learnNumbers.html')
-
-@app.route('/learnDateAndTime')
-def learnDateAndTime():
-    return render_template('learningQuizzes/learnDateAndTime.html')
-    
 @app.route('/learnSimpleQuestions/')
 def learnSimpleQuestions():
 
@@ -177,8 +182,3 @@ def updateProgress(id,moduleFin):
             return redirect('/module_page')
     else:
         return render_template('learningQuizzes/learnHello.html')
-
-@app.route('/quiz/')
-def quiz():
-
-    return render_template('quiz.html')
