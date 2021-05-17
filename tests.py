@@ -1,25 +1,24 @@
 # from _typeshed import NoneType
 import unittest
-    
-from app import app, db
+import os
+from app import app, db, routes
 from app.models import User
-from app import routes
+from app.routes import signUp
 # from flaskr import flaskr
 
 
 class UserModelCase(unittest.TestCase):
 
     def setUp(self):
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
+
+        app.config['TESTING'] = True
+        app.config['WTF_CSRF_ENABLED'] = False
+        app.config['DEBUG'] = False
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' 
         self.app = app.test_client()
+        db.drop_all()
         db.create_all()
-        # s1 = User(firstname= "Shin", lastname= "Lim", email = "shin@test.com")
-        # s1.set_password("myPassword")
-        # s2 = User(firstname= "Iffah", lastname= "Mohamed Zulkifli", email = "Iffah@test.com")
-        # s2.set_password("notmYPassword")
-        # db.session.add(s1)
-        # db.session.add(s2)
-        db.session.commit()
+   
 
     def tearDown(self):
         db.session.remove()
@@ -32,50 +31,56 @@ class UserModelCase(unittest.TestCase):
         self.assertFalse(u.check_password('joelosepassword'))
         self.assertTrue(u.check_password('joewinpassword')) 
 
-    # def test_score(self):
 
-    #     u1 = User(firstname = "Shane", lastname = "Monck", email = "shane@test.com")
-    #     u2 = User(firstname = "Guest", lastname = "1", email = "guest1@test.com")
-
-    #     db.session.add(u1)
-    #     db.session.add(u2)
-
-    #     db.session.commit()
-
-    #     self.assertEqual(u1.testScore(), type(None))
-    #     self.assertEqual(u2.testScore(), type(None))
-
-    # def HiUser(self):
-    #     u = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
-    #     db.session.add(u)
-    #     db.session.commit()
-    #     self.assertEqual(u.firstname, "Joe")
-    #     print("debug- first name is correct")
-
-    def test_signUp3(self):
-        u1 = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
-        u1.set_password('joewinpassword')
-        db.session.add(u1)
-        db.session.commit()
-
-        u2 = User(firstname= "Angela", lastname= "Wei", email = "joe@test.com")
-        u2.set_password('joewinpassword')
-        db.session.add(u2)
-
-        # request.method == 'POST' 
-        self.assertEqual(sign_up_3(), redirect(url_for('login_Final_2')))
-        # self.assertEqual(u1.sign_up_3(), render_template('sign_up_3.html', title='Register'))
-        # self.assertEqual(u2.sign_up_3(), redirect(url_for('login_Final_2')))
-
-    def test_loginFinal2(self):
-        u1 = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
-        u1.set_password('joewinpassword')
-        db.session.add(u1)
-        db.session.commit()
-
-        self.assertEqual(u1.login_Final_2)
-
+   
+    def test_valid_user_registration(self):
+        response = self.register("Shane","monck",'patkennedy89@gmail.com', 'Eagles1125',0)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'Congratulations, you are now a registered user!', response.data)
+        
+    def test_invalid_user_registration_duplicate_email(self):
+        response = self.register("bob","Smith",'patkennedy79@gmail.com', 'Eagles1125', 0)
+        self.assertEqual(response.status_code, 200)
+        response = self.register("bob","Smith",'patkennedy79@gmail.com', 'Eagles1125', 0)
+        self.assertIn(b'Email address already exists!', response.data)
     
+    def test_valid_logIn_does_not_exist(self):
+        response = self.login('patkennedy89@gmail.com','Eagles2511')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'Invalid username or password', response.data)
+
+    def test_valid_logIn(self):
+        self.register("Shane","monck",'patkennedy89@gmail.com', 'Eagles1125',0)
+        response = self.login('patkennedy89@gmail.com','Eagles1125')
+        self.assertEqual(response.status_code, 200)
+        # Should be routed to index page
+        self.assertIn(b'WELCOME TO LANGUAGE PRO', response.data)
+
+    def test_module_progress(self):
+        self.register("Shane","monck",'patkennedy89@gmail.com', 'Eagles1125',0)
+        self.login('patkennedy89@gmail.com','Eagles1125')
+        response = self.module()
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b' Modules Completed = <span id = "progress">0</span>/7', response.data)
+
+    def register(self,firstname,lastname, email, password,progress):
+        return self.app.post(
+        '/signUp',
+        data=dict(firstname = firstname , lastname=lastname, email=email, password=password, progress = progress ),
+        follow_redirects=True
+    )
+    def login(self,email, password):
+        return self.app.post(
+        '/login',
+        data=dict(email=email, password=password ),
+        follow_redirects=True
+    )
+ 
+    def module(self):
+        return self.app.get(
+        '/module_page',
+        follow_redirects=True
+    )
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
