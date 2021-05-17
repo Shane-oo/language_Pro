@@ -106,7 +106,7 @@
 }
 
 #quote{
-  text-decoration: underline;
+  color: black;
 }
 
 #sentence{
@@ -123,6 +123,7 @@ footer{
     text-align: center;
     align-items: center;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /* MAIM HOME PAGE CSS - BEFORE LOGIN */
