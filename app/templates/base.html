@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
+    <title>LANGUAGE PRO</title>
     <!----->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
-    <!----->
+    <!---
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!--
     <link rel = "stylesheet" href ='https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap'>
 -->
    
@@ -28,10 +28,10 @@
             <a href="login">Login</a>
             <a href="signUp">Sign Up</a>
             <a href="index#about">About</a>
-            <a href="module_page">Module</a>
+            <a href="module_page">Modules</a>
         </div>
         {% else %}
-        <h4 id=hiUser>Hola {{ current_user.firstname }}!</h4>
+        <h4 id=hiUser>Hi, {{ current_user.firstname }}!</h4>
         <div class="myTopnav">
             <a href="index#about">About</a>
             <a href="module_page">Modules</a>
