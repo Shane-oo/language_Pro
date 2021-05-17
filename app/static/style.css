@@ -963,14 +963,14 @@ background-color: #aa151b;
 font-family: cursive;
 }
 
-.start_button, .Information_box, .quiz_section, .quiz_result, .outerlayer-cert{
+.start_button, .Information_box, .quiz_section, .quiz_result, .my_cert{
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%) 
+transform: translate(-50%, -50%);
 }
 
-.Information_box.activeinformation, .quiz_section.activequiz, .quiz_result.activeresult, .outerlayer-cert.activecert{
+.Information_box.activeinformation, .quiz_section.activequiz, .quiz_result.activeresult, .my_cert.activecert{
 z-index: 5;
 opacity: 1;
 pointer-events: auto;
@@ -1247,6 +1247,12 @@ border-radius: 5px;
 cursor: pointer;
 }
 
+.my_cert{
+opacity: 0;
+pointer-events: none;
+transform: translate(-50%, -50%) scale(0.9);
+}
+
 .outerlayer-cert{
 margin: auto;
 width: max-content;
@@ -1255,9 +1261,6 @@ padding: 30px;
 border: 10px solid goldenrod;
 text-align: center;
 background: gold;
-opacity: 0;
-pointer-events: none;
-transform: translate(-50%, -50%) scale(0.9);
 }
 
 .innerlayer-cert{

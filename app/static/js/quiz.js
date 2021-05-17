@@ -5,7 +5,7 @@ var restart_button = document.querySelector(".buttons .continue_button");
 var quiz = document.querySelector(".quiz_section");
 var countdown_time = document.querySelector(".quiz_time .second");
 var times_up = document.querySelector("header .countdown");
-var certificate = document.querySelector(".my-cert");
+var certificate = document.querySelector(".my_cert");
 
 var quiz_options = document.querySelector(".quiz_options");
 
