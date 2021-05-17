@@ -10,13 +10,9 @@ from app.form import ResetPasswordForm
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    return render_template('index.html',title="Langauge Pro")
 
-#module
-@app.route('/home')
-@login_required  # to protect some pages nd only allow access to authenticated user
-def home():
-    return render_template("home.html", title='Main Page')
+
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -48,7 +44,7 @@ def login():
 @app.route('/forgot_pass', methods =['GET', 'POST'])
 def forgot_pass():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('index'))
 
     if request.method == 'POST' : 
         email = request.form.get('email')
@@ -78,7 +74,7 @@ def pass_request(token):
 
         flash('Your password has been reset.')
         return redirect(url_for('login'))
-    return render_template('pass_request.html', form=form)
+    return render_template('pass_request.html', form=form,title="Update Password")
 
 @app.route('/logout')
 def logout():
@@ -111,7 +107,7 @@ def signUp():
         db.session.commit()
         flash('Congratulations, you are now a registered user!', 'success')
         return redirect(url_for('login'))
-    return render_template('signUp.html', title='Register')
+    return render_template('signUp.html')
 
     
 #-----------------------------------#
@@ -124,37 +120,37 @@ def module_page():
 @app.route('/learnHello/')
 def learnHello():
 
-    return render_template('learningQuizzes/learnHello.html')
+    return render_template('learningQuizzes/learnHello.html',title="Module 1")
 
     
 @app.route('/learnIntroduce/')
 def learnIntroduce():
 
-    return render_template('learningQuizzes/learnIntroduce.html')
+    return render_template('learningQuizzes/learnIntroduce.html',title="Module 2")
 @app.route('/learnHowAreYou/')
 def learnHowAreYou():
 
-    return render_template('learningQuizzes/learnHowAreYou.html')
+    return render_template('learningQuizzes/learnHowAreYou.html',title="Module 3")
 @app.route('/learnGoodbye/')
 def learnGoodbye():
 
-    return render_template('learningQuizzes/learnGoodbye.html')
+    return render_template('learningQuizzes/learnGoodbye.html',title="Module 4")
 @app.route('/learnNumbers/')
 def learnNumbers():
 
-    return render_template('learningQuizzes/learnNumbers.html')
+    return render_template('learningQuizzes/learnNumbers.html',title="Module 5")
 @app.route('/learnDateAndTime/')
 def learnDateAndTime():
 
-    return render_template('learningQuizzes/learnDateAndTime.html')
+    return render_template('learningQuizzes/learnDateAndTime.html',title="Module 6")
 @app.route('/learnSimpleQuestions/')
 def learnSimpleQuestions():
 
-    return render_template('learningQuizzes/learnSimpleQuestions.html')
+    return render_template('learningQuizzes/learnSimpleQuestions.html',title="Module 7")
 
 @app.route('/quiz/')
 def quiz():
-    return render_template('quiz.html')
+    return render_template('quiz.html',title="Quiz")
 
 @app.route('/updateProgress/<int:id>/<int:moduleFin>',methods=['POST'])
 def updateProgress(id,moduleFin):
@@ -172,4 +168,5 @@ def updateProgress(id,moduleFin):
         else:
             return redirect('/module_page')
     else:
-        return render_template('learningQuizzes/learnHello.html')
+        return False
+        #render_template('learningQuizzes/learnHello.html')
