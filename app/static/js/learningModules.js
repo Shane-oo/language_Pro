@@ -125,7 +125,6 @@ var soSo = new Audio("/static/sounds/soSo.m4a");
 var helloHowAreYou1 = new Audio("/static/sounds/helloHowAreYou1.m4a");
 var adios = new Audio("/static/sounds/adios.m4a");
 var chao = new Audio("/static/sounds/chao.m4a");
-// not upladed yet
 var tenCents = new Audio("/static/sounds/tenCents.m4a");
 var twentyCents = new Audio("/static/sounds/twentyCents.m4a");
 var fiftyCents = new Audio("/static/sounds/fiftyCents.m4a");
@@ -153,3 +152,8 @@ var itsElevenOClock = new Audio("/static/sounds/itsElevenOClock.m4a");
 var itsTwelveOClock = new Audio("/static/sounds/itsTwelveOClock.m4a");
 var itsNoon = new Audio("/static/sounds/itsNoon.m4a");
 var itsMidnight = new Audio("/static/sounds/itsMidnight.m4a");
+var whereAreYou = new Audio("/static/sounds/whereAreYou.m4a");
+var whenAreWeLeave = new Audio("/static/sounds/whenAreWeLeave.m4a");
+var whoAreYouLivingWith = new Audio("/static/sounds/whoAreYouLivingWith.m4a");
+var whatIsThat = new Audio("/static/sounds/whatIsThat.m4a");
+var whatMovie = new Audio("/static/sounds/whatMovie.m4a");

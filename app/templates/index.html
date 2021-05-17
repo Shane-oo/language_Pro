@@ -1,5 +1,10 @@
 <!-- HOME PAGE BEFROE LOG IN -->
 {% extends "base.html" %}
+<head>
+    <title>
+        {% block title %}Language Pro{%endblock%}
+    </title>
+</head>
 <body class= "indexPage">
     {% with messages = get_flashed_messages() %}
     {% if messages %}
