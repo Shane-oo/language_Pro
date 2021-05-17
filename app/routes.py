@@ -70,6 +70,20 @@ def forgot_pass():
 @app.route('/pass_request/<token>', methods=['GET', 'POST'])
 def pass_request(token):
 
+    # if current_user.is_authenticated:
+    #     return redirect(url_for('index'))
+
+    # user = User.verify_reset_password_token(token)
+
+    # if request.method == 'POST' : 
+    #     password = request.form.get('new_password')
+    #     user.set_password(password)
+    #     db.session.commit()
+
+    #     flash('Your password has been reset!', 'success')
+    #     return redirect(url_for('login'))
+    # return render_template('pass_request.html')
+
     if current_user.is_authenticated:
         return redirect(url_for('index'))
 
@@ -83,7 +97,7 @@ def pass_request(token):
         user.set_password(form.password.data)
         db.session.commit()
 
-        flash('Your password has been reset.', 'success')
+        flash('Your password has been reset.')
         return redirect(url_for('login'))
     return render_template('pass_request.html', form=form)
 
