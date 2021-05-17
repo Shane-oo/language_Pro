@@ -255,7 +255,7 @@ let questions = [
             "Buenas noches",
             "Me llamo…"
         ]
-    }
+    },
 
     {
         Number: 6,
@@ -267,8 +267,7 @@ let questions = [
             "Hola",
             "Buenos días"
         ]
-    },
-
+    }
 
 
 ]
