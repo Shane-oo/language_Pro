@@ -127,6 +127,15 @@ window.onload = function() {
           location.href = 'learnSimpleQuestions';
           break;
         }
+        case 8:
+          if(progressVal.innerHTML<7){
+            alert("Module Not Unlocked Please Complete Above Modules")
+            break;
+          }
+          else{
+            location.href = 'quiz';
+            break;
+          }
     }
   
   }
