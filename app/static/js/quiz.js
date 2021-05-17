@@ -169,7 +169,8 @@ function Timer_start(time){
 
 //bottom quiz counter
 function quiz_counter(index){
-    var quiz_remaining = quiz.querySelector(".quiz_remaining");
+    var quiz_footer = quiz.querySelector(".quiz_footer")
+    var quiz_remaining = quiz_footer.querySelector(".quiz_remaining");
     let quiz_remaining_tag = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span>';
     quiz_remaining.innerHTML = quiz_remaining_tag;
 }
@@ -197,64 +198,77 @@ function show_percentage(){
 
 //question bank
 let questions = [
-    {
+       {
         Number: 1,
-        Question: "What is your name?",
-        Answer: "I dont know",
+        Question: "How are you? in Spanish",
+        Answer: "¿Cómo estás?",
         Options: [
-            "I dont know",
-            "hahah",
-            "tell me",
-            "just trying"
+            "¿Cómo estás?",
+            "Hola",
+            "Salud",
+            "Gracias"
         ]
     },
 
     {
         Number: 2,
-        Question: "Where do you live?",
-        Answer: "I dont know",
+        Question: "Thank you in Spanish",
+        Answer: "Gracias",
         Options: [
-            "I dont know",
-            "what?",
-            "privacy",
-            "bleh"
+            "Gracias",
+            "Lo siento",
+            "Adiós",
+            "cómo estás"
         ]
     },
 
     {
         Number: 3,
-        Question: "hahahha?",
-        Answer: "I dont know",
+        Question: "Good morning in Spanish",
+        Answer: "Buenos días",
         Options: [
-            "I dont know",
-            "heheh",
-            "hohoh",
-            "kukukuk"
+            "Gracias",
+            "Adiós",
+            "Buenos días",
+            "Mucho gusto"
         ]
     },
 
     {
         Number: 4,
-    Question: "how many members?",
-    Answer: "four of us",
-    Options: [
-        "1",
-        "2",
-        "3",
-        "four of us"
+        Question: "Nice to Meet you in Spanish",
+        Answer: "Mucho gusto",
+        Options: [
+            "cómo estás",
+            "Mucho gusto",
+            "Hola",
+            "Lo siento"
         ]
     },
 
     {
         Number: 5,
-    Question: "How to say ola",
-    Answer: "ola",
-    Options: [
-        "loa",
-        "ola",
-        "aol",
-        "oal"
+        Question: "My name is...in Spanish",
+        Answer: "Me llamo…",
+        Options: [
+            "Buenas tardes",
+            "Salud",
+            "Buenas noches",
+            "Me llamo…"
+        ]
+    },
+
+    {
+        Number: 6,
+        Question: "Good Afternoon in Spanish",
+        Answer: "Buenas tardes",
+        Options: [
+            "cómo estás",
+            "Buenas tardes",
+            "Hola",
+            "Buenos días"
         ]
     }
+
 
 ]
