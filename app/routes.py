@@ -163,7 +163,9 @@ def learnSimpleQuestions():
 
     return render_template('learningQuizzes/learnSimpleQuestions.html')
 
-
+@app.route('/quiz/')
+def quiz():
+    return render_template('quiz.html')
 
 @app.route('/updateProgress/<int:id>/<int:moduleFin>',methods=['POST'])
 def updateProgress(id,moduleFin):
