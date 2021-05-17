@@ -235,26 +235,40 @@ let questions = [
 
     {
         Number: 4,
-    Question: "Nice to Meet you in Spanish",
-    Answer: "Mucho gusto",
-    Options: [
-        "cómo estás",
-        "Mucho gusto",
-        "Hola",
-        "Lo siento"
+        Question: "Nice to Meet you in Spanish",
+        Answer: "Mucho gusto",
+        Options: [
+            "cómo estás",
+            "Mucho gusto",
+            "Hola",
+            "Lo siento"
         ]
     },
 
     {
         Number: 5,
-    Question: "My name is...in Spanish",
-    Answer: "Me llamo…",
-    Options: [
-        "Buenas tardes",
-        "Salud",
-        "Buenas noches",
-        "Me llamo…"
+        Question: "My name is...in Spanish",
+        Answer: "Me llamo…",
+        Options: [
+            "Buenas tardes",
+            "Salud",
+            "Buenas noches",
+            "Me llamo…"
         ]
     }
+
+    {
+        Number: 6,
+        Question: "Good Afternoon in Spanish",
+        Answer: "Buenas tardes",
+        Options: [
+            "cómo estás",
+            "Buenas tardes",
+            "Hola",
+            "Buenos días"
+        ]
+    },
+
+
 
 ]
