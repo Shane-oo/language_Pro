@@ -18,7 +18,10 @@ def index():
 def home():
     return render_template("home.html", title='Main Page')
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':

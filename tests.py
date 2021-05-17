@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
+=======
+# from _typeshed import NoneType
+>>>>>>> Stashed changes
 import unittest
-
+    
 from app import app, db
 from app.models import User
 from app import routes
@@ -44,7 +48,18 @@ class UserModelCase(unittest.TestCase):
     #     self.assertEqual(u1.testScore(), type(None))
     #     self.assertEqual(u2.testScore(), type(None))
 
+<<<<<<< Updated upstream
     def test_signUp(self):
+=======
+    # def HiUser(self):
+    #     u = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
+    #     db.session.add(u)
+    #     db.session.commit()
+    #     self.assertEqual(u.firstname, "Joe")
+    #     print("debug- first name is correct")
+
+    def test_signUp3(self):
+>>>>>>> Stashed changes
         u1 = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
         u1.set_password('joewinpassword')
         db.session.add(u1)
@@ -54,6 +69,7 @@ class UserModelCase(unittest.TestCase):
         u2.set_password('joewinpassword')
         db.session.add(u2)
 
+<<<<<<< Updated upstream
         # res = self.client().post('/signUp', {"Angela", "Wei", "joe@test.com"})
         # request.method == 'POST' 
         signUp().get('/redirect_me/', follow=True)
@@ -127,3 +143,23 @@ class UserModelCase(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+=======
+        # request.method == 'POST' 
+        self.assertEqual(sign_up_3(), redirect(url_for('login_Final_2')))
+        # self.assertEqual(u1.sign_up_3(), render_template('sign_up_3.html', title='Register'))
+        # self.assertEqual(u2.sign_up_3(), redirect(url_for('login_Final_2')))
+
+    def test_loginFinal2(self):
+        u1 = User(firstname= "Joe", lastname= "Tan", email = "joe@test.com")
+        u1.set_password('joewinpassword')
+        db.session.add(u1)
+        db.session.commit()
+
+        self.assertEqual(u1.login_Final_2)
+
+    
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
+    app.run()
+>>>>>>> Stashed changes
