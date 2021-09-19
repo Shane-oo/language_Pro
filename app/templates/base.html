@@ -1,0 +1,68 @@
+<!-- This is the base that will be inherited by the other html pages using JINJA  -->
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>
+        {% block title %}{%endblock%}
+    </title>
+    <!----->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   
+    <!--JavaScript-->
+    <script src="{{ url_for('static',filename='/js/homepage_scripts.js') }}"></script>
+    
+    <script src="{{url_for('static', filename='/js/module_page.js')}}"></script>
+</head>
+
+<body class = "indexPage">
+    <div class="topnav" id=newTopnav>
+        <a href="javascript:void(0);" class="icon" onclick="burger()"><i class="fa fa-bars"></i></a>
+        <div class="logo"><a href="index">LANGUAGE PRO</a></div>
+        {% if current_user.is_anonymous %}
+        <div class="myTopnav">
+            <a href="login">Login</a>
+            <a href="signUp">Sign Up</a>
+            <a href="index#about">About</a>
+            <a href="module_page">Modules</a>
+        </div>
+        {% else %}
+        <h4 id=hiUser>¡HOLA! {{ current_user.firstname }},</h4>
+        <div class="myTopnav">
+            <a href="index#about">About</a>
+            <a href="module_page">Modules</a>
+            <a href="logout">Log Out</a>
+        </div>
+        {% endif %}
+    </div>
+    <div>
+        {% with messages = get_flashed_messages(with_categories = true ) %}
+        {% if messages %}
+            {% for category,  message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    <span>{{ message }}</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    </div>
+   
+    {% block content %}{% endblock %}
+
+    <footer>
+        <h2 id= "quote">SPANISH QUOTE OF THE DAY</h2>
+        <h3 id="sentence"></h3>
+        <button class = "fbutton" onclick="sentenceNew()">GET A NEW QUOTE</button>
+
+        <h4 id="contacts">Contact us at <a>LanguageProTeam@gmail.com</a></h4>
+    </footer>
+</body>
+
+</html>

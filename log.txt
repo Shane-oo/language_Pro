@@ -1,0 +1,1840 @@
+commit 4c8c28968e6913d459afade2a57e87dff7826a51
+Merge: 4fc66767 fafbf3c6
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 17:40:20 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 4fc6676791e569dba189598490d09781b0eeb4a6
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 17:40:02 2021 +0800
+
+    update style css
+
+commit fafbf3c627072ab37c137ca5a5957f344b60f119
+Merge: 7769c2e7 39b499cb
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 17:37:01 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 7769c2e7c5c7e8a9a4d6d126a9d7f5692c7674d9
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 17:36:52 2021 +0800
+
+    Fix javascript
+
+commit 39b499cb0cec694b81c48ed525e9050f88366a50
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 17:35:30 2021 +0800
+
+    UPDATE ON README
+
+commit 6b30d8734df84cc1f87d315aaf34a2de9ce3fbcc
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 17:34:40 2021 +0800
+
+    Fixed css bug
+
+commit 1c1f0fa789a75455b3cefa1939e4e05ce6190263
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 17:12:04 2021 +0800
+
+    deleted unneeded files
+
+commit 39c36a544ef9b08ff5ffc0cf12615b60351c197a
+Merge: bd99d9e7 3ed3f092
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 17:08:58 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit bd99d9e73f4e6eadfb25d72cf36ed000ee13ddc8
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 17:08:42 2021 +0800
+
+    requirements.txt
+
+commit 3ed3f092a7d67d99eaf5481f21756cd3479af368
+Merge: 51b1831a 33721330
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 17:01:18 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 51b1831a5198c21e6033e66ce85932a7d3494ea8
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 17:00:40 2021 +0800
+
+    update on README
+
+commit 337213308615eb7af7edfcbb8ffeacb978af98a7
+Merge: 4dce39f9 8cb89021
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 16:59:45 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 4dce39f9dfd8f622599f97223f21b2e4995d112d
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 16:59:28 2021 +0800
+
+    tests.py working
+
+commit 8cb89021512d61a7502f2088fe58f67a137b7103
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 16:23:35 2021 +0800
+
+    updates done on css
+
+commit f841d135dd3a8a98abcd176ac3a085f9ae4efa77
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 15:40:15 2021 +0800
+
+    update on style of quiz
+
+commit 95a2335b5ceb72a4d72684173fe9d992537155d0
+Merge: dd06af7c 44f4c9f7
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 15:06:11 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit dd06af7ccbbf504e5711994e49dd7e6cfb2b4f1d
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 15:05:14 2021 +0800
+
+    update on quiz
+
+commit 44f4c9f7d6bbbb3224fca8975318416e4107a082
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 15:03:32 2021 +0800
+
+    added titles
+
+commit 38f815c2757948ab6227f8d432572cfd97dadc07
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 14:47:00 2021 +0800
+
+    junk
+
+commit be349d22ed02fd6b3236726827987381d07acc88
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 14:40:54 2021 +0800
+
+    Forgot Password working fully
+
+commit 79db4d31566f7f6d68e6c282248915c482c93af5
+Merge: 260a5692 57a51c58
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 14:31:25 2021 +0800
+
+    Merge branch 'development' into development-shin
+
+commit 260a569294e471282a8fb081e1b4de7c395c639f
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 14:21:28 2021 +0800
+
+    bunch of files
+
+commit 57a51c580607019e278b73b57181935d08a792e8
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 14:08:15 2021 +0800
+
+    delete useless files
+
+commit 59330905e58c4a3b8130270f08cf2788971a1316
+Merge: 2f0d2b5d b3a6769f
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 14:05:39 2021 +0800
+
+    Merge branch 'development' into development-shin
+
+commit 2f0d2b5def0d3d9c17d67cd1c53eef191f50ea0c
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 14:03:54 2021 +0800
+
+    bunch of files
+
+commit d80e220537f97255c21894893212b6b3d6ed0617
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 14:02:32 2021 +0800
+
+    fix navbar fix bootstrap
+
+commit b3a6769f907b60d0357efe9c28bc3b01620cf6b1
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 13:53:43 2021 +0800
+
+    all audio done
+
+commit 033b8f977ce06cc3755f4be89e9075f4f425f3fa
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 13:21:29 2021 +0800
+
+    halfway audio
+
+commit c74f069fc880cfa7d5e79f6b81492c23d0dac72a
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 13:02:04 2021 +0800
+
+    quiz route
+
+commit ed062f57fc53a0cd6219230a7436a5bc2986c356
+Merge: 06b366bf 01ce28b3
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 12:56:21 2021 +0800
+
+    On backup: !!GitHub_Desktop<backup>
+
+commit 01ce28b34625381244a8723b798109025521f835
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 12:56:21 2021 +0800
+
+    index on backup: 06b366bf Big Fix Working
+
+commit 06b366bfa0145331a2c9b019e3e386e4adf51188
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 12:49:53 2021 +0800
+
+    Big Fix Working
+
+commit 699e7349b591cebb4f49184c4e67363a224ef40c
+Merge: adb97027 26efd83e
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 12:28:38 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit adb970275c08b726ac3d0a2a7bae5379eb7390a3
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 12:28:00 2021 +0800
+
+    Revert "update on alert box"
+    
+    This reverts commit 932eb66abcb3702fa493ed0456afc4e8d37bc0a5.
+
+commit 1cfe44f394e4a7319ab8393e655f5a134d20000a
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 12:21:15 2021 +0800
+
+    Revert "Update base.html"
+    
+    This reverts commit b0d4ca5147cebffcc9a87606fa3669e85e983610.
+
+commit 26efd83ed6489889b6faa84d5c2256f33498d56b
+Merge: 734cc9b5 b0d4ca51
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 12:20:48 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 734cc9b569a8ed1a3425fe1dc4d1e60b8bc04180
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 12:20:25 2021 +0800
+
+    more files
+
+commit b0d4ca5147cebffcc9a87606fa3669e85e983610
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 12:19:27 2021 +0800
+
+    Update base.html
+
+commit a574134acaa759a98b6a407cded494fedc75b4e9
+Merge: 932eb66a e82f5ae1
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 12:17:59 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 932eb66abcb3702fa493ed0456afc4e8d37bc0a5
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 12:17:38 2021 +0800
+
+    update on alert box
+
+commit e82f5ae1bb49113dcec6a9932cff50d6d7f3e20c
+Merge: c938e971 6a805ae2
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 12:12:33 2021 +0800
+
+    more files
+
+commit c938e9719ac1eff94c974124a7cbb715d1913a9a
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 11:55:26 2021 +0800
+
+    more fix
+
+commit e0892cd6f4f430132436178755aa1627289e64ea
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 11:54:31 2021 +0800
+
+    more files changes
+
+commit 1bbdbfacad72b3cc500c9652c96f86827681d529
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 11:52:07 2021 +0800
+
+    style fix
+
+commit 6a805ae21aff5df8e9c20c0f978a3d518e991ca4
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 11:50:38 2021 +0800
+
+    garbage files
+
+commit fbc35f70c81e25ffd835da4a2b00eccc7bc0b635
+Merge: 8029f525 b3f3b39d
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 11:50:00 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 8029f525f38c41332727ffa1f065c73b57c4e019
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 11:49:50 2021 +0800
+
+    bug fix on signUp
+
+commit b3f3b39d1ee6f9995747635c317e3161d2334452
+Merge: 9f9cb15f c549cc07
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 11:47:17 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 9f9cb15fd63dbf2acb8b7137d6294fe6e0000bd1
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 11:45:55 2021 +0800
+
+    updated changes to password request
+
+commit c549cc0780c6077213f812c2d29d28e7bc11da92
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 11:37:42 2021 +0800
+
+    remove web border
+
+commit 382ec2271d6e5c4c30d881b2caffa9127c254a9a
+Merge: ef1b48ec 818a38c7
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 11:33:07 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit ef1b48ec81839e577e9d896406ef185f2f5ac44e
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 11:33:02 2021 +0800
+
+    minor fix
+
+commit ade23fedcda2cd82039ac69826910b906c233159
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 17 11:32:09 2021 +0800
+
+    Update quiz.js
+
+commit 818a38c7ee5567c012fe509c7dd749f82e34229b
+Merge: 06fdf1c1 4c261e24
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 11:32:07 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 06fdf1c1e0c6220613d751574e7e8f3eb93fd737
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 11:31:58 2021 +0800
+
+    bug fix
+
+commit 000e77e01f4b48363cf35d7e39e9f281269b862a
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 17 11:29:22 2021 +0800
+
+    Update quiz.js
+
+commit 4c261e247aebcf094260c27b2d268b34cb116a28
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 11:22:20 2021 +0800
+
+    Revert "Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development"
+    
+    This reverts commit 5d6ce64a33b5cf3a53c4adba96495096fe91ccf1, reversing
+    changes made to f4fc0b2d4fabb7c7410abc27a5d86efe2c8fe262.
+
+commit 5d6ce64a33b5cf3a53c4adba96495096fe91ccf1
+Merge: f4fc0b2d 99a4090a
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 11:21:38 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit f4fc0b2d4fabb7c7410abc27a5d86efe2c8fe262
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 11:21:26 2021 +0800
+
+    update on pass_request
+
+commit 15f74f550315d103eb06bc195578e3bd40cb3e34
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 17 11:20:46 2021 +0800
+
+    updated question bank
+
+commit 99a4090aedc7ffd6a7f4953757801f23f52a2be3
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 11:20:00 2021 +0800
+
+    uncommented burger
+
+commit 6a53bbd93f9b55c215d6817f84b03d9da7154049
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 17 11:13:00 2021 +0800
+
+    updated question
+
+commit d157ded9a7356f759b76a3b226c0d4896e81687e
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 11:12:47 2021 +0800
+
+    selenium testing file
+
+commit ddfacfb167b00efe47c7652c95b04dbb217a8d9f
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 09:15:26 2021 +0800
+
+    startedQs
+
+commit de3757df7e53e8ad63f63f77976dba65680fec9a
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 08:13:54 2021 +0800
+
+    audio variables
+
+commit 251cb874016828ea064c80811514bb4187c5e375
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 07:43:52 2021 +0800
+
+    DateAndTime Done
+
+commit a539448c2ff152e28de76b948b600d9b06629c1e
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 06:27:17 2021 +0800
+
+    finshed money. added learnDateAndTime
+
+commit 653f799dc60b2536ec0c1f66d5365f76ce8269dc
+Merge: 0cc82121 ddff7bfe
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 05:45:36 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 0cc821214f440fc60c0289f5c4e7fab066152cb0
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 05:45:24 2021 +0800
+
+    moneyModuleDoing
+
+commit ddff7bfe846769cac9c53c6813fbdd288382493c
+Merge: c5305780 dccb56d5
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 05:22:44 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit c53057804b36c7562d2c18ad2eeee58087813024
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 05:22:28 2021 +0800
+
+    Cleaner homepage and css
+
+commit dccb56d5a28c7a8308924d6673314abff414074b
+Merge: 2b6fc4af 0471c1cd
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 05:17:57 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 2b6fc4afd33deae934c0cae81a0b1f77a46b935d
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 05:17:51 2021 +0800
+
+    learnGoodbye done
+    
+    just need audio clips
+
+commit 0471c1cdd7fdffd5c2fd26868860bae511ac539a
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 04:42:58 2021 +0800
+
+    Update style.css
+
+commit 212b31f72fb6c147e22551f5d331b753ff321bd0
+Merge: e8d91d93 a6c9e0d6
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 04:41:59 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit e8d91d93ef57b9818474fa94678fdf67088266f7
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 04:41:54 2021 +0800
+
+    Cleaner homepage & basepage
+
+commit a6c9e0d6329617114113ec33e975561185d68ba9
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 04:17:12 2021 +0800
+
+    Update module_page.js
+
+commit ea8d5aba55d9839734eac825046e20795feb3acf
+Merge: e724c707 a35027be
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 04:16:18 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit e724c707e90f9b20bccca3b7e770f0ae3bc6dd26
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 04:13:06 2021 +0800
+
+    try fix quiz 1.1
+
+commit 0436d6cff6e0dfb82fb6699cb97ee213ec78dab1
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 04:06:29 2021 +0800
+
+    fixed quote of day
+
+commit a35027be76e25c95d5d44ca0b3952a3d6f2886b8
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 04:03:01 2021 +0800
+
+    Updated base and home page
+    
+    - base and home page (class name updates)
+    - js updates (module_page js edits)
+
+commit 98c965958fa48e74b03576341f9f77515ce4d549
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 03:14:22 2021 +0800
+
+    new quiz.html
+
+commit 1f4ead936b8e33b5b33b2717bd99d87033baa0bc
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 03:12:22 2021 +0800
+
+    commented out disrupting bootstrap
+
+commit 8ce719c32629c336400f1d17e349fcf97447e877
+Merge: 7f86d12d f2a514d9
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 17 01:37:00 2021 +0800
+
+    Merge branch 'testing1' of https://github.com/Shane-oo/language_Pro into testing1
+
+commit 6df9a8532ccd68be8f1780f9b3c8d6b638f6c56c
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 01:36:10 2021 +0800
+
+    fix a little
+
+commit f181ee4d618b2d2e4928ac60b2ad4477340c1f1e
+Merge: 5558e32f 70d6f443
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 00:54:39 2021 +0800
+
+    Merge branch 'development' of https://github.com/Shane-oo/language_Pro into development
+
+commit 70d6f4434e05f4debd1bedbf5d04851ca7d62b04
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 00:54:09 2021 +0800
+
+    Update on routes
+
+commit 5558e32fd060671939c2ec240913d3ae25c6c4c7
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 00:49:01 2021 +0800
+
+    venv garbage files
+
+commit 16c8c16430e500b1658acb9e8c081d5bee496162
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 00:43:12 2021 +0800
+
+    added module page and learnmods
+
+commit f2a514d9f625cacd434f2b42ca5508e51dac0e94
+Merge: ccfdf9cf 32e72ff1
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 00:36:18 2021 +0800
+
+    Merge branch 'testing1' of https://github.com/Shane-oo/language_Pro into testing1
+
+commit ccfdf9cfe6868c8edebf73fa4be2eaf2ea55c39f
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 17 00:34:25 2021 +0800
+
+    updated version of forgot password
+    
+    note : password request page uses form that is ugly
+
+commit e7ec9b2e6c0fa200ef42531d66f654c896fdc8a4
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 17 00:26:01 2021 +0800
+
+    join All files 1.0
+
+commit 32e72ff11cf16e66881ea34e7b3baebe70755f42
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Mon May 17 00:01:08 2021 +0800
+
+    update basepage
+
+commit 04be43279c2f9452b0a81b95eed485d9942c758f
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 23:57:54 2021 +0800
+
+    learnGoodbye started
+
+commit 7f86d12d90c779a8a44bdc7b8d56814f1f31f0ee
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sun May 16 23:53:22 2021 +0800
+
+    removed nav bar and footer from quiz page
+
+commit a24b61c910df974239a8192a696584b76d5ad9d2
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 23:27:15 2021 +0800
+
+    learnHowAreYou done
+
+commit d36ced3556250f0267d4c034f23db1d980184d27
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sun May 16 23:19:12 2021 +0800
+
+    changed the print button and the scale
+
+commit c06a7197795492d0391382488f436d415b690f9c
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sun May 16 22:30:00 2021 +0800
+
+    Update on forgot password
+
+commit 380c84d437ebde8116b63793225005d1202b0724
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 21:46:33 2021 +0800
+
+    merging unit testing 1 to unit testing 2
+    
+    Unit testing 2 was cloned from database
+
+commit c816f08859eb6369defa7582c0f0874c992aa9f8
+Merge: fff2428c 752c95af
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 21:46:01 2021 +0800
+
+    Merge branch 'unit_testing1' into unit_testing2
+
+commit 752c95afdcb1e11f450dd5938beb44e493a831c1
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 21:27:38 2021 +0800
+
+    unit test & selenium test
+
+commit c5cb203694ab04d87331af32a05200a07b06c7e5
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 21:07:57 2021 +0800
+
+    learnIntroduce fully done
+
+commit fff2428cc361a2d7aba9c40de5474e5f1ee7d9d8
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 20:53:26 2021 +0800
+
+    learnIntroduce done
+
+commit 2aab9e3575efbfcd3950ec17fc59fdbae1c4ce05
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 19:46:56 2021 +0800
+
+    learnIntroduce updated
+
+commit c27c838b02c04bf3bf57ff680c9c00a959a494dc
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 18:24:02 2021 +0800
+
+    changes js file name
+
+commit c7a30523e4c468e8f0dd006bc2061dcc84b8e322
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sun May 16 17:29:19 2021 +0800
+
+    username shown on certificate
+
+commit 12b248417e635b95e78b3d2891e3f8583c48d478
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 16:45:30 2021 +0800
+
+    Update module_page.html
+
+commit 87607e6ec5b8ddb105020b8ca5097c21da73fd36
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sun May 16 16:34:31 2021 +0800
+
+    updated quiz page
+
+commit cee4083ad81e90b9ee5a54511c0b2e4958eb74fd
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 16:27:03 2021 +0800
+
+    all modules added
+
+commit 9696cfb418680a093e57e17e197e6d94bb79d41a
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 16:00:45 2021 +0800
+
+    fixed progress bar so can have as many content as want
+
+commit d7c9e861a7b36ff7ca364e51df854de9ea426e42
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 14:43:41 2021 +0800
+
+    added learnIntroduce.html
+
+commit 6d1b78bc6a9c68a4bdd874073f852a7d341b47e4
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 13:35:06 2021 +0800
+
+    looking cleaner
+
+commit 10c296486924f0443e5d1044a1ce41e3c2700e6b
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 13:16:35 2021 +0800
+
+    fixed updating progress bug where they do an already done module
+
+commit d8e4a5c3df6f447fa6341fd677ba44b0563bad1d
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 16 12:43:46 2021 +0800
+
+    added a new js file to fix bug
+
+commit 84673db69d10877894efe416d9008bd40836e349
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 04:45:32 2021 +0800
+
+    venv
+
+commit 657435974f9a65b0d4373b0b492aff60fa68fa00
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 04:43:38 2021 +0800
+
+    junk
+
+commit 11bdad9e2e912733bb83f133ed7378470dd799b6
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 04:41:44 2021 +0800
+
+    Revert "venv junk"
+    
+    This reverts commit d3fbc2f56259b64c0d1fdd84557c33cf0cc11109.
+
+commit d3fbc2f56259b64c0d1fdd84557c33cf0cc11109
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 04:29:00 2021 +0800
+
+    venv junk
+
+commit 043f2956bfddbbc6f54d747058a46cfdf3d277f8
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:44:30 2021 +0800
+
+    Revert "junk file"
+    
+    This reverts commit 6e51d79f8d354cf3a4c9e132086667c8909911bb.
+
+commit fee88e3322254e0501f9532b67d3cc16b38623ee
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:43:58 2021 +0800
+
+    Revert "garbage"
+    
+    This reverts commit b08f82e1eeb276b05dee2746d3b5252cf4f87f6c.
+
+commit b08f82e1eeb276b05dee2746d3b5252cf4f87f6c
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:42:24 2021 +0800
+
+    garbage
+
+commit 320cdd4dc2c679e3f3bb56af214950a754f470a5
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:40:33 2021 +0800
+
+    Revert "garbage"
+    
+    This reverts commit 905bffb6516f03f9f504252ca688519bf2398027, reversing
+    changes made to 6e51d79f8d354cf3a4c9e132086667c8909911bb.
+
+commit 905bffb6516f03f9f504252ca688519bf2398027
+Merge: 6e51d79f b8f802cd
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:34:49 2021 +0800
+
+    garbage
+
+commit 6e51d79f8d354cf3a4c9e132086667c8909911bb
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:30:11 2021 +0800
+
+    junk file
+
+commit 0bc7311a1781c339954224c10d616ec9fe130af5
+Merge: 09ab93eb a82537dd
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:27:58 2021 +0800
+
+    Merge branch 'main' into testing1
+
+commit 09ab93eb9c7bbb80281f14e88b97748f77949a2e
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:21:25 2021 +0800
+
+    Unit Testing
+    
+    Unit testing on Log in and password
+
+commit 551d61f608b27d8e6704711ee53f59b82b03f50e
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sun May 16 03:20:14 2021 +0800
+
+    Unit Testing
+    
+    Tested login and hash password
+
+commit a6a30ac50dfd5cb5bf1cbae03d5421c2477d3d9f
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sun May 16 02:05:17 2021 +0800
+
+    linked quiz to index
+
+commit b8f802cd91091dc5d9aaad155943b10ead747810
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sun May 16 00:52:41 2021 +0800
+
+    password validation
+
+commit da14332943c2161eeebb16c3e585733958cca20a
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sun May 16 00:42:26 2021 +0800
+
+    update on route
+
+commit 288059a8802ef383f9200a60e8e25cf4eeeb62cc
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sun May 16 00:33:28 2021 +0800
+
+    Update on html css
+
+commit 8d2eb5b03809b4a3b9767bb76baccffb21545f42
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat May 15 23:26:51 2021 +0800
+
+    added in quiz page
+
+commit f94b4d14b49a6f9d47516ccca5dd7a506f792f9e
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat May 15 23:15:47 2021 +0800
+
+    junk files
+
+commit 4415f9eab0096dfd93125eb8adb58eabd98f0f42
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat May 15 22:44:10 2021 +0800
+
+    junk files
+
+commit 467d1cf74cd9cd2493999ce9063ba5b6e2cc452f
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat May 15 22:33:18 2021 +0800
+
+    junk files
+
+commit 72d10005bf08a5535e3ea3655f8d141bc3a618f3
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sat May 15 20:35:08 2021 +0800
+
+    update routes
+
+commit 2e28aefcb13c0a84acae3c21d2b138c9f6e0428c
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 18:51:13 2021 +0800
+
+    Update language_pro.db
+
+commit 81225a9f1c42e266fae6d1f49a65e3081d193555
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat May 15 18:19:48 2021 +0800
+
+    junk files
+
+commit 09fe331f10723930b89c0a637e19267f4da3081a
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sat May 15 17:37:30 2021 +0800
+
+    Base page template done
+    
+    Navbar changes depending on user
+
+commit 32f9b2187054caa3effcfa8078fb22a13879ef92
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 16:33:08 2021 +0800
+
+    bug fix
+
+commit 2a0ce2b283961b5028e78f0a0719fe61e106b748
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 16:31:05 2021 +0800
+
+    Progress bars working!
+    
+    Looking clean sheesh
+
+commit 65a7b3a4fbdc7278832d3233a2854e32df15799c
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 14:44:00 2021 +0800
+
+    update progress after finishing module working!
+
+commit dde4e4a19afc3aef9e3e2dbb90bfcf449713b3e3
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Sat May 15 13:33:53 2021 +0800
+
+    Homepage Javascript
+
+commit cecea2211413582d27053846b69df75dc73fe0ec
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 12:41:51 2021 +0800
+
+    nothing was wrong
+    
+    now just have to use incognito mode
+
+commit 97373beb16142bd0a54b82ae8034efc294460097
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 12:35:22 2021 +0800
+
+    flask is being stupid
+
+commit ad66e7e5aeea9d25c5b35224e4702c54438b32a6
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 12:31:39 2021 +0800
+
+    grr
+
+commit c76e64dbae4036388772cfd3c9dd56faec5eb02f
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 12:31:36 2021 +0800
+
+    grr
+
+commit 5872b970910cf1452126db86f9edef79397a9ac2
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 12:31:27 2021 +0800
+
+    venv files
+
+commit 477c92239b8d712feaec358bbc98dad0c08a6123
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 12:31:15 2021 +0800
+
+    whatever
+
+commit 503415fa1d58d4c10c108b4f79fdd5c69a2967f8
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 12:26:12 2021 +0800
+
+    db working but now learnHello route not working
+
+commit f2bae33ab70cadbf95422baf7571ba3c7b239941
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat May 15 12:00:33 2021 +0800
+
+    db working now wtf
+
+commit bb906220a6da4f474ca7841dcb1d50b2a8e53d27
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Fri May 14 19:39:16 2021 +0800
+
+    Update on model.py
+    
+    inserted new column (testScore) into the db.
+
+commit 5e085c5f20513ebd5b0f27a2628a57eb509ec401
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Fri May 14 00:11:54 2021 +0800
+
+    Deleted Test Pages
+
+commit 79502b63c5147137728a1e89d701074826200d87
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Fri May 14 00:08:30 2021 +0800
+
+    Update routes.py
+
+commit 51a1cc1cf343e351ba34b25b07470268525d65b8
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Fri May 14 00:03:51 2021 +0800
+
+    Update done on db
+    
+    added progress column
+
+commit 19ae41e0df75d445bc64260ce0ead3bc501faccb
+Merge: 4711b95a 8c9ecf25
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Fri May 14 00:02:06 2021 +0800
+
+    Merge branch 'database' of https://github.com/Shane-oo/language_Pro into database
+
+commit 4711b95a41a7eca0632d97dc978f7d7b778a61b8
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Fri May 14 00:01:36 2021 +0800
+
+    add files
+
+commit 8c9ecf25b965c0a0209481daa177ebbda839a22e
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Fri May 14 00:01:30 2021 +0800
+
+    junk files
+
+commit a82537dd085f9520a9618c4b55cb3764c5ebde88
+Merge: 12b7bc89 1019f409
+Author: yuhshin-00 <82132833+yuhshin-00@users.noreply.github.com>
+Date:   Thu May 13 23:42:55 2021 +0800
+
+    Merge pull request #25 from Shane-oo/homepage
+    
+    Homepage
+
+commit 1019f40975750caeabbc0816f70b866d5eedde38
+Merge: c1794000 12b7bc89
+Author: yuhshin-00 <82132833+yuhshin-00@users.noreply.github.com>
+Date:   Thu May 13 23:42:41 2021 +0800
+
+    Merge branch 'main' into homepage
+
+commit c179400010e1227da041ae75efb16a9d84784a4d
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Thu May 13 23:37:17 2021 +0800
+
+    Updated Homepage
+
+commit 62b39ed6441e5b8ec47fd75f50c7b2eb88aadf23
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Thu May 13 23:30:13 2021 +0800
+
+    Updated Navbar
+    
+    burger works now
+
+commit 12f027dcdc7553031ecd2b471340e7a08b11536b
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu May 13 23:18:34 2021 +0800
+
+    adding learningTemplate files
+
+commit 3bd3e6ff833bbdf2200f003a8d9c5e9a81648807
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Thu May 13 23:16:43 2021 +0800
+
+    Test pages created
+
+commit 5023f848b17aa3f0cf55b1e10cb78bfae864ed33
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu May 13 22:27:48 2021 +0800
+
+    added finish button
+
+commit 3fa022134c13cee094c0ceb618b296393ffe17f1
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Thu May 13 21:53:11 2021 +0800
+
+    new homepage
+
+commit 07e9d3518a92dc66b2ab1d55ea345ff56dd53fbb
+Merge: 6e3c0ade 691a3dec
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Thu May 13 20:37:55 2021 +0800
+
+    Merge branch 'login' of https://github.com/Shane-oo/language_Pro into login
+
+commit 6e3c0ade39a4343478b591f6cfcdbdd8db4af667
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Thu May 13 20:35:56 2021 +0800
+
+    Update done on Login Page
+    
+    created
+    html : loginTest, signupPage2, home, index2, user
+    
+    python : forms, models
+    
+    db : language_pro.db
+
+commit 691a3dece48e5a61f608987fca64f26d3452680d
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu May 13 00:12:36 2021 +0800
+
+    downloaded files into venv
+
+commit 16b63df809efab6be01d85a25ff14d4286bc79c4
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Wed May 12 23:57:34 2021 +0800
+
+    Updates made on Login Page
+    
+    updates made on :
+     routes
+    
+    created new py files :
+    1. models
+    2. forms
+    3.config
+
+commit 3f2aed8d758bdfbdacc49b9306b8c1713eaa5c0c
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 23:48:09 2021 +0800
+
+    Update routes.cpython-38.pyc
+
+commit 7894548a8276f800947b648bf5cbe113fdfd07ea
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 20:12:55 2021 +0800
+
+    garbage
+
+commit 72abd5e30b468bb79b1eb4e48dcbe47586f9b4f4
+Merge: f1757d46 8e7de1ff
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 10:29:07 2021 +0800
+
+    Merge branch 'homepage' of https://github.com/Shane-oo/language_Pro into homepage
+
+commit f1757d46e2d81de6bc5a6dc4bcf5771683bc772b
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 10:29:04 2021 +0800
+
+    added a /
+
+commit 12b7bc8935779a16ba50f2add37e1e2908b15765
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 10:25:15 2021 +0800
+
+    fix js
+
+commit 9779e6eb265532509d54ec73797e02066f15e443
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 10:22:59 2021 +0800
+
+    garb
+
+commit 33c8670fed47c3dfcb18488296f5b1ad6557b1ff
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 09:35:14 2021 +0800
+
+    fix wording
+
+commit 67d0291a819b2ec543f14e87ef6724d221b79a96
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 09:26:44 2021 +0800
+
+    Quiz working good
+
+commit 8e7de1fff930ec5c922caeb1bc09b6bb811229ce
+Merge: 7891aa17 3693d639
+Author: yuhshin-00 <82132833+yuhshin-00@users.noreply.github.com>
+Date:   Wed May 12 09:11:51 2021 +0800
+
+    Merge pull request #21 from Shane-oo/main
+    
+    Merge pull request #20 from Shane-oo/homepage
+
+commit 3693d639bf91161a6e9420dc6413e39e6b1f4558
+Merge: aee89e81 7891aa17
+Author: yuhshin-00 <82132833+yuhshin-00@users.noreply.github.com>
+Date:   Wed May 12 09:10:04 2021 +0800
+
+    Merge pull request #20 from Shane-oo/homepage
+    
+    Homepage
+
+commit 7891aa1720a2302e5735b9d49270b323d55a10f0
+Author: yuhshin-00 <yuhshinlim0808@gmail.com>
+Date:   Wed May 12 09:07:40 2021 +0800
+
+    updated homepage
+
+commit db892010ca32ec35ef9e8f74906fcaff2ec57237
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 08:28:29 2021 +0800
+
+    added save answer
+    
+    seems like the only way to submit all up because theres a bug with speaking the images
+
+commit 6ce874aadd5229c897415266a5efb0162fd1d310
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 08:10:26 2021 +0800
+
+    Update .DS_Store
+
+commit 4ee65ccbd240264f8e746c37eb86061e0949d22f
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 08:05:02 2021 +0800
+
+    end quiz started
+
+commit 43f220fa20f4237d2d2062ec00a309a8c91a3b5b
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 03:37:30 2021 +0800
+
+    garbage
+
+commit c8ad8cee498e95c574570b7560172608e9990daf
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 03:36:18 2021 +0800
+
+    Update routes.cpython-38.pyc
+
+commit 10ac3f4760849cc756c9cd6305618d52bc2dfc88
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 03:35:31 2021 +0800
+
+    hola done. Template set.
+
+commit 50bf82a4402be2f7caf530d85a903590f1dd4f51
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Wed May 12 00:45:03 2021 +0800
+
+    fundamental next and previous added
+    
+    js working
+
+commit e3844d8155f4d8ec4c10697c23adb650fddb8bcd
+Merge: ba5300ec aee89e81
+Author: yuhshin-00 <82132833+yuhshin-00@users.noreply.github.com>
+Date:   Tue May 11 16:55:41 2021 +0800
+
+    Merge pull request #19 from Shane-oo/main
+    
+    pulling homepage js
+
+commit aee89e81e43923b01c20b8c85a293e91ac51ac95
+Author: yuhshin-00 <82132833+yuhshin-00@users.noreply.github.com>
+Date:   Tue May 11 16:42:04 2021 +0800
+
+    home page js
+
+commit ba5300eca1dc293ac325ec5784d5b55d59a9413f
+Author: yuhshin-00 <82132833+yuhshin-00@users.noreply.github.com>
+Date:   Tue May 11 16:35:20 2021 +0800
+
+    Add files via upload
+
+commit c88bfe2501c780843f3d35078b893c11260ba1eb
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Tue May 11 00:58:53 2021 +0800
+
+    started hola
+
+commit 86f52c21c5a2125d5ee8266503b8b393b832dffa
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 10 21:34:38 2021 +0800
+
+    Update routes.cpython-38.pyc
+
+commit 51566ac0526944a3ed10f841449fda853d7e0a5c
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 10 21:31:01 2021 +0800
+
+    deleted venv
+
+commit 648237bd95889c4a60f86f49dc5b3c038461eda5
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 10 21:13:54 2021 +0800
+
+    stupid venv files
+
+commit 3521e2d2aa4f9036150eb60b0978df6d656532c2
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat May 8 18:49:04 2021 +0800
+
+    Update signupFinal.html
+
+commit 0a5eb446932cabc3cd6be7b697cca58ac0a7fd5e
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat May 8 18:48:06 2021 +0800
+
+    Update routes.py
+
+commit 1fa2e9cf0f2773988e8f6050d50ebc20515fb87d
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat May 8 18:31:15 2021 +0800
+
+    Delete signupstyle.css
+    
+    stylesheet that is not in use
+
+commit 478ce753ac80d36635d870c60e14e86bf5a711f9
+Merge: c9949d13 bb0fea5a
+Author: Faaaah <82351892+Faaaah@users.noreply.github.com>
+Date:   Sat May 8 18:19:25 2021 +0800
+
+    Merge pull request #17 from Shane-oo/login
+    
+    Login
+
+commit bb0fea5ad7d7430b6580a08c2001df2ee1276b83
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat May 8 18:18:05 2021 +0800
+
+    Removal of unused stylesheets
+
+commit bb42773e76bfc6c2e503eab76233275f2e50b813
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat May 8 18:12:11 2021 +0800
+
+    update made on css and html
+    
+    Update of loginFinal made and final.css that will be used for the project.
+
+commit 184fb7f53b5d0aa302378e1aef2cb06fb2352a73
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat May 8 18:10:08 2021 +0800
+
+    updated name of css
+    
+    signupFinal.html css link updated to final.css which is the css that will be used for all html pages.
+
+commit 64e1ce50957f8d64e45dd1c1cf0ec0917150e174
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat May 8 16:15:37 2021 +0800
+
+    Updates on Sign Up Page and CSS
+    
+    CSS is now more specific with added ids and classes.
+
+commit 6ab3de2443ced3fbbcd5c2f37ceedcd5cd34b344
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Fri May 7 03:11:02 2021 +0800
+
+    started learning branch
+
+commit c9949d13f00a23f80fe18c33047029b3c29d05f1
+Merge: 9979ff87 0618f688
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Fri May 7 02:19:15 2021 +0800
+
+    Merge pull request #15 from Shane-oo/feat/module
+    
+    Added more text
+
+commit 0618f688c9cf9cafe08a0750ac5abc6e22eefd12
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Fri May 7 02:18:44 2021 +0800
+
+    Added more text
+
+commit f3c4e71040b65ec9e7e592972f09716e592ad00b
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Fri May 7 00:06:26 2021 +0800
+
+    updated (need database to fill in the blanks)
+
+commit cb265a1e0545fa897107242e766692f4065b8524
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Fri May 7 00:04:52 2021 +0800
+
+    certificate template
+
+commit 9979ff87b399f9a7c9505b3c84c981c3ebb8ebe9
+Merge: ff46da06 44e86c09
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Thu May 6 23:21:55 2021 +0800
+
+    Merge pull request #14 from Shane-oo/feat/module
+    
+    Updated module Page
+
+commit 44e86c098226629ef7048c9fc09bec08c252db90
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu May 6 23:19:53 2021 +0800
+
+    added module_talk
+
+commit 9872c855bdf38b89ae58c25013d748baf32a0370
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu May 6 23:16:06 2021 +0800
+
+    fixed images
+
+commit eee6f44a1ab85b7c1ee7e40c17831a3e3ffe455c
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu May 6 23:05:19 2021 +0800
+
+    Improved layout of Module added text
+
+commit 686852f624ea27fb890f769e5b8291ae2581708f
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Wed May 5 00:01:57 2021 +0800
+
+    update on forgot password page
+
+commit 95ef3d407f9f054340b7795e0e0c0f7aac112db6
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Wed May 5 00:01:25 2021 +0800
+
+    venv files
+
+commit 53fb985e1588b633ef1ae861e425b4a16af2d6b1
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Tue May 4 21:47:52 2021 +0800
+
+    venv files
+
+commit 199014a933c6ff73ed1e19af7aac6b861419ae21
+Merge: 60c13f55 ff46da06
+Author: JoeWinTan <82102487+JoeWinTan@users.noreply.github.com>
+Date:   Tue May 4 21:40:48 2021 +0800
+
+    Merge pull request #13 from Shane-oo/main
+    
+    merging main
+
+commit ff46da06f953d919937207523dddf908f9c6b93e
+Merge: eaf9cdaf 60c13f55
+Author: JoeWinTan <82102487+JoeWinTan@users.noreply.github.com>
+Date:   Tue May 4 21:40:07 2021 +0800
+
+    Merge branch 'forgetPassword' into main
+
+commit 60c13f55d0277b9117145b22d02e8d9332578cbc
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Tue May 4 20:54:39 2021 +0800
+
+    venv
+
+commit 0d4d0725184d1a5d478bd6cea9453b9d0cde601a
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Tue May 4 01:03:48 2021 +0800
+
+    basics fully done
+    
+    Very ugly but the basics are done.
+
+commit b2982cdb52c8dd45b9aead28787132a72c564a81
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 3 17:45:18 2021 +0800
+
+    venv
+
+commit eaf9cdaf4cb576ce037545904274b385c1823cbd
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 3 17:30:52 2021 +0800
+
+    irrelevant files
+
+commit 4d367cb27363854c91cd6cc932a19f68c19301e8
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 3 17:11:43 2021 +0800
+
+    Update modulePageStyle.css
+
+commit 7733d74c854baaaa0826e7f90c363c6488b22ea6
+Merge: bec84629 50dd5e51
+Author: Faaaah <82351892+Faaaah@users.noreply.github.com>
+Date:   Mon May 3 17:10:16 2021 +0800
+
+    Merge pull request #12 from Shane-oo/signup
+    
+    Signup final working
+
+commit 4a8008b57390c912cf734f22a5db4e54c87a8e0d
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 3 17:09:56 2021 +0800
+
+    venv files
+
+commit bec84629a407e21b1f4be04ba1cbd095adc89840
+Merge: 62c9e452 66706380
+Author: Faaaah <82351892+Faaaah@users.noreply.github.com>
+Date:   Mon May 3 17:03:22 2021 +0800
+
+    Merge pull request #11 from Shane-oo/login
+    
+    Login Page working with new css called final.css
+
+commit c2b8fffc393a7087b6bb683b130639a9ef4fa87b
+Merge: 29b6700c 62c9e452
+Author: JoeWinTan <82102487+JoeWinTan@users.noreply.github.com>
+Date:   Mon May 3 16:51:19 2021 +0800
+
+    Merge pull request #10 from Shane-oo/main
+    
+    grabbing main files
+
+commit 50dd5e5197aee413ba76dd1b08f461bd91ef645b
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 3 16:50:35 2021 +0800
+
+    update sign up final page
+
+commit 667063801ab7e40a8fd8edead96d40d5bc988773
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 3 16:49:25 2021 +0800
+
+    updated final login file
+
+commit 29b6700c2c151790c88d61c544bd19777b0bd74f
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Mon May 3 16:48:57 2021 +0800
+
+    needed venv files
+
+commit fa8913107c5352db111479030945b38c7c41303e
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 3 16:45:47 2021 +0800
+
+    Created a final login
+
+commit 7ba4b5205e0b95a68510e4696580d5b4d6ea1a16
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 3 16:42:50 2021 +0800
+
+    Updated SignUp
+
+commit 19b64e34d6beddf4f6ed17e61791fd730400a3b1
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 3 16:37:06 2021 +0800
+
+    updates login2 and signUpPage
+
+commit e57642a4b00e11383f3e8eadcd7d163902b249db
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Mon May 3 16:34:48 2021 +0800
+
+    Created a new standardised css
+
+commit 737b87e007e354396809cc2f7fe9d85a5612bdf0
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 3 16:32:44 2021 +0800
+
+    in progress accordion
+
+commit 090b4ed6f8cb9285b52a0b7c43b854eadf31cc39
+Merge: fc35b934 62c9e452
+Author: Faaaah <82351892+Faaaah@users.noreply.github.com>
+Date:   Mon May 3 16:24:21 2021 +0800
+
+    Merge pull request #8 from Shane-oo/main
+    
+    Grabbing main
+
+commit d75105aca27fea89f0f0b9aacd11e5bf5b829249
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Mon May 3 00:45:32 2021 +0800
+
+    basics made, heading and accordion
+
+commit ece20d9277bcd6c91c876255804ce3a723e878e1
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun May 2 22:52:27 2021 +0800
+
+    module page created
+
+commit 9bcb0a6a8a0acde6097f2dd443849295d331c249
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun Apr 25 02:20:20 2021 +0800
+
+    linked forgetPass.html
+
+commit dfc7a664fef235420c472d8d3723264d7dc8ba6b
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sun Apr 25 00:14:45 2021 +0800
+
+    fixed link to signup page and img src link
+
+commit 0d9b0148d9384d894985dead474e42c93e939214
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sun Apr 25 00:05:57 2021 +0800
+
+    Update on Login and Sign Up
+    
+    Updated both login and sign up with new files. Deleted the previous stylesheets and created a new one called stylesheet2
+
+commit fc35b934763fd42a2a23b884fded9e447a193f4a
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat Apr 24 23:54:06 2021 +0800
+
+    Update login2.html
+    
+    updated href for stylesheet
+
+commit 5f8d6aa7d2f84895cddfd8e5187efb4ba87a744c
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat Apr 24 23:53:14 2021 +0800
+
+    Update signup2.html
+    
+    updated stylesheet href
+
+commit 1b5b284b36c0ff9036302ca2f1eb777f524f6554
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat Apr 24 23:09:25 2021 +0800
+
+    Created a new sign up page
+    
+    this sign up page is the latest one and uses the main css which is stylesheet2.css
+
+commit ee9cf26e97c59c7c81e148df56ff99ae5ffc7b3e
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Sat Apr 24 23:07:14 2021 +0800
+
+    Created new login page and main CSS
+    
+    stylesheet2.css will be the css file that we add all our styles into.
+
+commit e5178a1a4ac8079bcf350be6f1157cd4bd7e35ac
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat Apr 24 22:45:26 2021 +0800
+
+    Update forgetPass.html
+
+commit e7dba7217142d169de36cb1e9c60f83dcb1ef0c6
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat Apr 24 22:20:43 2021 +0800
+
+    Update forgetPass.html
+
+commit 336f3c7696416fad7230c620c01d983b13682e3e
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat Apr 24 22:20:14 2021 +0800
+
+    Update forgetPass.html
+
+commit a32b1416618cef22796eda35360a4c99fc6748af
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat Apr 24 17:09:57 2021 +0800
+
+    Update forgetPass.html
+
+commit 471940751fc9af8e94ec98367afe81e687bbd885
+Author: JoeWinTan <22702179@student.uwa.edu.au>
+Date:   Sat Apr 24 16:35:40 2021 +0800
+
+    Update forgetPass.html
+
+commit 62c9e4521627d0189729427c6a3dc1fc5bd65fc1
+Merge: 6487006e 34bd083a
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Sat Apr 24 13:46:48 2021 +0800
+
+    Merge pull request #7 from Shane-oo/feat/routing
+    
+    Feat/routing
+
+commit 34bd083ae46af55ff052c0085ca238443dd1113f
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Sat Apr 24 13:46:22 2021 +0800
+
+    fixed css styling and linked forget Password?
+
+commit a9dd9efa5eabbe1023794acf0fba1e6ee78081a9
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Fri Apr 23 13:57:31 2021 +0800
+
+    added routing to signUp and login pages
+    
+    css style not working
+
+commit 6487006eca3bb2f78809da1b6f2d81cae2c74c43
+Merge: 9c7b3066 a130d940
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Fri Apr 23 13:46:20 2021 +0800
+
+    Merge pull request from Faaaah
+    
+    Created Sign up Page
+
+commit 9c7b30661f6dc0a749eb5ba8ca301dfed52568ef
+Merge: 6ad72323 48953079
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Fri Apr 23 13:46:02 2021 +0800
+
+    Merge pull request from Faaaah
+    
+    Created Login Page
+
+commit a130d94035953f01c717b33496beb4238e031a4f
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Fri Apr 23 13:35:20 2021 +0800
+
+    Created Sign up Page
+    
+    added relevant files to their own sub directories.
+
+commit 48953079a367c7b15f046025cba451d8cdf90c4f
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Fri Apr 23 13:32:02 2021 +0800
+
+    Created Login Page
+    
+    login page and external css called loginstyle created. Icon.png is needed for the login page and has been added into static folder.
+
+commit 6ad7232346a6e3c7c985772c1a62ec647a8fbee9
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Fri Apr 23 13:16:05 2021 +0800
+
+    deleted unwanted files
+
+commit fe2ee76639a9ce1ad7ca704179be52081843bd47
+Author: Faaaah <82351892+Faaaah@users.noreply.github.com>
+Date:   Fri Apr 23 13:15:26 2021 +0800
+
+    Delete signupstyle.css
+
+commit 8ba597fcef5e3f3de841ee413b959b55bc676530
+Author: Faaaah <82351892+Faaaah@users.noreply.github.com>
+Date:   Fri Apr 23 13:15:19 2021 +0800
+
+    Delete signupPage.html
+
+commit 7ca5eb9c0b9f675edf968fed5eed5d20fae8d3b3
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Fri Apr 23 13:05:56 2021 +0800
+
+    Update README.md
+
+commit 4bfe40fe86b55331d38eb522618075c9d5d596b3
+Merge: 11fe2c0d 8a1844bb
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Fri Apr 23 12:49:30 2021 +0800
+
+    Merge pull request #4 from Shane-oo/forgetPassword
+    
+    Forget password
+
+commit 8a1844bbc968a7837489d821908e853c30e1b8a3
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Fri Apr 23 12:48:38 2021 +0800
+
+    added Route to forgetPass.html in account page
+    
+    forgetPass.html is now accessible from the account page
+
+commit 61e9037705fd27201245786a294c84425a845830
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Thu Apr 22 20:57:23 2021 +0800
+
+    Update on signup page
+    
+    updated input type from text to email to ensure validation.
+
+commit 7e06eb15a2f6d6145581524fc8bc0023ff5b45f3
+Author: Faaaah <nuri.0316@gmail.com>
+Date:   Thu Apr 22 20:46:48 2021 +0800
+
+    Created Sign up page for Account
+    
+    This page is the page that users will view when they click on sign up button on the login page.
+
+commit 11fe2c0d5bc03ee3a9a4ec8584ac75a65f5c01c0
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Thu Apr 22 14:26:33 2021 +0800
+
+    Update README.md
+
+commit 90fb3a74af5b7960752aff4205b05d3b3fd966dd
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Thu Apr 22 14:25:40 2021 +0800
+
+    updated readme
+
+commit 20996780376f1e01e4bb334966df442bf839855c
+Merge: 40b3b9a4 35709193
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Thu Apr 22 14:18:56 2021 +0800
+
+    Merge pull request #3 from Shane-oo/feat/shinsHomePage
+    
+    added a temporary photo
+
+commit 35709193ee31ae1150973463a85cf73af0323e2b
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu Apr 22 14:18:12 2021 +0800
+
+    added a temporary photo
+    
+    example of how static photos work
+
+commit 40b3b9a425c1be96bce717a122348158b9e9a352
+Merge: 9c098407 a0d79621
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Thu Apr 22 14:12:18 2021 +0800
+
+    Merge pull request #2 from Shane-oo/feat/shinsHomePage
+    
+    Feat/shins home page
+
+commit a0d79621dd2b00dc3ccff82d5457cfa90a2762e3
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu Apr 22 14:11:24 2021 +0800
+
+    added body and </html> was missing
+
+commit 22c0e632e8d9740ff802557659a54e11411adcfb
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu Apr 22 14:09:43 2021 +0800
+
+    added Shins homepage
+    
+    added Shins homepage. CSS style and bootstrap not working.
+
+commit 9c098407130a5cc0547c4c07868e90f6750db78e
+Merge: 862e6e54 b8e3aeaf
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Thu Apr 22 13:55:45 2021 +0800
+
+    Merge pull request #1 from Shane-oo/accountPage
+    
+    linked to account page and put style in external style.css
+
+commit b8e3aeafcc76168c140a8571965ce8d0d4f4ad00
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu Apr 22 13:54:38 2021 +0800
+
+    linked to account page
+    
+    added the link to the account page so can go back and forth from homepage to account page
+
+commit 862e6e54fbbe0682b64afba3795f924b141587e2
+Author: Shane <68227178+Shane-oo@users.noreply.github.com>
+Date:   Thu Apr 22 13:03:03 2021 +0800
+
+    Read me file for flask application
+
+commit 5187d55274f309dbccda598b946387ca06f81750
+Author: Shane <shanemonck11@hotmail.com>
+Date:   Thu Apr 22 12:55:38 2021 +0800
+
+    template & flask run
+    
+    Created a homepage template, with an external style sheet template, files are in correct sub directories. flask is working

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<div class = "QuizContainer">
+    <div class = "container">
+<head>
+    <title>
+        {% block title %}Module 1{%endblock%}
+    </title>
+    <!--CSS FILES-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <!--JS FILES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
+ 
+
+    
+    <!--icon bug-->
+    <link rel="icon" href= "{{ url_for('static',filename='flag-icon.png') }}">
+    <!-- Feature shins navbar up top-->
+</head>
+<body class = "moduleLearn">
+    <div class = "wholeBar">
+    <div class = "progress_bar2">
+        <div id = "module2Bar">0%</div>
+            <br>
+    </div>
+    </div>
+    <div class = "wordLearn">
+        <div class = "content" id = "content-1"name = "content" style = "display: block;">
+       <h3><span class = "heading">¡Hola!</span></h3>
+        <br>
+        <br>
+        <p>
+            Spanish is the native language of more than 450 million
+            people and the official language in 21 countries worldwide – 
+            Mastering Spanish means you'll be understood whether you go
+            despite any regional differences there may be.
+            <br>
+            And it all starts with...
+        </p>
+        <p>
+            <!-- sound currently works on chrome, safari and firefox-->
+            <button class = "sayWord" onclick="hola.play()">Hola</button>
+        </p>
+        <p>
+            This is the most basic of the greetings,
+            Remember the h is silent!
+        </p>
+        </div>
+
+        <div class = "content"id = "content-2" name = "content">
+            <h3><span class = "heading">Buenos días</span></h3>
+            <p> Literally meaning “good day,” it can also mean “good morning.” “Buenos días” is usually used until noon.
+            </p>
+            <p>
+                <button class = "sayWord" onclick="buenosDias.play()">Buenos días</button>
+            </p>
+            <p>
+                Perfect for those early risers, you'll find a lot of your travel tours or if you plan on hiking,
+                will start in the morning so its ideal to say good morning with Buenos días
+            </p>
+            <div class ="imageForHolaMod">
+                <img  src ="/static/images/goodMorningPeru.jpeg" alt="Sunrise in Llanganuco Valley, Peru"/>
+            </div>
+        </div>
+        <div class = "content"id = "content-3" name = "content">
+            <h3><span class = "heading">Buenas tardes</span></h3>
+            <p>If you want to say “good afternoon,” and it’s one o’clock or later in the day, you can say “buenas tardes.”
+                In Spain it may be used until later in the evening, while in most Latin American countries 
+                and the Caribbean, it may be used until the sun goes down.
+            </p>
+            <p>
+                <button class = "sayWord" onclick="buenasTardes.play()">Buenas tardes</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-4" name = "content">
+            <h3><span class = "heading">Buenas noches</span></h3>
+            <p>For saying "good evening". This phrase also means “goodnight.” 
+                But always be mindful of the context since you could be saying goodbye.
+            </p>
+            <p>
+                <button class = "sayWord" onclick="buenasNoches.play()">Buenas noches</button>
+            </p>
+            <div class ="imageForHolaMod">
+                <img  src ="/static/images/sunsetMexico.png" alt="Sunset in Mexico"/>
+            </div>
+        </div>
+        
+        
+    
+        <button onclick="unmove()"type = "button" class = "back" id = "button_slide slide_right">Back</button>
+        
+        <button onclick = "move()" type = "button" class = "next">Next</button>
+
+    </div>
+        
+         <div class = "end">
+            <h3><span class = "heading">Finished!</span></h3>
+            <p>Lets test what you've learnt so far in this module</p>
+            <br>
+            <p>Click the Images to hear the Spanish word and Select the what you think it is in English below the image</p>
+            
+            <div class = "multiChoice">
+                <p>
+                <button class = "sayWordtestm1" onclick="hola.play()">
+                <img src="/static/images/holaPhoto.png" class = "left" width="500" height="400" >
+                </button>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question1" value = "0"/>Good Bye
+                    <input type ="radio" name ="question1" value = "33.33"/>Hello
+                    <input type ="radio" name ="question1" value = "0"/>Good Morning
+                    <br>
+                    
+                    
+                  
+                </p>
+                <p>
+                <button class = "sayWordtestm1" onclick="buenasNoches.play()">
+                <img src="/static/images/goodnight.png" width="500" height="400">
+                </button>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question2" value = "33.33"/>Good Evening
+                    <input type ="radio" name ="question2" value = "0"/>Hello
+                    <input type ="radio" name ="question2" value = "0"/>Good Morning
+                    <br>
+                   
+                    
+                   
+                </p>
+                <p>
+                <button class = "sayWordtestm1" onclick="buenosDias.play()">
+                <img src="/static/images/goodMorningPhoto.png" width="500" height="400"></button>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question3" value = "0"/>Hello
+                    <input type ="radio" name ="question3" value = "0"/>Goodnight
+                    <input type ="radio" name ="question3" value = "33.33"/>Good day
+                    <br>
+                    
+                </p>
+                <form id = "form4" action = " ">
+                    <input type = "submit" class = "showResults"value="Show Results">
+                </form>
+                   <p>Your score is: <span id="grade">__</span></p>
+                   <p id="grade2"></p>
+       
+            </div>
+            <!-- /updateProgress/{{current_user.id}}/MODULE_NUMBER-->
+            <form action = '/updateProgress/{{current_user.id}}/1' method = "POST" >
+            <button id="sumbitButt" type = 'submit'  class = "next"  progress = "{{current_user.progress}}" >
+                Finish</button>
+            </form>
+        </div>
+   
+
+</body>
+</div>
+</div>
+</html>

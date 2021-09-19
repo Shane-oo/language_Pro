@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<div class = "QuizContainer">
+    <div class = "container">
+<head>
+    <title>
+        {% block title %}Module 7{%endblock%}
+    </title>
+    <!--CSS FILES-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <!--JS FILES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/learningModules.js')}}"></script>
+ 
+ 
+    <!-- Feature shins navbar up top-->
+</head>
+<body class = "moduleLearn">
+    <div class = "wholeBar">
+    <div class = "progress_bar2">
+        <div id = "module2Bar">0%</div>
+            <br>
+    </div>
+    </div>
+    <div class = "wordLearn">
+        <div class = "content" id = "content-1" name = "content" style = "display: block;">
+       <h3><span class = "heading">How to ask simple questions in Spanish</span></h3>
+        <br>
+        <br>
+        <p>
+           Note! the first thing you may notice about written Spanish questions
+        is a punctuation difference—they always begin with an inverted question mark (¿)
+        </p>
+
+        
+        </div>
+
+        <div class = "content"id = "content-2" name = "content" >
+            <h3><span class = "heading">Where? – ¿Dónde?</span></h3>
+            <br>
+            <p> ¿Dónde? is a fairly easy question word to use because it translates well from English question word ‘where?’.
+                <br>
+                For example:
+                <br>
+                English: Where are you?
+            </p>
+            <p>
+                <button class = "sayWord" onclick="whereAreYou.play()">¿Dónde estás?</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-3" name = "content" >
+            <h3><span class = "heading">When? – ¿Cuándo?</span></h3>
+            <br>
+            <p>If you want to ask ‘when?’ something happened or is going to happen, then you’ll need the Spanish question ¿cuándo?
+                <br>
+                When are we leaving?
+            </p>
+            <p>
+               
+                <button class = "sayWord" onclick="whenAreWeLeave.play()">¿Cuándo nos vamos?</button>
+            </p>
+        </div>
+        <div class = "content"id = "content-4" name = "content" >
+            <h3><span class = "heading">Who? – ¿Quién?</span></h3>
+            <br>
+            <p>To ask ‘who?’ questions in Spanish, you can use ¿quién?
+                <br>
+                Who are you living with?
+            </p>
+            <p>
+              
+                <button class = "sayWord" onclick="whoAreYouLivingWith.play()">¿Con quién vives?</button>
+            </p>
+
+
+        </div>
+        <div class = "content"id = "content-5" name = "content" >
+            <h3><span class = "heading">What? or Which? – ¿Qué?</span></h3>
+            <br>
+            <p>The Spanish question word ¿qué? can translate to the English question word ‘what?’ but it can 
+                also translate to ‘which?’ depending on the context.
+            <br>
+            <br>
+            What is that?
+            </p>
+            <p>
+                
+                <button class = "sayWord" onclick="whatIsThat.play()">¿Qué es esto?</button>
+            </p>
+            Which movie do you want to watch?
+            <p>
+                
+                <button class = "sayWord" onclick="whatMovie.play()">¿Qué película quieres ver?</button>
+            </p>
+        </div>
+        
+        
+    
+        <button onclick="unmove()"type = "button" class = "back" id = "button_slide slide_right">Back</button>
+        
+        <button onclick = "move()" type = "button" class = "next">Next</button>
+
+    </div>
+        
+         <div class = "end">
+            <h3><span class = "heading">Finished!</span></h3>
+            <p>Lets test what you've learnt so far in this module</p>
+            <br>
+    
+            
+            <div class = "multiChoice">
+                <h4>What Does this Translate to?</h4>
+                <br>
+                <p>
+                <button class = "sayWord" onclick="whatMovie.play()">Hear in Spanish
+                </button>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question1" value = "0"/>Who are you living with?
+                    <input type ="radio" name ="question1" value = "33.33"/>Which movie do you want to watch?
+                    <input type ="radio" name ="question1" value = "0"/>When are we leaving?
+                    <br>
+                </p>
+                <h4>What Does this Translate to?</h4>
+                <br>
+                <p>
+                <button class = "sayWord" onclick="whereAreYou.play()">Hear in Spanish</button>
+                </p>
+                <p>
+                    
+                    <input type ="radio" name ="question2" value = "33.33"/>Where are you?
+                    <input type ="radio" name ="question2" value = "0"/>What is that?
+                    <input type ="radio" name ="question2" value = "0"/>When are we leaving?
+                    <br>
+                   
+                    
+                   
+                </p>
+                <p>
+                <button class = "sayWord" onclick="whatIsThat.play()">Hear in Spanish</button>
+                </p>
+                <p>
+                    <input type ="radio" name ="question3" value = "0"/>Which movie do you want to watch?
+                    <input type ="radio" name ="question3" value = "0"/>Who are you living with?
+                    <input type ="radio" name ="question3" value = "33.33"/>What is that?
+                    <br>
+                    
+                </p>
+                <form id = "form4" action = " ">
+                    <input type = "submit" class = "showResults"value="Show Results">
+                </form>
+                   <p>Your score is: <span id="grade">__</span></p>
+                   <p id="grade2"></p>
+       
+            </div>
+            <!-- /updateProgress/{{current_user.id}}/MODULE_NUMBER-->
+            <form action = '/updateProgress/{{current_user.id}}/7' method = "POST" >
+            <button id="sumbitButt" type = 'submit'  class = "next"  progress = "{{current_user.progress}}" >
+                Finish</button>
+            </form>
+        </div>
+   
+
+</body>
+</div>
+</div>
+</html>
